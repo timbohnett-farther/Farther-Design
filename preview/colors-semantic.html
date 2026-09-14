@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" viewport="700x260" name="Semantic tokens" subtitle="Surface, text, border, data-viz aliases" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Semantic colors</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+ body{margin:0;padding:22px 26px;background:var(--surface-canvas);font-family:var(--font-sans);}
+ .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+ .row{display:flex;align-items:center;gap:10px;padding:10px;background:#fff;border-radius:10px;border:1px solid var(--border-hairline-warm);}
+ .dot{width:24px;height:24px;border-radius:6px;flex:0 0 auto;}
+ .label{font-size:13px;color:var(--fg-primary);font-weight:500;}
+ .tok{font-family:var(--font-mono);font-size:10px;color:var(--fg-muted);}
+</style></head>
+<body>
+<div class="grid">
+  <div class="row"><div class="dot" style="background:#F8F4F0;border:1px solid #E3D3C5"></div><div><div class="label">canvas</div><div class="tok">--surface-canvas</div></div></div>
+  <div class="row"><div class="dot" style="background:#FFFFFF;border:1px solid #E7E7E7"></div><div><div class="label">card</div><div class="tok">--surface-card</div></div></div>
+  <div class="row"><div class="dot" style="background:#F2EAE2"></div><div><div class="label">sunken</div><div class="tok">--surface-sunken</div></div></div>
+  <div class="row"><div class="dot" style="background:#333333"></div><div><div class="label">inverse</div><div class="tok">--surface-inverse</div></div></div>
+  <div class="row"><div class="dot" style="background:#333333"></div><div><div class="label">fg primary</div><div class="tok">--fg-primary</div></div></div>
+  <div class="row"><div class="dot" style="background:#4F4F4F"></div><div><div class="label">fg secondary</div><div class="tok">--fg-secondary</div></div></div>
+  <div class="row"><div class="dot" style="background:#6D6D6D"></div><div><div class="label">fg muted</div><div class="tok">--fg-muted</div></div></div>
+  <div class="row"><div class="dot" style="background:#3B5A69"></div><div><div class="label">brand / link</div><div class="tok">--fg-accent</div></div></div>
+  <div class="row"><div class="dot" style="background:#3CC1D3"></div><div><div class="label">positive</div><div class="tok">--status-positive</div></div></div>
+  <div class="row"><div class="dot" style="background:#CE3657"></div><div><div class="label">negative</div><div class="tok">--status-negative</div></div></div>
+  <div class="row"><div class="dot" style="background:#B68A4C"></div><div><div class="label">reserved</div><div class="tok">--status-reserved</div></div></div>
+  <div class="row"><div class="dot" style="background:#E3D3C5"></div><div><div class="label">hairline</div><div class="tok">--border-hairline-warm</div></div></div>
+</div>
+</body></html>

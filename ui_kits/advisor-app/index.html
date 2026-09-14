@@ -1,0 +1,232 @@
+<!-- @dsCard group="Advisor app" viewport="1440x900" name="Advisor workspace" subtitle="In-product advisor dashboard" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Farther — Advisor workspace</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body{margin:0;background:var(--limestone-25);height:100vh;overflow:hidden;}
+  .app{display:grid;grid-template-columns:248px 1fr;height:100vh;}
+  /* Sidebar */
+  aside{background:var(--charcoal-900);color:var(--limestone-100);padding:22px 18px;display:flex;flex-direction:column;gap:4px;}
+  aside .brand{display:flex;align-items:center;gap:10px;padding:4px 8px 24px;}
+  aside .brand img{height:22px;}
+  aside .brand .sep{width:1px;height:18px;background:rgba(248,244,240,.25);}
+  aside .brand .iw{font-family:var(--font-sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--charcoal-300);}
+  aside .section{font-family:var(--font-sans);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--charcoal-400);padding:16px 10px 6px;}
+  aside a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;font-family:var(--font-sans);font-size:13px;color:var(--limestone-100);border:none;cursor:pointer;}
+  aside a:hover{background:rgba(248,244,240,.05);}
+  aside a.active{background:rgba(59,90,105,.45);color:var(--limestone-50);}
+  aside a svg{width:16px;height:16px;stroke-width:1.5;opacity:.8;}
+  aside a .b{margin-left:auto;font-size:10px;background:var(--bronze-400);color:var(--charcoal-900);padding:1px 6px;border-radius:9999px;font-weight:600;}
+  aside .advisor{margin-top:auto;display:flex;gap:10px;align-items:center;padding:12px 10px;border-top:1px solid rgba(248,244,240,.08);}
+  aside .advisor .av{width:32px;height:32px;border-radius:50%;background:var(--bronze-400);color:var(--charcoal-900);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:12px;}
+  aside .advisor .n{font-size:13px;}
+  aside .advisor .r{font-size:11px;color:var(--charcoal-300);}
+
+  /* Main */
+  main{overflow-y:auto;}
+  .topbar{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:rgba(252,251,250,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-hairline-warm);z-index:5;}
+  .search{display:flex;align-items:center;gap:10px;background:var(--surface-card);padding:8px 14px;border-radius:9999px;border:1px solid var(--border-hairline-warm);min-width:360px;}
+  .search input{flex:1;border:0;outline:0;background:transparent;font-family:var(--font-sans);font-size:13px;}
+  .search .kbd{font-family:var(--font-mono);font-size:10px;color:var(--fg-muted);background:var(--limestone-100);padding:1px 6px;border-radius:4px;}
+  .topbar .right{display:flex;align-items:center;gap:16px;}
+  .icbtn{width:34px;height:34px;border-radius:50%;border:1px solid var(--border-hairline-warm);display:flex;align-items:center;justify-content:center;background:transparent;cursor:pointer;color:var(--fg-primary);}
+  .icbtn:hover{background:var(--surface-card);}
+
+  .content{padding:32px 40px 60px;}
+  .pagehead{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;}
+  .pagehead h1{font-family:var(--font-display);font-weight:300;font-size:48px;letter-spacing:-.03em;line-height:1;margin:0;}
+  .pagehead .eyebrow{font-family:var(--font-sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:6px;}
+  .pagehead .right{display:flex;gap:10px;}
+  .btn{font-family:var(--font-sans);font-size:13px;font-weight:500;padding:9px 16px;border-radius:9999px;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:8px;}
+  .btn.primary{background:var(--steel-700);color:var(--limestone-50);}
+  .btn.ghost{background:transparent;color:var(--fg-primary);border:1px solid var(--border-hairline-warm);}
+
+  /* KPI row */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px;}
+  .kpi{background:var(--surface-card);border:1px solid var(--border-hairline-warm);border-radius:12px;padding:20px;}
+  .kpi .l{font-family:var(--font-sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:10px;}
+  .kpi .n{font-family:var(--font-display);font-weight:300;font-size:36px;letter-spacing:-.03em;line-height:1;}
+  .kpi .d{display:flex;align-items:center;gap:6px;margin-top:10px;font-family:var(--font-sans);font-size:12px;color:var(--aqua-700);}
+  .kpi .d.neg{color:var(--pomegranate-600);}
+  .kpi .d svg{width:12px;height:12px;}
+
+  /* 2-col */
+  .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px;}
+
+  .card{background:var(--surface-card);border:1px solid var(--border-hairline-warm);border-radius:12px;padding:22px;}
+  .card h3{font-family:var(--font-display);font-weight:400;font-size:22px;letter-spacing:-.03em;margin:0 0 16px;}
+  .card .subh{font-size:12px;color:var(--fg-muted);margin-top:-10px;margin-bottom:18px;}
+
+  /* Chart */
+  .chart{height:240px;position:relative;display:flex;align-items:flex-end;gap:10px;padding:10px 0 24px;}
+  .col{flex:1;display:flex;flex-direction:column-reverse;gap:2px;}
+  .seg{border-radius:6px 6px 2px 2px;}
+  .x-axis{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:10px;color:var(--fg-muted);margin-top:8px;}
+  .legend{display:flex;gap:16px;font-size:12px;color:var(--fg-secondary);}
+  .legend span{width:8px;height:8px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle;}
+
+  /* Client list */
+  .row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--border-hairline-warm);}
+  .row:first-child{border-top:none;}
+  .av{width:34px;height:34px;border-radius:50%;background:var(--limestone-200);color:var(--charcoal-900);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:12px;}
+  .av.b1{background:var(--steel-200);color:var(--steel-800);}
+  .av.b2{background:var(--limestone-300);color:var(--limestone-900);}
+  .av.b3{background:var(--granite-200);color:var(--granite-800);}
+  .av.b4{background:var(--clay-200);color:var(--clay-800);}
+  .row .n{font-size:13px;font-weight:500;}
+  .row .m{font-size:11px;color:var(--fg-muted);}
+  .row .right{margin-left:auto;text-align:right;}
+  .row .amt{font-family:var(--font-display);font-weight:300;font-size:18px;letter-spacing:-.02em;}
+  .row .chg{font-size:11px;color:var(--aqua-700);}
+  .row .chg.neg{color:var(--pomegranate-600);}
+  .tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:9999px;background:var(--limestone-100);color:var(--fg-secondary);margin-left:6px;}
+
+  /* Tasks */
+  .task{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-top:1px solid var(--border-hairline-warm);}
+  .task:first-child{border-top:0;}
+  .task .box{width:16px;height:16px;border:1.5px solid var(--charcoal-400);border-radius:4px;flex:0 0 auto;margin-top:2px;}
+  .task.done .box{background:var(--steel-700);border-color:var(--steel-700);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;}
+  .task.done .t{text-decoration:line-through;color:var(--fg-muted);}
+  .task .t{font-size:13px;}
+  .task .m{font-size:11px;color:var(--fg-muted);margin-top:2px;}
+  .task .when{margin-left:auto;font-size:11px;color:var(--fg-muted);}
+
+  /* Allocation donut */
+  .donut{width:150px;height:150px;border-radius:50%;background:conic-gradient(var(--granite-800) 0 42%, var(--steel-700) 42% 66%, var(--granite-400) 66% 82%, var(--bronze-400) 82% 92%, var(--limestone-300) 92% 100%);display:flex;align-items:center;justify-content:center;margin:8px auto 16px;}
+  .donut::after{content:"";width:94px;height:94px;border-radius:50%;background:var(--surface-card);}
+  .alegend{display:grid;grid-template-columns:1fr auto;gap:6px 12px;font-size:12px;}
+  .alegend .k{color:var(--fg-secondary);display:flex;align-items:center;gap:8px;}
+  .alegend .k::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--k,var(--steel-700));}
+</style>
+</head>
+<body data-screen-label="02 Advisor workspace">
+  <div class="app">
+    <aside>
+      <div class="brand"><img src="../../assets/logos/wordmark-cream.svg"><div class="sep"></div><div class="iw">Advisor</div></div>
+      <div class="section">Workspace</div>
+      <a class="active"><i data-lucide="layout-grid"></i>Overview</a>
+      <a><i data-lucide="users"></i>Clients<span class="b">47</span></a>
+      <a><i data-lucide="briefcase"></i>Portfolios</a>
+      <a><i data-lucide="line-chart"></i>Performance</a>
+      <a><i data-lucide="calendar"></i>Meetings</a>
+      <a><i data-lucide="message-square"></i>Inbox<span class="b">3</span></a>
+      <div class="section">Intelligent Wealth</div>
+      <a><i data-lucide="sparkles"></i>Opportunities</a>
+      <a><i data-lucide="gem"></i>Private markets</a>
+      <a><i data-lucide="shield-check"></i>Tax &amp; estate</a>
+      <a><i data-lucide="book-open"></i>Playbook</a>
+      <div class="advisor">
+        <div class="av">JR</div>
+        <div><div class="n">Janice Rowland</div><div class="r">VP · New York</div></div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <div class="search"><i data-lucide="search" style="width:14px;height:14px;"></i><input placeholder="Search clients, portfolios, opportunities…"><span class="kbd">⌘K</span></div>
+        <div class="right">
+          <button class="icbtn"><i data-lucide="plus"></i></button>
+          <button class="icbtn"><i data-lucide="bell"></i></button>
+          <div class="av b1">JR</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="pagehead">
+          <div>
+            <div class="eyebrow">Good afternoon, Janice</div>
+            <h1>Book overview</h1>
+          </div>
+          <div class="right">
+            <button class="btn ghost"><i data-lucide="filter" style="width:14px;height:14px;"></i>This quarter</button>
+            <button class="btn primary">+ Add client</button>
+          </div>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi"><div class="l">Assets under management</div><div class="n">$312.4M</div><div class="d"><i data-lucide="trending-up"></i>+$18.2M · 6.2%</div></div>
+          <div class="kpi"><div class="l">Active households</div><div class="n">47</div><div class="d"><i data-lucide="trending-up"></i>+3 this quarter</div></div>
+          <div class="kpi"><div class="l">YTD after-tax alpha</div><div class="n">+2.4%</div><div class="d"><i data-lucide="trending-up"></i>Above benchmark</div></div>
+          <div class="kpi"><div class="l">Revenue run-rate</div><div class="n">$2.18M</div><div class="d neg"><i data-lucide="trending-down"></i>-1.1% MoM</div></div>
+        </div>
+
+        <div class="cols">
+          <!-- Left col -->
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
+                <div><h3 style="margin-bottom:4px;">Book growth · trailing 10 months</h3><div class="subh">Net inflows by source</div></div>
+                <div class="legend"><div><span style="background:var(--granite-800)"></span>Retention</div><div><span style="background:var(--steel-500)"></span>Referrals</div><div><span style="background:var(--limestone-300)"></span>New</div></div>
+              </div>
+              <div class="chart" id="chart"></div>
+              <div class="x-axis"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+            </div>
+
+            <div class="card">
+              <h3>Top clients</h3>
+              <div class="row"><div class="av b1">RB</div><div><div class="n">Rick Benjamin <span class="tag">GRAT</span></div><div class="m">Startup founder · Liquidity event</div></div><div class="right"><div class="amt tnum">$40.2M</div><div class="chg">+4.1% QTD</div></div></div>
+              <div class="row"><div class="av b2">EM</div><div><div class="n">Eleanor &amp; Marcus Ray <span class="tag">Trust</span></div><div class="m">Multi-gen · Fort Worth</div></div><div class="right"><div class="amt tnum">$22.8M</div><div class="chg">+2.8% QTD</div></div></div>
+              <div class="row"><div class="av b3">LM</div><div><div class="n">Lauren Moone <span class="tag">Direct idx</span></div><div class="m">Exec · San Francisco</div></div><div class="right"><div class="amt tnum">$14.1M</div><div class="chg neg">-0.3% QTD</div></div></div>
+              <div class="row"><div class="av b4">HK</div><div><div class="n">Hiroshi Kimura <span class="tag">DAF</span></div><div class="m">Philanthropy-heavy</div></div><div class="right"><div class="amt tnum">$9.6M</div><div class="chg">+1.9% QTD</div></div></div>
+              <div class="row"><div class="av">SA</div><div><div class="n">Sasha Ahmad</div><div class="m">Engineer · Private mkts interest</div></div><div class="right"><div class="amt tnum">$6.2M</div><div class="chg">+5.4% QTD</div></div></div>
+            </div>
+          </div>
+
+          <!-- Right col -->
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div class="card">
+              <h3>Today</h3>
+              <div class="task done"><div class="box">✓</div><div><div class="t">Review Q3 tax-loss harvest for Benjamin HH</div><div class="m">Saved $42k YTD</div></div><div class="when">8:30a</div></div>
+              <div class="task"><div class="box"></div><div><div class="t">Call — Lauren Moone (estate planning)</div><div class="m">Prep: trust structure memo</div></div><div class="when">11:00a</div></div>
+              <div class="task"><div class="box"></div><div><div class="t">Review Sequoia Private Credit Fund II</div><div class="m">3 clients flagged interest</div></div><div class="when">2:00p</div></div>
+              <div class="task"><div class="box"></div><div><div class="t">Quarterly letter — Intelligent Wealth themes</div><div class="m">Draft shared with marketing</div></div><div class="when">Today</div></div>
+            </div>
+
+            <div class="card">
+              <h3>Book allocation</h3>
+              <div class="subh">Across 47 households</div>
+              <div class="donut"></div>
+              <div class="alegend">
+                <div class="k" style="--k:var(--granite-800)">Public equity</div><div class="tnum">42%</div>
+                <div class="k" style="--k:var(--steel-700)">Fixed income</div><div class="tnum">24%</div>
+                <div class="k" style="--k:var(--granite-400)">Private markets</div><div class="tnum">16%</div>
+                <div class="k" style="--k:var(--bronze-400)">Alternatives</div><div class="tnum">10%</div>
+                <div class="k" style="--k:var(--limestone-300)">Cash &amp; equiv.</div><div class="tnum">8%</div>
+              </div>
+            </div>
+
+            <div class="card" style="background:linear-gradient(160deg,var(--steel-800),var(--charcoal-900));color:var(--limestone-50);border:none;">
+              <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;">Opportunity · IW Engine</div>
+              <h3 style="color:var(--limestone-50);margin:10px 0 8px;">4 clients fit the new municipal SMA</h3>
+              <p style="font-size:13px;color:var(--charcoal-300);margin:0 0 16px;">Estimated after-tax alpha: +0.8%. Concentration risk reduces by 12% across flagged portfolios.</p>
+              <button class="btn" style="background:var(--limestone-50);color:var(--charcoal-900);">Review matches →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script>
+lucide.createIcons();
+// Build a stacked bar chart
+const chart = document.getElementById('chart');
+const data = [
+  [30,18,12],[34,20,16],[28,14,8],[42,26,20],[38,22,15],[46,30,24],[40,24,18],[44,28,22],[48,32,26],[52,36,30]
+];
+const max = 120;
+data.forEach(([r,f,n])=>{
+  const col = document.createElement('div');col.className='col';
+  const s1 = document.createElement('div');s1.className='seg';s1.style.background='var(--granite-800)';s1.style.height=(r/max*100)+'%';
+  const s2 = document.createElement('div');s2.className='seg';s2.style.background='var(--steel-500)';s2.style.height=(f/max*100)+'%';
+  const s3 = document.createElement('div');s3.className='seg';s3.style.background='var(--limestone-300)';s3.style.height=(n/max*100)+'%';
+  col.appendChild(s1);col.appendChild(s2);col.appendChild(s3);
+  chart.appendChild(col);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" viewport="700x160" name="Badges" subtitle="Status and metric badges" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Badges & eyebrows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:22px 26px;background:var(--surface-canvas);font-family:var(--font-sans);}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center;}
+.badge{font-size:11px;font-weight:500;padding:4px 10px;border-radius:9999px;letter-spacing:.02em;display:inline-flex;align-items:center;gap:6px;}
+.dot{width:6px;height:6px;border-radius:50%;}
+.eyebrow-w-bullet{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-secondary);}
+.eyebrow-w-bullet .b{width:6px;height:6px;border-radius:50%;}
+</style></head>
+<body>
+<div class="row">
+ <span class="badge" style="background:#EBF0F3;color:#3B5A69;">Advisor</span>
+ <span class="badge" style="background:#F2EAE2;color:#5A3C34;">Client</span>
+ <span class="badge" style="background:#333;color:#F8F4F0;">Intelligent Wealth</span>
+ <span class="badge" style="background:#F8F5EE;color:#92643C;"><span class="dot" style="background:#B68A4C"></span>Reserved</span>
+ <span class="badge" style="background:#D2F1F5;color:#1D7682;"><span class="dot" style="background:#3CC1D3"></span>+2.4%</span>
+ <span class="badge" style="background:#F2CAD2;color:#771D30;"><span class="dot" style="background:#CE3657"></span>-1.1%</span>
+</div>
+<div class="row">
+ <div class="eyebrow-w-bullet"><span class="b" style="background:#B68A4C"></span>Outcome</div>
+ <div class="eyebrow-w-bullet"><span class="b" style="background:#3CC1D3"></span>Year 1</div>
+ <div class="eyebrow-w-bullet"><span class="b" style="background:#CE3657"></span>Risk</div>
+</div>
+</body></html>

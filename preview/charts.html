@@ -1,0 +1,45 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Charts" subtitle="Blues for segments, accents for signal" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Chart styles</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:20px 26px;background:var(--surface-canvas);font-family:var(--font-sans);}
+.row{display:flex;gap:20px;align-items:flex-end;}
+.bars{display:flex;gap:8px;align-items:flex-end;height:120px;}
+.bar{width:18px;border-radius:9999px 9999px 4px 4px;}
+.eye{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:8px;}
+.donut{width:120px;height:120px;border-radius:50%;background:conic-gradient(#31465C 0 36%, #37516D 36% 68%, #779AB9 68% 82%, #D0DBE7 82% 100%);display:flex;align-items:center;justify-content:center;}
+.donut::after{content:"";width:62px;height:62px;background:var(--surface-canvas);border-radius:50%;}
+.legend{font-size:11px;color:var(--fg-secondary);line-height:1.5;}
+.legend span{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle;}
+</style></head>
+<body>
+<div class="row">
+ <div>
+  <div class="eye">Monthly growth</div>
+  <div class="bars">
+   <div class="bar" style="height:60%;background:linear-gradient(#6F473D 50%,#BE9479 50% 80%,#E3D3C5 80%);"></div>
+   <div class="bar" style="height:95%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:50%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:75%;background:linear-gradient(#6F473D 45%,#BE9479 45% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:45%;background:linear-gradient(#6F473D 35%,#BE9479 35% 70%,#E3D3C5 70%);"></div>
+   <div class="bar" style="height:85%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:70%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:72%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:68%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+   <div class="bar" style="height:90%;background:linear-gradient(#6F473D 40%,#BE9479 40% 75%,#E3D3C5 75%);"></div>
+  </div>
+ </div>
+ <div>
+  <div class="eye">Advisor associations</div>
+  <div style="display:flex;gap:14px;align-items:center;">
+   <div class="donut"></div>
+   <div class="legend">
+    <div><span style="background:#31465C"></span>IBD · 36.4%</div>
+    <div><span style="background:#37516D"></span>RIA · 31.8%</div>
+    <div><span style="background:#779AB9"></span>Bank · 18.2%</div>
+    <div><span style="background:#D0DBE7"></span>Wirehouse · 13.6%</div>
+   </div>
+  </div>
+ </div>
+</div>
+</body></html>

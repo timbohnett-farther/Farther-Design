@@ -1,0 +1,20 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Primary palette" subtitle="Limestone, White, Charcoal, Clay" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Primary palette</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+ body{margin:0;padding:22px 26px;background:var(--surface-canvas);}
+ .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+ .sw{display:flex;flex-direction:column;gap:8px;}
+ .chip{height:84px;border-radius:12px;border:1px solid rgba(51,51,51,.08);}
+ .name{font-family:var(--font-sans);font-size:13px;font-weight:500;color:var(--fg-primary);}
+ .hex{font-family:var(--font-mono);font-size:11px;color:var(--fg-muted);}
+</style></head>
+<body>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#F8F4F0"></div><div class="name">Limestone 50</div><div class="hex">#F8F4F0 · canvas</div></div>
+  <div class="sw"><div class="chip" style="background:#FFFFFF;border-color:#E7E7E7"></div><div class="name">White</div><div class="hex">#FFFFFF · cards</div></div>
+  <div class="sw"><div class="chip" style="background:#333333"></div><div class="name">Charcoal 900</div><div class="hex">#333333 · text / dark bg</div></div>
+  <div class="sw"><div class="chip" style="background:#9F8E75"></div><div class="name">Clay 400</div><div class="hex">#9F8E75 · graphic accent</div></div>
+</div>
+</body></html>

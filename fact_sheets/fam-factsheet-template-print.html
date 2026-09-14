@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>FAM Global Profitability Factor SMA — Fact Sheet</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:#E4E1D8;font-family:var(--font-sans);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  /* Letter @ 96dpi: 816 x 1056 — pages flow naturally; break enforced on print */
+  .page{width:816px;min-height:1056px;margin:24px auto;background:var(--limestone-50);position:relative;box-shadow:0 8px 40px rgba(0,0,0,.12);padding-bottom:48px;box-sizing:border-box;}
+  .page + .page{page-break-before:always;}
+
+  /* ——— Print ——— */
+  @page { size: letter portrait; margin: 0; }
+  @media print {
+    html, body { background: #fff; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 8.5in;
+      height: 11in;
+      min-height: 11in;
+      page-break-after: always;
+      break-after: page;
+      break-inside: avoid;
+    }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+    .hdr, .hdr .bg, .hdr .bg::after, .scen, .step, .alpha-grid, .two, .alloc, .fund {
+      break-inside: avoid;
+    }
+    table.perf { break-inside: avoid; }
+  }
+
+  /* ——— Header band ——— */
+  .hdr{position:relative;height:120px;overflow:hidden;color:var(--limestone-50);}
+  .hdr .bg{position:absolute;inset:0;background:#3C5864 url("../assets/waves/steel.png") center/cover no-repeat;}
+  .hdr .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,36,44,.72) 0%,rgba(20,36,44,.45) 55%,rgba(20,36,44,.25) 100%);}
+  .hdr .inner{position:relative;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;padding:18px 44px 0;box-sizing:border-box;}
+  .hdr .mark{display:flex;align-items:center;gap:10px;}
+  .hdr .mark img{height:15px;filter:brightness(0) invert(1);opacity:.95;}
+  .hdr .mark .div{width:1px;height:13px;background:rgba(248,244,240,.35);}
+  .hdr .mark .tag{font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:rgba(248,244,240,.85);}
+  .hdr .title{position:absolute;left:44px;right:44px;top:48px;z-index:1;display:flex;align-items:baseline;justify-content:space-between;gap:24px;}
+  .hdr h1{margin:0;font-family:var(--font-display);font-weight:300;font-size:26px;line-height:1.15;letter-spacing:-.02em;max-width:560px;padding-top:2px;color:var(--limestone-50);}
+  .hdr h1 em{font-style:italic;color:#C9E4EA;}
+  .hdr .asof{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(248,244,240,.78);white-space:nowrap;}
+
+  /* ——— Typography primitives ——— */
+  .page{color:var(--fg-primary);}
+  .eyebrow{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-muted);font-weight:500;display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .eyebrow::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--bronze-400);}
+  h2.sec{font-family:var(--font-sans);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--charcoal-900);font-weight:600;margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border-hairline-warm);}
+  p{margin:0;}
+  .body{font-size:10px;line-height:1.5;color:var(--fg-secondary);}
+  .num{font-family:var(--font-display);font-weight:300;letter-spacing:-.02em;color:var(--charcoal-900);}
+
+  /* ——— Body grid ——— */
+  .body-wrap{padding:10px 44px 12px;}
+
+  /* Objective block */
+  .objective{display:grid;grid-template-columns:1fr 2.4fr;gap:24px;margin-bottom:8px;align-items:start;}
+  .objective .lede{font-family:var(--font-display);font-weight:300;font-size:12.5px;line-height:1.3;letter-spacing:-.015em;color:var(--charcoal-900);}
+  .objective .lede em{font-style:italic;color:var(--steel-700);}
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .step{background:var(--surface-card);border:1px solid var(--border-hairline-warm);border-radius:5px;padding:6px 8px;position:relative;}
+  .step .n{font-family:var(--font-mono);font-size:8px;letter-spacing:.12em;color:var(--bronze-400);margin-bottom:3px;}
+  .step .h{font-family:var(--font-sans);font-size:9.5px;font-weight:600;color:var(--charcoal-900);margin-bottom:2px;}
+  .step .d{font-size:8.5px;line-height:1.3;color:var(--fg-secondary);}
+
+  /* Two-col section */
+  .two{display:grid;grid-template-columns:1.7fr 1fr;gap:22px;margin-bottom:8px;}
+
+  /* Performance table */
+  table.perf{width:100%;border-collapse:collapse;font-size:9.5px;}
+  table.perf th,table.perf td{padding:3px 6px;text-align:right;border-bottom:1px solid var(--border-hairline-warm);}
+  table.perf th:first-child,table.perf td:first-child{text-align:left;}
+  table.perf thead th{font-weight:500;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-muted);border-bottom:1px solid var(--charcoal-900);}
+  table.perf td.lbl{font-weight:500;color:var(--charcoal-900);}
+  table.perf td.bench{color:var(--fg-secondary);}
+  table.perf td.dash{color:var(--charcoal-300);}
+  table.perf td.pos{color:#1E6B4D;}
+  table.perf td.neg{color:#A12323;}
+  table.perf caption{caption-side:top;text-align:left;font-family:var(--font-mono);font-size:8.5px;color:var(--fg-muted);margin-bottom:4px;letter-spacing:.06em;text-transform:uppercase;}
+
+  /* Fundamentals list */
+  .fund{display:grid;grid-template-columns:1fr;gap:0;}
+  .fund .row{display:flex;justify-content:space-between;align-items:baseline;padding:3px 0;border-bottom:1px solid var(--border-hairline-warm);}
+  .fund .row:last-child{border-bottom:none;}
+  .fund .k{font-size:9px;color:var(--fg-secondary);}
+  .fund .v{font-family:var(--font-display);font-weight:300;font-size:12px;letter-spacing:-.01em;color:var(--charcoal-900);}
+
+  /* Tax alpha */
+  .alpha-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;gap:18px;}
+  .alpha-hdr .big{font-family:var(--font-display);font-weight:300;font-size:17px;letter-spacing:-.02em;color:var(--charcoal-900);line-height:1.1;max-width:240px;}
+  .alpha-hdr .big em{color:var(--steel-700);font-style:italic;}
+  .alpha-hdr .note{font-size:8.5px;color:var(--fg-muted);max-width:470px;line-height:1.35;}
+  .alpha-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .scen{border:1px solid var(--border-hairline-warm);border-radius:5px;padding:7px 10px;background:var(--surface-card);}
+  .scen .tag{display:inline-flex;align-items:center;gap:6px;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--charcoal-900);font-weight:600;margin-bottom:1px;}
+  .scen .tag .ico{font-family:var(--font-mono);font-size:10px;}
+  .scen .sub{font-size:8px;color:var(--fg-muted);margin-bottom:4px;}
+  .scen .avg{font-family:var(--font-display);font-weight:300;font-size:20px;letter-spacing:-.02em;color:var(--charcoal-900);line-height:1;}
+  .scen .avg em{color:var(--steel-700);font-style:italic;}
+  .scen .range{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:7.5px;color:var(--fg-muted);margin-top:5px;padding-top:5px;border-top:1px dashed var(--border-hairline-warm);}
+  .scen .range span b{display:block;color:var(--charcoal-900);font-weight:500;font-size:9px;font-family:var(--font-sans);}
+  .scen.bear .ico{color:#A12323;}
+  .scen.bull .ico{color:#1E6B4D;}
+
+  /* Hypothetical label chip — compliance */
+  .hyp{display:inline-block;font-family:var(--font-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#A12323;background:rgba(161,35,35,.08);border:1px solid rgba(161,35,35,.22);padding:2px 6px;border-radius:3px;vertical-align:middle;margin-left:6px;font-weight:500;}
+  .hyp-inline{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:#A12323;font-weight:500;}
+  .asterisk{color:#A12323;font-family:var(--font-sans);}
+  .foot-note{font-size:7.5px;line-height:1.35;color:var(--fg-muted);margin-top:3px;font-style:italic;}
+  .foot-note b{color:var(--charcoal-900);font-weight:500;font-style:normal;}
+
+  /* Allocation bar sections — 2 columns */
+  .alloc{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;margin-top:8px;}
+  .alloc .col h3{font-family:var(--font-sans);font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--charcoal-900);margin:0 0 6px;padding-bottom:4px;border-bottom:1px solid var(--border-hairline-warm);}
+  .alloc .col h3 + h3{margin-top:10px;}
+  .alloc .line{display:flex;align-items:center;gap:12px;margin-bottom:1px;font-size:9px;}
+  .alloc .line .l{flex:1;color:var(--fg-secondary);}
+  .alloc .line .bar{position:relative;flex:0 0 110px;height:3px;background:var(--limestone-200);border-radius:2px;overflow:hidden;}
+  .alloc .line .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--steel-600);border-radius:2px;}
+  .alloc .line .v{flex:0 0 40px;text-align:right;font-variant-numeric:tabular-nums;color:var(--charcoal-900);font-weight:500;}
+
+  /* Footer */
+  .pf{position:absolute;left:44px;right:44px;bottom:20px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:9px;color:var(--fg-muted);letter-spacing:.06em;}
+  .pf .dot{width:3px;height:3px;border-radius:50%;background:var(--fg-muted);}
+  .pf .left{display:flex;align-items:center;gap:10px;}
+
+  /* Page 2 disclosures */
+  .page.p2 .body-wrap{padding:22px 44px 24px;}
+  .disc-title{font-family:var(--font-display);font-weight:300;font-size:17px;letter-spacing:-.02em;color:var(--charcoal-900);margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid var(--charcoal-900);}
+  .disc-group{margin-bottom:10px;}
+  .disc-group h3{font-family:var(--font-sans);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--charcoal-900);margin:0 0 5px;}
+  .disc-group p{font-size:8px;line-height:1.5;color:var(--fg-secondary);margin:0 0 5px;}
+  .two-col{columns:2 328px;column-gap:24px;width:100%;}
+  .two-col p{break-inside:avoid;margin:0 0 5px;font-size:8px;line-height:1.5;color:var(--fg-secondary);}
+  .dfn{font-size:8px;line-height:1.5;color:var(--fg-secondary);margin-bottom:4px;}
+  .dfn b{color:var(--charcoal-900);font-weight:600;}
+
+  @media print{
+    html,body{background:#fff;}
+    .page{margin:0;box-shadow:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ======================= PAGE 1 ======================= -->
+<section class="page" data-screen-label="01 Page 1">
+  <div class="hdr">
+    <div class="bg"></div>
+    <div class="inner">
+      <div class="mark">
+        <img src="../assets/logos/wordmark-navy.svg" alt="Farther">
+        <span class="div"></span>
+        <span class="tag">Asset Management · Fact Sheet</span>
+      </div>
+      <div class="asof">As of Mar 31, 2026</div>
+    </div>
+    <div class="title">
+      <h1>FAM Global Profitability <em>Factor</em> SMA</h1>
+    </div>
+  </div>
+
+  <div class="body-wrap">
+
+    <!-- OBJECTIVE + PROCESS -->
+    <div class="objective">
+      <div>
+        <div class="eyebrow">Objective</div>
+        <div class="lede">Seeks long-term capital appreciation through equities with high <em>Direct Profitability-to-Book</em> ratios, relative to the overall global equity market.</div>
+      </div>
+      <div>
+        <div class="eyebrow">Investment process</div>
+        <div class="process">
+          <div class="step"><div class="n">01</div><div class="h">Universe</div><div class="d">Global large-caps. Exclude REITs, LPs, recent IPOs, low-liquidity names.</div></div>
+          <div class="step"><div class="n">02</div><div class="h">Factor sorts</div><div class="d">Rank by profitability-to-book; keep top percentile by market cap per country.</div></div>
+          <div class="step"><div class="n">03</div><div class="h">Risk controls</div><div class="d">Country and position sizes constrained around a style-neutral benchmark.</div></div>
+          <div class="step"><div class="n">04</div><div class="h">Portfolio</div><div class="d">Hold subset emphasizing securities with higher expected returns.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFORMANCE + FUNDAMENTALS -->
+    <div class="two">
+      <div>
+        <h2 class="sec">Performance — total return vs. benchmark</h2>
+        <table class="perf">
+          <caption>Inception: 02/17/2026 · ∼6 weeks of live data</caption>
+          <thead><tr><th></th><th>1M</th><th>YTD</th><th>Incept.</th></tr></thead>
+          <tbody>
+            <tr><td class="lbl">Portfolio (Gross)</td><td class="neg">−6.45%</td><td class="neg">−6.27%</td><td class="neg">−6.27%</td></tr>
+            <tr><td class="lbl">Portfolio (Net)</td><td class="neg">−6.47%</td><td class="neg">−6.30%</td><td class="neg">−6.30%</td></tr>
+            <tr><td class="bench">iShares MSCI ACWI (ACWI) — <em style="font-style:normal;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze-400);font-weight:600;">Primary</em></td><td class="neg">−5.82%</td><td class="neg">−5.74%</td><td class="neg">−5.74%</td></tr>
+            <tr><td class="bench">iShares Core S&amp;P 500 (IVV) — <em style="font-style:normal;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);font-weight:500;">Secondary ref.</em></td><td class="neg">−5.03%</td><td class="neg">−4.98%</td><td class="neg">−4.98%</td></tr>
+          </tbody>
+        </table>
+        <div class="foot-note"><b>Note:</b> 3M, 6M, 1Y, 3Y, and 5Y periods are not yet available for the portfolio. Benchmark multi-year figures were removed to avoid an implicit comparison; ACWI is the primary benchmark. IVV is shown as a secondary US-only reference and is not representative of this global strategy.</div>
+
+        <h2 class="sec" style="margin-top:12px;">Calendar year performance</h2>
+        <table class="perf">
+          <thead><tr><th></th><th>YTD</th></tr></thead>
+          <tbody>
+            <tr><td class="lbl">Portfolio (Gross)</td><td class="neg">−6.27%</td></tr>
+            <tr><td class="lbl">Portfolio (Net)</td><td class="neg">−6.30%</td></tr>
+            <tr><td class="bench">iShares MSCI ACWI (ACWI) — <em style="font-style:normal;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);font-weight:500;">reference</em></td><td class="neg">−5.74%</td></tr>
+            <tr><td class="bench">iShares Core S&amp;P 500 (IVV) — <em style="font-style:normal;font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);font-weight:500;">reference</em></td><td class="neg">−4.98%</td></tr>
+          </tbody>
+        </table>
+        <div class="foot-note">Prior-year benchmark data (2019–2025) removed; portfolio has no prior-year history to present. Multi-year benchmark history available upon request or at <b>farther.com</b>.</div>
+      </div>
+
+      <div>
+        <h2 class="sec">Fundamentals</h2>
+        <div class="fund">
+          <div class="row"><div class="k">Management fee (annual)</div><div class="v">0.24<span style="font-size:10px;color:var(--fg-muted);">%</span></div></div>
+          <div class="row"><div class="k">Recommended minimum</div><div class="v">$100,000</div></div>
+          <div class="row"><div class="k">Number of holdings</div><div class="v">123</div></div>
+          <div class="row"><div class="k">Current yield</div><div class="v">1.77<span style="font-size:10px;color:var(--fg-muted);">%</span></div></div>
+        </div>
+        <div class="foot-note" style="margin-top:4px;">Additional fees may apply (custodial, transaction, wrap-program). Total cost may exceed the management fee alone. See Form ADV Part 2A, Item 5.</div>
+
+        <div style="margin-top:10px;font-family:var(--font-sans);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#A12323;font-weight:600;">Hypothetical statistics <span style="color:var(--fg-muted);font-weight:400;text-transform:none;letter-spacing:0;font-size:8px;">— based on current weights; not actual performance</span></div>
+        <div class="fund" style="margin-top:4px;">
+          <div class="row"><div class="k">Global equity beta ∗</div><div class="v">1.02</div></div>
+          <div class="row"><div class="k">Hypothetical return (1Y) ∗</div><div class="v">35.62<span style="font-size:10px;color:var(--fg-muted);">%</span></div></div>
+          <div class="row"><div class="k">Hypothetical volatility (1Y) ∗</div><div class="v">10.40<span style="font-size:10px;color:var(--fg-muted);">%</span></div></div>
+          <div class="row"><div class="k">Hypothetical Sharpe (1Y) ∗</div><div class="v">2.70</div></div>
+        </div>
+        <div class="foot-note">∗ Applies current portfolio weights to historical data; does not represent actual trading results. <b>Actual performance since inception (02/17/2026): −6.27% (gross), YTD.</b></div>
+      </div>
+    </div>
+
+    <!-- TAX ALPHA -->
+    <h2 class="sec">Tax alpha <span class="hyp">Hypothetical · US equity simulation only</span></h2>
+    <div class="alpha-hdr">
+      <div class="big">Up to <em>~1.50%</em>∗ estimated range</div>
+      <div class="note"><b style="color:var(--charcoal-900);">Not derived from this portfolio.</b> Figures reflect a simulated US large-cap equity basket — not this global strategy (∼38% non-US). Actual benefits will differ materially due to (1) non-US holdings with different tax treatment, (2) individual client tax rates varying from the 40.8% / 23.8% assumed, and (3) actual cash flows differing from the 1% monthly contribution assumed in the simulation. These figures do not represent achievable results for any specific investor.</div>
+    </div>
+    <div class="alpha-grid">
+      <div class="scen bull">
+        <div class="tag"><span class="ico">↗</span>Steady bull · <span class="hyp-inline">US SIM∗</span></div>
+        <div class="sub">Rising market, low volatility</div>
+        <div class="avg"><em>0.71%</em>∗</div>
+        <div class="range"><span><b>0.36%</b>Min</span><span><b>1.06%</b>Max</span></div>
+      </div>
+      <div class="scen bull">
+        <div class="tag"><span class="ico">↗</span>Volatile bull · <span class="hyp-inline">US SIM∗</span></div>
+        <div class="sub">Rising market, high volatility</div>
+        <div class="avg"><em>2.65%</em>∗</div>
+        <div class="range"><span><b>1.71%</b>Min</span><span><b>3.59%</b>Max</span></div>
+      </div>
+      <div class="scen bear">
+        <div class="tag"><span class="ico">↘</span>Slow bear · <span class="hyp-inline">US SIM∗</span></div>
+        <div class="sub">Falling market, low volatility</div>
+        <div class="avg"><em>2.28%</em>∗</div>
+        <div class="range"><span><b>1.62%</b>Min</span><span><b>2.95%</b>Max</span></div>
+      </div>
+      <div class="scen bear">
+        <div class="tag"><span class="ico">↘</span>Correction · <span class="hyp-inline">US SIM∗</span></div>
+        <div class="sub">Falling market, high volatility</div>
+        <div class="avg"><em>4.56%</em>∗</div>
+        <div class="range"><span><b>3.23%</b>Min</span><span><b>5.90%</b>Max</span></div>
+      </div>
+    </div>
+    <div class="foot-note" style="margin-top:4px;">∗ Hypothetical US equity simulation. Global strategy results will differ. See Issue-1 disclosure on page 2 for material limitations.</div>
+
+    <!-- ALLOCATION -->
+    <div class="alloc">
+      <div class="col">
+        <h3>Sector exposure</h3>
+        <div class="line"><span class="l">Technology</span><span class="bar"><i style="width:67.4%;"></i></span><span class="v">33.7%</span></div>
+        <div class="line"><span class="l">Healthcare</span><span class="bar"><i style="width:28.2%;"></i></span><span class="v">14.1%</span></div>
+        <div class="line"><span class="l">Consumer Cyclical</span><span class="bar"><i style="width:24.4%;"></i></span><span class="v">12.2%</span></div>
+        <div class="line"><span class="l">Industrials</span><span class="bar"><i style="width:19.4%;"></i></span><span class="v">9.7%</span></div>
+        <div class="line"><span class="l">Financial Services</span><span class="bar"><i style="width:19.4%;"></i></span><span class="v">9.7%</span></div>
+        <div class="line"><span class="l">Communication Services</span><span class="bar"><i style="width:18.6%;"></i></span><span class="v">9.3%</span></div>
+        <div class="line"><span class="l">Basic Materials</span><span class="bar"><i style="width:8.8%;"></i></span><span class="v">4.4%</span></div>
+        <div class="line"><span class="l">Consumer Defensive</span><span class="bar"><i style="width:8.8%;"></i></span><span class="v">4.4%</span></div>
+        <div class="line"><span class="l">Energy</span><span class="bar"><i style="width:4.8%;"></i></span><span class="v">2.4%</span></div>
+      </div>
+      <div class="col">
+        <h3>Style exposure</h3>
+        <div class="line"><span class="l">Large Cap Value</span><span class="bar"><i style="width:40.8%;"></i></span><span class="v">20.4%</span></div>
+        <div class="line"><span class="l">Large Cap Blend</span><span class="bar"><i style="width:74.2%;"></i></span><span class="v">37.1%</span></div>
+        <div class="line"><span class="l">Large Cap Growth</span><span class="bar"><i style="width:78.2%;"></i></span><span class="v">39.1%</span></div>
+        <div class="line"><span class="l">Mid Cap Value</span><span class="bar"><i style="width:3.0%;"></i></span><span class="v">1.5%</span></div>
+        <div class="line"><span class="l">Small Cap Value</span><span class="bar"><i style="width:3.2%;"></i></span><span class="v">1.6%</span></div>
+        <div class="line"><span class="l">Small Cap Growth</span><span class="bar"><i style="width:0.6%;"></i></span><span class="v">0.3%</span></div>
+
+        <h3>Market cap &amp; region</h3>
+        <div class="line"><span class="l">Large cap</span><span class="bar"><i style="width:96.7%;"></i></span><span class="v">96.7%</span></div>
+        <div class="line"><span class="l">Mid cap</span><span class="bar"><i style="width:1.5%;"></i></span><span class="v">1.5%</span></div>
+        <div class="line"><span class="l">Small cap</span><span class="bar"><i style="width:1.8%;"></i></span><span class="v">1.8%</span></div>
+        <div class="line"><span class="l">Americas</span><span class="bar"><i style="width:62.1%;"></i></span><span class="v">62.1%</span></div>
+        <div class="line"><span class="l">Asia</span><span class="bar"><i style="width:20.6%;"></i></span><span class="v">20.6%</span></div>
+        <div class="line"><span class="l">Europe</span><span class="bar"><i style="width:17.3%;"></i></span><span class="v">17.3%</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="pf">
+    <div class="left"><span>FAM Global Profitability Factor SMA</span><span class="dot"></span><span>As of Mar 31, 2026</span></div>
+    <div>Page 1 of 2</div>
+  </div>
+</section>
+
+<!-- ======================= PAGE 2 ======================= -->
+<section class="page p2" data-screen-label="02 Page 2">
+  <div class="hdr" style="height:80px;">
+    <div class="bg"></div>
+    <div class="inner">
+      <div class="mark">
+        <img src="../assets/logos/wordmark-navy.svg" alt="Farther">
+        <span class="div"></span>
+        <span class="tag">Important disclosures · FAM Global Profitability Factor SMA</span>
+      </div>
+      <div class="asof">As of Mar 31, 2026</div>
+    </div>
+  </div>
+  <div class="body-wrap">
+    <div class="disc-title">Important disclosure information</div>
+
+    <!-- Compliance callout — Tax Alpha limitations (Issue 1) -->
+    <div style="background:rgba(161,35,35,.06);border:1px solid rgba(161,35,35,.22);border-left:3px solid #A12323;border-radius:5px;padding:10px 14px;margin-bottom:14px;">
+      <div style="font-family:var(--font-sans);font-size:8.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A12323;margin-bottom:6px;">Hypothetical performance — material limitations</div>
+      <p style="font-size:8.5px;line-height:1.5;color:var(--fg-secondary);margin:0;"><b style="color:var(--charcoal-900);">Tax alpha figures shown are hypothetical and based on a simulated US large-cap equity portfolio — NOT this global equity strategy.</b> Actual tax benefits will differ materially due to: <b>(1)</b> this strategy's ∼38% non-US holdings, which receive different tax treatment; <b>(2)</b> individual client tax rates that will vary from the 40.8% short-term / 23.8% long-term rates assumed; and <b>(3)</b> actual account cash flows that will differ from the 1% monthly contribution assumed in the simulation. Harvested losses are assumed to be reinvested immediately; wash-sale blocks are modeled. These figures do not represent achievable results for any specific investor. Hypothetical performance has inherent limitations and is not indicative of future results.</p>
+    </div>
+
+    <div class="two-col">
+      <p><b style="color:var(--charcoal-900);">Past performance is no guarantee of future results.</b> Different types of investments involve varying degrees of risk. There can be no assurance that the future performance of any specific investment or strategy (including those recommended or undertaken by Farther Finance Advisors, LLC ["Farther"]) or Farther Asset Management, LLC, will be profitable, equal any historical performance level, be suitable for your portfolio or individual situation, or prove successful.</p>
+      <p>Neither Farther's investment adviser registration status, nor any amount of prior experience or success, should be construed to mean that a certain level of results or satisfaction will be achieved if Farther is engaged, or continues to be engaged, to provide investment advisory services. Farther is neither a law firm nor a certified public accounting firm, and no portion of its services should be construed as legal or accounting advice.</p>
+      <p>No portion of this discussion serves as the receipt of, or a substitute for, personalized investment advice from Farther. A copy of our current written disclosure Brochure discussing our advisory services and fees is available upon request or at www.farther.com. The scope of services provided depends upon the needs and requests of the client and the terms of the engagement.</p>
+      <p>Historical performance results for indices, benchmarks, and categories are provided for general informational and comparison purposes only, and generally do not reflect transaction or custodial charges, the deduction of a management fee, or the impact of taxes — the incurrence of which would decrease historical results. Account holdings should not be assumed to correspond directly to any comparative indices or categories.</p>
+    </div>
+
+    <div class="disc-group" style="margin-top:14px;">
+      <h3>Performance calculation methodology</h3>
+      <div class="two-col">
+        <p><b>Constant-weight approach.</b> Model returns use the industry-standard constant-weight methodology: target allocation weights from each rebalance date, assumed monthly/quarterly rebalancing to exact target weights, reinvestment of all dividends and distributions, and underlying ETF expense ratios. Does not account for drift between rebalances, nor reflect advisory fees, transaction costs, or taxes.</p>
+        <p><b>[1] Gross vs. Net performance.</b> Gross returns reflect reinvested dividends and underlying ETF expense ratios before advisory fees. Net returns deduct the strategy's stated management fee using a <b>linear pro-rata approximation</b>: for periods &lt; 1 year, Net = Gross − (months ÷ 12) × Annual Fee. For annualized multi-year periods, Net Annualized = Gross Annualized − Annual Fee. <b>Important:</b> this methodology is an approximation; actual client net returns will differ based on specific fee schedules, account size, timing of fee deductions, and any additional fees charged at the account level (custodial, transaction, wrap). Investors should request account-level performance reports for their actual net-of-fee experience. Future periods will use actual fee deductions consistent with <b>GIPS 2020 §1.A.39.</b></p>
+        <p><b>Period availability.</b> Performance is only shown for periods with complete data since inception. Multi-year periods (3Y, 5Y, 10Y) appear only when fully elapsed. Annualized: (1 + Total Return)^(1/years) − 1. Sub-1-year periods are not annualized.</p>
+        <p><b>Benchmark.</b> Calculated using a buy-and-hold approach (no rebalancing) for periods of one year or less, and annual rebalancing for multi-year periods. This methodology differs from the model portfolio approach and ensures benchmark returns are transparent and verifiable using publicly available ETF data.</p>
+      </div>
+    </div>
+
+    <div class="disc-group">
+      <h3>Investment risks</h3>
+      <p class="dfn">All investments involve risk, including possible loss of principal. The value of investments will fluctuate and you may lose money. <b>Market risk:</b> security values fluctuate with market conditions, economic factors, interest rates, and investor sentiment. <b>Model vs. actual risk:</b> model performance does not represent actual client account performance. <b>Equity risk:</b> stock prices can be volatile. <b>Fixed-income risk:</b> bond values are subject to interest-rate, credit, and duration risk. <b>International / emerging-market risk:</b> involves currency fluctuation and political instability. <b>ETF risk:</b> shares trade at market prices that may differ from NAV. <b>No FDIC insurance:</b> securities investments are not insured by the FDIC.</p>
+    </div>
+
+    <div class="disc-group">
+      <h3>Definitions</h3>
+      <div class="two-col">
+        <p class="dfn"><b>[2] Global equity beta.</b> Measure of portfolio return volatility relative to the <b>iShares MSCI ACWI ETF (ACWI)</b>, calculated using 36 months of weekly returns (or available history where shorter). 1.0 = moves in line with ACWI; &gt;1.0 = more volatile; &lt;1.0 = less volatile. Source: FinMason. <b>Hypothetical</b> — see note [3] below.</p>
+        <p class="dfn"><b>[3] Historical return (1Y).</b> Hypothetical total return over the trailing 1-year period, applying current model weights to historical security returns. Includes price appreciation and reinvested dividends. Sourced from FinMason.</p>
+        <p class="dfn"><b>[4] Historical volatility (1Y).</b> Hypothetical annualized volatility applying current model weights to historical security volatilities over a 1-year period. Sourced from FinMason.</p>
+        <p class="dfn"><b>[5] Historical Sharpe ratio (1Y).</b> Hypothetical risk-adjusted return — trailing 1-year return ÷ trailing 1-year volatility — using current model weights. Higher = better risk-adjusted performance. Sourced from FinMason.</p>
+        <p class="dfn"><b>[6] Current yield.</b> Portfolio-weighted annual income (interest or dividends) ÷ current market price, gross of advisory fees and account-level expenses. Sourced from FinMason.</p>
+        <p class="dfn">Performance calculations and portfolio metrics are based on information from FinMason and internal calculations. All data is believed to be accurate but has not been audited. All metrics and holdings are presented as of the period-end date shown.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="pf">
+    <div class="left"><span>FAM Global Profitability Factor SMA</span><span class="dot"></span><span>As of Mar 31, 2026</span></div>
+    <div>Page 2 of 2</div>
+  </div>
+</section>
+
+<script>
+(async () => {
+  try {
+    if (document.fonts && document.fonts.ready) { await document.fonts.ready; }
+  } catch (e) {}
+  // also wait for any images in the header bg
+  const imgs = Array.from(document.images).filter(i => !i.complete);
+  await Promise.all(imgs.map(i => new Promise(r => { i.onload = i.onerror = r; })));
+  setTimeout(() => window.print(), 500);
+})();
+</script>
+</body></html>

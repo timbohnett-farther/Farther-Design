@@ -1,0 +1,12 @@
+# Raw source material — local-only.
+# The consumable kit (CSS, assets, fonts, ui_kits, preview, slides) plus the
+# extracted text in research/ is what agents read. The original PDFs/screenshots
+# in uploads/ are ~89MB of provenance kept out of git history to keep clones lean.
+uploads/
+
+# macOS / editor junk
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/

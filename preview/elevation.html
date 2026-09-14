@@ -1,0 +1,22 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Elevation" subtitle="Flat-first, soft warm shadows" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Elevation</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:24px 26px;background:var(--surface-canvas);font-family:var(--font-sans);}
+.row{display:flex;gap:18px;}
+.card{flex:1;height:78px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--fg-muted);}
+.c1{box-shadow:var(--shadow-1);}
+.c2{box-shadow:var(--shadow-2);}
+.c3{box-shadow:var(--shadow-3);}
+.c4{box-shadow:var(--shadow-4);}
+.glass{background:rgba(255,255,255,.72);backdrop-filter:blur(24px);border:1px solid var(--border-hairline-warm);box-shadow:var(--shadow-glass);}
+</style></head>
+<body>
+<div class="row">
+ <div class="card c1">shadow-1</div>
+ <div class="card c2">shadow-2</div>
+ <div class="card c3">shadow-3 · card</div>
+ <div class="card c4">shadow-4</div>
+ <div class="card glass">glass</div>
+</div>
+</body></html>

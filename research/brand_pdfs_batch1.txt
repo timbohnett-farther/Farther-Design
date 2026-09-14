@@ -1,0 +1,930 @@
+
+
+===== Farther_Color.pdf =====
+Color
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_Palette.pdf =====
+Color
+Primary
+Limestone
+White
+Palette
+Clay
+Charcoal Black
+Secondary
+Slate Blue / 500
+Accent
+Bronze / 400
+Granite Blue / 700
+Pomegranate / 500
+Smalt Blue / 500
+Steel Blue / 300
+Serene Aqua / 600
+Sky Blue / 300
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_PrimaryColorScale.pdf =====
+Color 	primary Color SCALE
+Primary Color Hues
+Our color hierarchy defines the role of each color. Primary colors of Charcoal and Limestone do most of the heavy lifting, bringing a sense of warmth and sophistication to our
+brand.
+Charcoal Black 900 / 333333
+Charcoal Grey speaks with quiet confidence, balancing strength and sophistication. It embodies a brand that is modern, resilient, and unmistakably bold without being loud.
+AAA 7.02 	AA 6.84 	AA 6.55 	AA 5.92 	2.16 	2.40 	AA 4.56 	AAA 7.14 	AAA 9.46 	AAA 14.19 	AAA 16.88
+25
+#FAFAFA
+50
+#F6F6F6
+100
+#E7E7E7
+200
+#D1D1D1
+300
+#B0B0B0
+400
+#888888
+500
+#6D6D6D
+600
+#5D5D5D
+700
+#4F4F4F
+800
+#454545
+900
+#333333
+Text
+Limestone 50 / F8F4F0
+Soft and grounded, Limestone evokes calm simplicity and an effortless sense of natural refinement. It tells a brand story rooted in clarity, warmth, and timeless minimalism.
+AA 5.91 	AA 5.58 	AA 5.13 	4.18 	1.92 	2.72 	3.58 	4.42 	AA 6.11
+Graphic elements
+AAA 7.94 	AAA 9.85
+25
+#FCFBFA
+50
+#F8F4F0
+100
+#F2EAE2
+200
+#E3D3C5
+300
+#D1B6A0
+400
+#BE9479
+500
+#B17B5E
+600
+#A36A53
+700
+#885546
+800
+#6F473D
+900
+#5A3C34
+Clay 400 / 9F8E75
+Clay embodies the warmth of hand-shaped materials — organic, grounded, and quietly resilient. It reflects a brand rooted in authenticity and craft, where natural tones signal enduring quality and human touch.
+AAA 7.22 	AA 6.85 	AA 5.88 	AA 4.53 	2.37 	3.18 	4.06 	AA 5.44 	AAA 7.54 	AAA 9.1 	AAA 10.29
+25
+#FAFAFA
+50
+#F5F4F1
+100
+#E6E3DB
+200
+#CFC8B9
+300
+#B3A791
+400
+# 9F8E75
+500
+#8E7B64
+600
+#7A6654
+700
+#625146
+800
+#55453E
+900
+#
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_SecondaryColorScale.pdf =====
+Color 	Secondary Color SCALE
+Secondary Color Hues
+Secondary colors add variety into our system
+while still feeling elevated.
+Sky Blue 300 / B6D0ED
+Sky Blue brings a sense of openness and possibility, capturing the feeling
+of looking upward with optimism. It reflects a brand that values clarity,
+lightness, and forward momentum.
+Steel Blue 700 / 3B5A69
+Steel Blue fuses cool intensity with poised stability, suggesting depth and
+thoughtful strength. It represents a brand grounded in trust, intelligence,
+and refined determination.
+Slate Blue 500 / 5B6A71
+Slate Blue blends calm intelligence with subtle sophistication, suggesting
+a brand that values discretion, clarity, and depth. It carries a quiet
+steadiness that builds trust without spectacle.
+Smalt Blue 500 / 557A89
+Smalt Blue evokes a sense of crisp focus and cool confidence, ideal for a
+brand that thrives on clarity and purposeful movement. It feels modern,
+clean, and effortlessly capable.
+Granite Blue 800 / 31465C
+Granite Blue conveys enduring strength and thoughtful resilience,
+grounding a brand in stability and integrity. Its depth signals reliability
+while still feeling refined and contemporary.
+AAA 7.22
+AAA 7.84
+AAA 7.74
+AAA 8.05
+AA 6.9
+AAA 7.44
+AAA 7.44
+AAA 7.64
+AA 6.57
+AA 6.52
+AA 7.04
+5.79 	AA 5.49 	AA 4.95
+25
+F9FCFF 50
+#F2F6FC 100
+#E2EBF7
+AA 6.41
+25
+FBFDFF 50
+#F5F8FA 100
+#EBF0F3
+25
+FBFBFC 50
+#F4F5F7 100
+#E4E8E9
+25
+#F9FBFD 50
+#F3F7F8 100
+#E1E9EC
+25
+#FCFDFF 50
+#F5F7FA 100
+#EAEEF4
+4.27
+200
+#CBDCF2
+AA 5.4
+200
+#D2DFE5
+AA 5.31
+200
+#CCD2D5
+AA 5.37
+200
+#C6D6DB
+AA 5.84
+200
+#D0DBE7
+1.58
+300
+#B6D0ED
+2.17
+300
+#94B5C3
+2.14
+300
+#A8B3B8
+2.06
+300
+#9EB9C2
+1.93
+300
+#A7BDD2
+2.46
+400
+#7DA8DD
+2.68
+400
+#7CA4B4
+3.44
+400
+#7C8D94
+3.26
+400
+#6F94A1
+2.95
+400
+#779AB9
+3.46
+500
+#5E8AD3
+AA 5.6
+500
+#5B8A9C
+AA 5.6
+500
+#5B6A71
+AA 4.63
+500
+#557A89
+4.29
+500
+#567EA1
+AAA 7.8 	AAA 9.44	AA 4.69 	AA 5.96
+600
+#4A71C6 700
+#405FB5 800
+#394E94 900
+#324476
+AA 5.43 	AAA 7.36 	AAA 8.94 	AAA 10.49
+600
+#476F82 700
+#3B5A69 800
+#334D59 900
+#2F424B
+AA 6.48 	AAA 8.11 	AAA 9.57 	AAA 11.1
+600
+#536067 700
+#485156 800
+#40464A 900
+#383C41
+AA 6.28 	AAA 8.03 	AAA 9.46 	AAA 10.94
+600
+#486472 700
+#3F535F 800
+#394851 900
+#333E46
+AAA 8.2 	AAA 9.71 	AAA 11.39	AA 6.10
+600
+#436486 700
+#37516D 800
+#31465C 900
+#2C3B4E
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_AccentColorScale.pdf =====
+Color 	Accent Color SCALE
+Acccent Color Hues
+Accent colors are used sparingly to highlight key
+elements and specific negative and highlight values in
+charting.
+Pomegranate 500 / CE3657 AAA 9.36 	AAA 7.06 	AAA 8.74
+Pomegranate delivers a vibrant burst of energy, reserved for moments that
+require urgency, emotion, or bold attention. We reserve usage of this color
+for charting, to indicate negative values.
+Serene Aqua 500 / 3CC1D3
+Serene Aqua offers a refreshing spark of clarity and creativity, appearing
+when lightness or innovation needs to shine through. It infuses selective
+moments with a sense of breezy optimism and renewal. This color is
+mostly reserved for use in charting to highlight a positive data point.
+Bronze 400 / B68A4C
+Bronze brings a touch of elevated warmth, used sparingly to signal
+achievement, distinction, or moments of importance. It adds a refined
+glow that feels both grounded and prestigious. The most reserved of our
+colors, this should only be used in the upmost specific way — conceptual
+iconography, special moments, invitations, cards, stationary, etc.
+AA 4.7
+25
+#FFEEF2 50
+#F2CAD2 100
+#EEB9C5 200
+#E698A9
+AA 5.08 	4.44 	4.14 	3.64
+25
+#EFFDFF 50
+#D2F1F5 100
+#C1EBF1 200
+#A0E1EA
+AA 5.5 	AA 6.83 	AA 5.97 	1.26
+25
+#FAF9F8 50
+#F8F5EE 100
+#EDE6D4 200
+#DDCCAB
+2.92
+300
+#DE788E
+1.66
+300
+#7FD6E2
+2.16
+300
+#CAAC7A
+3.84
+400
+#D65772
+1.88
+400
+#5DCCDB
+3.12
+400
+#B68A4C
+AA 4.89 	AAA 7.08 	AAA 10.48 	AAA 15.03 	AAA 19.3
+500
+#CE3657 600
+#A42843 700
+#771D30 800
+#4A121E 900
+#1D070C
+AA 5.29 	AAA 9.59 	AAA 16.4	2.15 	3.14
+500
+#3CC1D3 600
+#289FAF 700
+#1D7682 800
+#134C54 900
+#092326
+3.64 	AA 5.1 	AAA 	AAA 	AAA
+500
+#AB7D47 600
+#92643C 700
+#764B32 800
+#64402F 900
+#56372D
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_Accessibility.pdf =====
+Color
+Accessibility
+Color choices for text must meet accessibility
+standards to ensure readability for everyone.
+This section outlines the minimum contrast
+requirements and approved color
+combinations from our palette for use in text.
+Accessibility
+AaContrast Ratio: 11.54:1
+
+Large Text: AAA
+
+Small Text: AAA
+Charcoal Black on Limestone
+AaContrast Ratio: 13.57:1
+
+
+Large Text: AAA
+
+Small Text: AAA
+White on Charcoal Black
+AaContrast Ratio: 3.97:1
+
+Large Text: AA
+
+Small Text: FAIL
+Charcoal Black on Clay
+AaContrast Ratio: 3.18:1
+
+Large Text: AA
+
+Small Text: FAIL
+White on Clay
+AaContrast Ratio: 6.64:1
+
+Large Text: AAA
+
+Small Text: AA
+Charcoal Black on Sky Blue
+AaContrast Ratio: 5.6:1
+
+Large Text: AAA
+
+Small Text: AA
+White on Slate Blue
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_Ratio.pdf =====
+Color
+Color Ratio
+Our color hierarchy defines the role of each
+color. Primary colors do most of the heavy
+lifting, bringing a sense of warmth and
+sophistication to our brand. Secondary
+colors add variety into our system while still
+feeling elevated. Accent colors are used
+sparingly to highlight key elements.
+This ensures consistency and balance
+across our visual identity.
+Color Ratio
+Primary 	Secondary 	Accent
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_InUse_Primary.pdf =====
+Color 	In Use (Primary)
+Net Change
+$1,644,884
+Recent Activity 	Requests
+022324
+Dividend Received from IYW (Individual)
+Dividend $68.76
+Summary 	Activity 	Holdings 	Projections
+7D 	30D 	1Y 	5Y 	All
+Farther Accounts Balance
+$3,773,568
+$3.92M
+$3.14M
+$2.35M
+$1.57M
+$786
+$0.00
+March 31, 2022
+Farther advisor
+Janice Rowland
+ew Yr, Y
+VP 	, Wealth Adviso
+New York, NY
+VP 	, Wealth Adviso
+New York, NY
+VP 	, Wealth Adviso
+New York, NY
+fartherfinance
+Proprietary
+technology
+Henry Harer 	John Bowen Riley 	mith
+Join our 	fast-growing
+team 	of 	advisors
+022324
+Dividend Received from IYW (Individual)
+022324
+Dividend Received from IYW (Individual)
+Dividend $68.76
+P
+M
+$8
+$6	Dividend $68.76
+ee 	whats ossile at a r 	m uilt to o 	wer your growth $4
+022324
+u ly 30, 2022 	ovemer 31,2022 	March 30, 2023
+$0	Dividend $68.76
+5
+David Benjamin 	Margaret Benjamin 	Henry Benjamin 	Rachel BenDB 	MB 	HB 	RB
+Memer 	Memer 	Memer
+Lo
+ertiied advisor 	ertiied advisor 	ertiied advisor
+ur 	Intelligent Wealth Platform is
+uilt in 	house to deliver smarter
+insights, faster decisions, and
+seamless eeriences no ot 	he
+shelf tool can match
+Dividend Received from IYW (Individual) $2
+op 	-tier talent 	Find an Advisor	The Benjamins
+Memer 	Ris
+ur advisors reresent t 	he ri 	ghtest
+minds in wealth management, and
+share a commitment to raising the ar
+in every asect o 	f client eerience
+Use the Charcoal Black for the brand avatar on social media and for the favicon. 	Backgrounds and large blocks of color should mostly derive from
+our primary and secondary palette. Headlines, Body copy, and CTAs should all be set in our primary colors.
+FARTHER Brand Guidelines	Integrations	Com 	rehensive Planning
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_InUse_Secondary.pdf =====
+Color 	In Use (Secondary)
+“I required financial
+planning for a $40M
+liquidity event.”
+After my startup saw significant growth, I
+required expert financial planning for a
+$40M liquidity event and wealth transfer
+to our children. With Farther's guidance,
+we utilized a GRAT, a CRUT strategy, and
+a donor-advised fund for charitable
+contributions — efficiently managing our
+assets and philanthropic goals.
+Hello! How can I help you?
+I need to generate a divestiture
+proposal for the McGills today.
+Our proposal tool lets you build and send a
+custom plan in minutes — want me to walk
+you through it?
+Industry-leading, personalized
+client service
+Our world-class CX team helps you efficiently and reliably manage client
+requests and service requirements.
+Lauren Moone
+Managing irector
+San Francisco, CA
+earn More
+Janet Kohrmann
+Principal, Wealth Advisor
+San Francisco, CA
+earn More
+Eleanor Ray
+Managing irector
+Fort Worth, TX
+earn More
+Rick
+Founder, Startup & Parent, Home
+In moments where we want certain information to stick out and have extra impact,
+secondary colors can be used as solid backgrounds. Moments where we want to contrast our neutral colors to illustrate something
+
+should bring in colors from the secondary palette. Titles and small call outs can use colors from the secondary palette.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Color_InUse_Accent.pdf =====
+Color 	In Use (Accent)
+Discovery meeting
+e start with a thoughtful conversation to understand your nancial
+picture today and your aspirations for tomorrow
+Your Portfolio
+Risk Level
+smarter 	technologyOutcome:
+A strong foundation for personalied guidance	Exponential
+
+growth
+Creating 	freedom 	for
+exceptional advisors
+Low
+Portfolio Breakdown
+Equity 	Fixed 	income
+Asset 	Class
+US Large Cap Equity
+Developed International Equity
+Other
+Become an Advisor
+Year 	1
+Goals assessment 
+& data collection
+ogether we dene your short and longterm goals while gathering
+details that shape your nancial life
+Charts should use accent colors to help make them readable at a glance. 	Accent colors can be used to guide storytelling.
+Outcome:
+A clear comprehensive prole of your priorities
+Bullets for eyebrows should use accent colors to add visual distinction.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography.pdf =====
+Typography
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_BrandFonts_Primary.pdf =====
+TYPOGRAPHY 	brand fonts - primary
+Primary Typeface
+ABC Arizona Text, our primary typeface, is a font
+with striking contrast and character, merging
+sharp serifs with soft flares and humanist
+elements in a way that feels both historically
+rooted and visually novel.
+This type family is our main family and is
+used throughout the entire brand for headings.
+ABC Arizona Text
+Aa Bb Cc Dd E
+Hh Ii Jj Kk Ll M
+Pp Qq Rr Ss Tt
+FARTHER Brand Guidelines
+ABC Arizona Text
+Light
+Regular
+Medium
+Bold
+Type Specimen
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_BrandFonts_Secondary.pdf =====
+TYPOGRAPHY 	brand fonts - secondary
+Secondary Typeface
+Fakt Pro, our secondary typeface, features both
+geometric and grotesque styles, which can be
+used as alternates, giving it a unique versatility.
+
+
+This type family is used throughout the entire
+brand for paragraphs and long-form copy.
+Fakt
+Aa Bb Cc Dd E
+Jj Kk Ll Mm Nn
+Ss Tt Uu Vv Ww
+FARTHER Brand Guidelines
+Fakt
+Blonde
+Normal
+Medium
+SemiBold
+Bold
+Type Specimen
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_BrandFonts_TypeHeirarchy.pdf =====
+TYPOGRAPHY 	Type Heirarchy
+Eyebrows
+
+Fakt
+
+Leading: 120%
+
+Tracking: 5%
+
+Upper Case
+SUMMARY
+SUMMARY
+SUMMARY
+SUMMARY
+SUMMARY
+Experienced advisors
+
+Smarter tools
+
+Stronger outcomes
+Headlines & Titles
+
+ABC Arizona Text
+
+Leading: 110%
+
+Tracking: -3%
+
+Sentence case 
+No terminal punctuation
+unless multiple sentences
+Experienced advisors, smarter
+tools, and stronger outcomes
+Human with a tech edge
+Farther is an intelligent wealth company — combining
+expert advisors and an AI-driven predictive platform to
+help you adapt, grow, and build across every stage of life.
+Subheads
+
+Fakt Normal
+
+Leading: 110%
+
+Tracking: -2%
+
+Sentence case
+Body Copy
+
+Fakt Normal
+
+Leading: 140%
+
+Tracking: -3%
+
+Sentence Case
+Numbers
+
+ABC Arizona Text Light
+
+Leading: 100%
+
+Tracking: -3%
+
+Sentence Case
+CTA & Tag Language
+
+Fakt Regular
+
+Leading: 100%
+
+Tracking: -2%
+
+Sentence Case
+Farther is an intelligent wealth company — combining
+expert advisors and an AI-driven predictive platform to
+help you adapt, grow, and build across every stage of life.
+60% 	4.6k
+Find an Advisor	Sign in
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_BrandFonts_InUse.pdf =====
+Typography 	In USE
+smarter 	technology
+Creating freedom for
+exceptional advisors
+Become an Advisor
+Discovery meeting
+e start with a thoughtful conversation to understand your nancial picture
+today and your aspirations for tomorrow
+Client login 	Sign Up
+Outcome:
+A strong foundation for personalied guidance
+High-touch client
+experiences driven by
+proprietary technology
+Learn More
+assets 	under management
+5x 	YOY 	GROWTH
+Your Portfolio
+Risk Level
+Low
+Portfolio Breakdown
+Equity 5.00% 	Fixed income 25.00%
+Asset Class
+US Large Cap Equity
+Developed International Equity
+Other
+High
+7B+FARTHER Brand Guidelines
+Allocation
+45.00%
+30.00%
+25.00%
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_HouseFonts_Primary.pdf =====
+TYPOGRAPHY 	House fonts - primary
+Internal Primary Typeface
+Garamond, our Internal primary typeface,
+has many old style characteristics but was
+adapted to give excellent legibility coupled
+with good economy of spacing.
+We only use Regular and Semibold weights of
+this font. This type family is used for internal
+documents only.
+Garamond (EB)
+Aa Bb Cc Dd Ee
+Kk Ll Mm Nn O
+Tt Uu Vv Ww Xx
+FARTHER Brand Guidelines
+Garamond
+Regular
+Regular Italic
+Medium
+Medium Italic
+Semibold
+Semibold Italic
+
+-- 1 of 1 --
+
+
+
+===== Farther_Typography_HouseFonts_Secondary.pdf =====
+TYPOGRAPHY 	house fonts - secondary
+Internal Secondary Typeface
+Avenir, our internal secondary typeface,
+is a sans serif family with subtle
+roundings on stems and corners.
+
+
+We only use this typeface in Book
+and Medium weights. This type family 
+is used for internal documents only.
+Avenir
+Aa Bb Cc Dd E
+Jj Kk Ll Mm N
+Rr Ss Tt Uu Vv
+FARTHER Brand Guidelines
+Avenir
+Book
+Book Oblique
+Medium
+Medium Oblique
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity.pdf =====
+Identity
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity_Wordmark_Overview.pdf =====
+WORDMARK
+Overview
+Our wordmark is the primary expression
+of our brand identity. It has been crafted to
+embody the characteristics of the Farther
+signaling precision, expertise, and growth.
+The wordmark should be used across all
+brand touchpoints where space allows.
+OVERVIEW
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity_Wordmark_ColorUse.pdf =====
+WORDMARK
+Wordmark Color Use
+Our wordmark should only appear in Steel
+Blue 700 and Limestone 50, leveraging the
+color that provides the most contrast. Full
+black and white can be used where
+technically required. Following are some
+example pairings but please use your
+judgement skewing to the combination that
+provides the highest level of contrast.
+Wordmark color use
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity_Symbol_Overview.pdf =====
+Symbol
+Overview
+Our symbol is derived from the “F” in our
+wordmark. The additional layers to the left of
+the “F” help build our brand story about
+growth and expansion.
+The symbol should be used in brand
+moments that are too small for our full
+wordmark. The symbol can be used
+alternatively in super moments to signal the
+brand in a more expressive way.
+OVERVIEW
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity_TaglineLockup.pdf =====
+Identity
+Tagline Lockup
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_Visual_Identity_TaglineLockup_IntelligentWealth.pdf =====
+Tagline lockup
+Overview
+Our wordmark can be combined with
+approved taglines to create a specific use
+lockup. It can be use with color blocks as
+seen here. Or it can be overlaid without a
+background onto images — being mindful
+of legibility.
+Our preferred color uses for these lockups
+are Limestone 50 or Steel Blue 700. Pure
+black and white can be used for print
+purposes when full color is not an option.
+intelligent wealth
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_GraphicElements.pdf =====
+Graphic Elements
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther_GraphicElements_WavesofWealth.pdf =====
+Graphic Elements
+Waves of Wealth
+Farther Brand Guidelines
+
+-- 1 of 1 --
+

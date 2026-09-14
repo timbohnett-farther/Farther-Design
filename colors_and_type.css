@@ -1,0 +1,441 @@
+/* ==========================================================================
+   Farther Design System — Color & Type
+   Import on every page: <link rel="stylesheet" href="colors_and_type.css">
+   ========================================================================== */
+
+/* ---- Webfonts -----------------------------------------------------------
+   Licensed brand fonts, locally hosted from /fonts:
+   • ABC Arizona Text — Light (300) + Light Italic. The hero display weight;
+     heavier display sizes render Light at larger sizes per brand guidance.
+   • Fakt Pro — full family: Blonde→300, Normal→400, Medium→500,
+     Semibold→600, Bold→700 (+ italics).
+   EB Garamond + Nunito Sans (Google Fonts, below) stand in for the
+   internal-only house fonts Garamond + Avenir until those are uploaded.
+   ----------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nunito+Sans:wght@400;600&display=swap');
+
+@font-face {
+  font-family: "ABC Arizona Text";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/ABCArizonaText-Light.woff2") format("woff2"),
+       url("fonts/ABCArizonaText-Light.woff")  format("woff"),
+       url("fonts/ABCArizonaText-Light.otf")   format("opentype");
+}
+
+@font-face {
+  font-family: "ABC Arizona Text";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/ABCArizonaText-LightItalic.woff2") format("woff2"),
+       url("fonts/ABCArizonaText-LightItalic.woff")  format("woff"),
+       url("fonts/ABCArizonaText-LightItalic.otf")   format("opentype");
+}
+
+/* Fakt Pro — full family, OTF. Brand naming maps to standard weights:
+   Blonde → 300, Normal → 400, Medium → 500, Semibold → 600, Bold → 700. */
+@font-face { font-family: "Fakt Pro"; font-style: normal; font-weight: 300; font-display: swap;
+  src: url("fonts/Fakt-Blond.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: italic; font-weight: 300; font-display: swap;
+  src: url("fonts/Fakt-BlondItalic.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/Fakt-Normal.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("fonts/Fakt-NormalItalic.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/Fakt-Medium.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: italic; font-weight: 500; font-display: swap;
+  src: url("fonts/Fakt-MediumItalic.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/Fakt-SemiBold.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: italic; font-weight: 600; font-display: swap;
+  src: url("fonts/Fakt-SemiBoldItalic.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/Fakt-Bold.otf") format("opentype"); }
+@font-face { font-family: "Fakt Pro"; font-style: italic; font-weight: 700; font-display: swap;
+  src: url("fonts/Fakt-BoldItalic.otf") format("opentype"); }
+
+:root {
+  /* ------------------------------------------------------------------
+     Primary scales
+     ------------------------------------------------------------------ */
+
+  /* Charcoal (primary text + high-contrast surfaces) */
+  --charcoal-25:  #FAFAFA;
+  --charcoal-50:  #F6F6F6;
+  --charcoal-100: #E7E7E7;
+  --charcoal-200: #D1D1D1;
+  --charcoal-300: #B0B0B0;
+  --charcoal-400: #888888;
+  --charcoal-500: #6D6D6D;
+  --charcoal-600: #5D5D5D;
+  --charcoal-700: #4F4F4F;
+  --charcoal-800: #454545;
+  --charcoal-900: #333333;
+
+  /* Limestone (dominant warm-neutral canvas) */
+  --limestone-25:  #FCFBFA;
+  --limestone-50:  #F8F4F0;
+  --limestone-100: #F2EAE2;
+  --limestone-200: #E3D3C5;
+  --limestone-300: #D1B6A0;
+  --limestone-400: #BE9479;
+  --limestone-500: #B17B5E;
+  --limestone-600: #A36A53;
+  --limestone-700: #885546;
+  --limestone-800: #6F473D;
+  --limestone-900: #5A3C34;
+
+  /* Clay (warm graphic / chart accent) */
+  --clay-25:  #FAFAFA;
+  --clay-50:  #F5F4F1;
+  --clay-100: #E6E3DB;
+  --clay-200: #CFC8B9;
+  --clay-300: #B3A791;
+  --clay-400: #9F8E75;
+  --clay-500: #8E7B64;
+  --clay-600: #7A6654;
+  --clay-700: #625146;
+  --clay-800: #55453E;
+
+  --white: #FFFFFF;
+
+  /* ------------------------------------------------------------------
+     Secondary blues
+     ------------------------------------------------------------------ */
+
+  /* Steel Blue — the wordmark lock color, primary brand blue */
+  --steel-25:  #FBFDFF;
+  --steel-50:  #F5F8FA;
+  --steel-100: #EBF0F3;
+  --steel-200: #D2DFE5;
+  --steel-300: #94B5C3;
+  --steel-400: #7CA4B4;
+  --steel-500: #5B8A9C;
+  --steel-600: #476F82;
+  --steel-700: #3B5A69;
+  --steel-800: #334D59;
+  --steel-900: #2F424B;
+
+  /* Granite Blue — deep, enduring */
+  --granite-25:  #FCFDFF;
+  --granite-50:  #F5F7FA;
+  --granite-100: #EAEEF4;
+  --granite-200: #D0DBE7;
+  --granite-300: #A7BDD2;
+  --granite-400: #779AB9;
+  --granite-500: #567EA1;
+  --granite-600: #436486;
+  --granite-700: #37516D;
+  --granite-800: #31465C;
+  --granite-900: #2C3B4E;
+
+  /* Slate Blue — cool neutral */
+  --slate-25:  #FBFBFC;
+  --slate-50:  #F4F5F7;
+  --slate-100: #E4E8E9;
+  --slate-200: #CCD2D5;
+  --slate-300: #A8B3B8;
+  --slate-400: #7C8D94;
+  --slate-500: #5B6A71;
+  --slate-600: #536067;
+  --slate-700: #485156;
+  --slate-800: #40464A;
+  --slate-900: #383C41;
+
+  /* Smalt Blue — crisp modern accent */
+  --smalt-25:  #F9FBFD;
+  --smalt-50:  #F3F7F8;
+  --smalt-100: #E1E9EC;
+  --smalt-200: #C6D6DB;
+  --smalt-300: #9EB9C2;
+  --smalt-400: #6F94A1;
+  --smalt-500: #557A89;
+  --smalt-600: #486472;
+  --smalt-700: #3F535F;
+  --smalt-800: #394851;
+
+  /* Sky Blue — optimistic light */
+  --sky-25:  #F9FCFF;
+  --sky-50:  #F2F6FC;
+  --sky-100: #E2EBF7;
+  --sky-200: #CBDCF2;
+  --sky-300: #B6D0ED;
+  --sky-400: #7DA8DD;
+  --sky-500: #5E8AD3;
+  --sky-600: #4A71C6;
+  --sky-700: #405FB5;
+
+  /* ------------------------------------------------------------------
+     Accent (used sparingly — charts, special moments)
+     ------------------------------------------------------------------ */
+
+  /* Pomegranate — urgency, negative chart values */
+  --pomegranate-300: #DE788E;
+  --pomegranate-400: #D65772;
+  --pomegranate-500: #CE3657;
+  --pomegranate-600: #A42843;
+  --pomegranate-700: #771D30;
+
+  /* Serene Aqua — positive data points */
+  --aqua-300: #7FD6E2;
+  --aqua-400: #5DCCDB;
+  --aqua-500: #3CC1D3;
+  --aqua-600: #289FAF;
+  --aqua-700: #1D7682;
+
+  /* Bronze — most reserved; diagram icons + stationery */
+  --bronze-200: #DDCCAB;
+  --bronze-300: #CAAC7A;
+  --bronze-400: #B68A4C;
+  --bronze-500: #AB7D47;
+  --bronze-600: #92643C;
+  --bronze-700: #764B32;
+
+  /* ------------------------------------------------------------------
+     Semantic roles (what designs should *actually* reach for)
+     ------------------------------------------------------------------ */
+
+  /* Surfaces */
+  --surface-canvas:   var(--limestone-50);   /* page background */
+  --surface-card:     var(--white);          /* elevated white card on canvas */
+  --surface-sunken:   var(--limestone-100);  /* inputs, wells */
+  --surface-inverse:  var(--charcoal-900);   /* dark sections, footer */
+  --surface-glass:    rgba(248, 244, 240, 0.72); /* frosted limestone */
+  --surface-glass-white: rgba(255, 255, 255, 0.72);
+
+  /* Foreground text */
+  --fg-primary:    var(--charcoal-900);      /* body, headlines on light bg */
+  --fg-secondary:  var(--charcoal-700);      /* supporting copy */
+  --fg-muted:      var(--charcoal-500);      /* captions, meta */
+  --fg-subtle:     var(--charcoal-400);      /* placeholders, disabled */
+  --fg-on-dark:    var(--limestone-50);      /* text on --surface-inverse */
+  --fg-accent:     var(--steel-700);         /* links, brand-tinted text */
+  --fg-accent-deep:var(--granite-800);
+
+  /* Borders */
+  --border-hairline-warm: var(--limestone-200); /* on warm surfaces */
+  --border-hairline-cool: var(--charcoal-100);  /* on white */
+  --border-strong:        var(--charcoal-300);
+  --border-focus:         var(--steel-700);
+
+  /* Brand */
+  --brand-lock:    var(--steel-700);   /* wordmark color */
+  --brand-lock-alt: var(--limestone-50);
+
+  /* Status (chart/data states) */
+  --status-positive: var(--aqua-500);
+  --status-negative: var(--pomegranate-500);
+  --status-reserved: var(--bronze-400);
+
+  /* ------------------------------------------------------------------
+     Spacing (4-point system)
+     ------------------------------------------------------------------ */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10:128px;
+
+  /* ------------------------------------------------------------------
+     Radii
+     ------------------------------------------------------------------ */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;   /* cards, the symbol square */
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* ------------------------------------------------------------------
+     Elevation — mostly flat; use sparingly
+     ------------------------------------------------------------------ */
+  --shadow-1: 0 1px 2px rgba(51,51,51,0.04);
+  --shadow-2: 0 1px 2px rgba(51,51,51,0.04), 0 4px 12px rgba(51,51,51,0.05);
+  --shadow-3: 0 1px 2px rgba(51,51,51,0.04), 0 8px 24px rgba(51,51,51,0.06);
+  --shadow-4: 0 4px 8px rgba(51,51,51,0.04), 0 16px 48px rgba(51,51,51,0.08);
+  --shadow-glass: 0 1px 2px rgba(51,51,51,0.06), 0 24px 48px rgba(51,51,51,0.08);
+
+  /* ------------------------------------------------------------------
+     Motion
+     ------------------------------------------------------------------ */
+  --ease-wave: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */ /* steady, reliable (Waves of Wealth) */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-quick: 160ms; /* @kind other */
+  --dur-base:  240ms; /* @kind other */
+  --dur-slow:  480ms; /* @kind other */
+
+  /* ------------------------------------------------------------------
+     Typography — families
+     Licensed brand fonts are named first; Google-Fonts substitutes follow.
+     ------------------------------------------------------------------ */
+  --font-display: "ABC Arizona Text", "Arizona Text",
+                  "Iowan Old Style", "Palatino", "Georgia", serif;
+  --font-sans:    "Fakt Pro", "Fakt", -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-house-serif: "EB Garamond", "Garamond", "Georgia", serif;
+  /* 'Avenir' and 'JetBrains Mono' have no @font-face yet — awaiting font-file
+     uploads. Fallback stacks render until the binaries land in /fonts. */
+  --font-house-sans:  "Avenir", "Nunito Sans", "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, monospace;
+
+  /* ------------------------------------------------------------------
+     Type scale (desktop baseline; scale down ~1 step on mobile)
+     ------------------------------------------------------------------ */
+  --fs-eyebrow:  13px;   /* Fakt UPPER, tracked +5% */
+  --fs-body-sm:  14px;
+  --fs-body:     16px;   /* Fakt Normal */
+  --fs-body-lg:  18px;
+  --fs-sub:      20px;
+  --fs-h6:       22px;
+  --fs-h5:       28px;
+  --fs-h4:       36px;
+  --fs-h3:       48px;
+  --fs-h2:       64px;
+  --fs-h1:       88px;
+  --fs-display: 120px;
+
+  --fs-num-sm:   32px;
+  --fs-num-md:   56px;
+  --fs-num-lg:   88px;
+  --fs-num-xl:  128px;
+}
+
+/* ==========================================================================
+   Base + semantic text classes
+   ========================================================================== */
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.4;                /* Fakt body = 140% leading */
+  letter-spacing: -0.01em;         /* -3% tracking reads as ~-.01em */
+  color: var(--fg-primary);
+  background: var(--surface-canvas);
+}
+
+/* Display + headline scale — Arizona Text, 110% leading, -3% tracking, sentence case */
+.f-display,
+.f-h1, h1,
+.f-h2, h2,
+.f-h3, h3,
+.f-h4, h4,
+.f-h5, h5,
+.f-h6, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--fg-primary);
+  margin: 0;
+}
+
+.f-display { font-size: var(--fs-display); font-weight: 300; line-height: 1; }
+.f-h1, h1  { font-size: var(--fs-h1); }
+.f-h2, h2  { font-size: var(--fs-h2); }
+.f-h3, h3  { font-size: var(--fs-h3); }
+.f-h4, h4  { font-size: var(--fs-h4); }
+.f-h5, h5  { font-size: var(--fs-h5); }
+.f-h6, h6  { font-size: var(--fs-h6); font-weight: 500; }
+
+/* Eyebrow — Fakt, UPPER, tracked */
+.f-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.14em;     /* +5%ish tracked, display-eye wide */
+  text-transform: uppercase;
+  color: var(--fg-secondary);
+}
+
+/* Subhead — Fakt Normal, 110% leading, -2% tracking */
+.f-sub {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--fg-primary);
+}
+
+/* Body */
+.f-body, p {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  color: var(--fg-primary);
+  margin: 0;
+}
+.f-body-lg { font-size: var(--fs-body-lg); line-height: 1.45; }
+.f-body-sm { font-size: var(--fs-body-sm); line-height: 1.5; color: var(--fg-secondary); }
+
+/* Numbers — Arizona Text Light, 100% leading, tabular */
+.f-num, .f-num-xl, .f-num-lg, .f-num-md, .f-num-sm {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-primary);
+}
+.f-num-xl { font-size: var(--fs-num-xl); }
+.f-num-lg { font-size: var(--fs-num-lg); }
+.f-num-md { font-size: var(--fs-num-md); }
+.f-num-sm { font-size: var(--fs-num-sm); }
+
+/* CTA / tag text — Fakt Regular, -2% tracking */
+.f-cta {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.005em;
+}
+
+/* Caption */
+.f-caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--fg-muted);
+}
+
+/* Mono */
+.f-mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+/* Link */
+a, .f-link {
+  color: var(--fg-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-quick) var(--ease-wave);
+}
+a:hover, .f-link:hover { border-bottom-color: currentColor; }
+
+/* Wave/divider utility — hairline */
+.f-rule {
+  height: 1px; background: var(--border-hairline-warm); border: 0;
+}
+
+/* Tabular-only helper */
+.tnum { font-variant-numeric: tabular-nums; }

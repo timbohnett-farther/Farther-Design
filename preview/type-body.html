@@ -1,0 +1,34 @@
+<!-- @dsCard group="Type" viewport="700x260" name="Body — Fakt Pro" subtitle="Body, subheads, eyebrows, CTAs" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Body type</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:22px 26px;background:var(--surface-canvas);font-family:var(--font-sans);}
+.eyebrow{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.eyebrow::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--bronze-400);}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;}
+.block{display:flex;flex-direction:column;gap:6px;}
+.sub{font-size:17px;font-weight:400;letter-spacing:-.01em;line-height:1.25;color:var(--fg-primary);}
+.body{font-size:14px;font-weight:400;letter-spacing:-.005em;line-height:1.45;color:var(--fg-primary);}
+.lead{font-size:18px;font-weight:400;letter-spacing:-.005em;line-height:1.5;color:var(--fg-secondary);}
+.lead em{font-style:italic;font-weight:400;color:var(--steel-700);}
+.spec{font-family:var(--font-mono);font-size:10px;color:var(--fg-muted);}
+</style></head>
+<body>
+<div class="grid">
+ <div class="block">
+  <div class="eyebrow">Lead · Fakt Pro Normal</div>
+  <p class="lead">Experienced advisors, <em>smarter</em> technology — stronger outcomes for every household.</p>
+  <div class="spec">18 / 27 · weight 400 · italic for emphasis</div>
+ </div>
+ <div class="block">
+  <div class="eyebrow">Subhead · Fakt Pro Normal</div>
+  <p class="sub">Combining expert judgment with native technology.</p>
+  <div class="spec">17 / 21 · weight 400 · −1% tracking · 125% leading</div>
+ </div>
+ <div class="block" style="grid-column:1 / -1;">
+  <div class="eyebrow">Body · Fakt Pro Normal</div>
+  <p class="body">Farther is the Intelligent Wealth Platform — built from the ground up to unlock greater wealth for clients throughout their financial lives. Automated strategies others miss deliver 1–3% greater after-tax returns, net of fees. Oxford commas, em dashes, sentence case.</p>
+  <div class="spec">14 / 20 · weight 400 · −0.5% tracking · 145% leading</div>
+ </div>
+</div>
+</body></html>

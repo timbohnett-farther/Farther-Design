@@ -1,0 +1,33 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Accent palette" subtitle="Pomegranate, Serene Aqua, Bronze" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Accent palette</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+ body{margin:0;padding:22px 26px;background:var(--surface-canvas);}
+ .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+ .sw{display:flex;flex-direction:column;gap:8px;}
+ .chip{height:96px;border-radius:12px;border:1px solid rgba(51,51,51,.08);display:flex;align-items:flex-end;padding:10px;}
+ .chip .tag{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.22);padding:2px 6px;border-radius:4px;}
+ .name{font-family:var(--font-sans);font-size:13px;font-weight:500;color:var(--fg-primary);}
+ .hex{font-family:var(--font-mono);font-size:11px;color:var(--fg-muted);}
+ .note{font-family:var(--font-sans);font-size:11px;color:var(--fg-muted);margin-top:2px;}
+</style></head>
+<body>
+<div class="grid">
+  <div class="sw">
+    <div class="chip" style="background:#CE3657"><span class="tag">negative</span></div>
+    <div class="name">Pomegranate 500</div><div class="hex">#CE3657</div>
+    <div class="note">Chart negatives, urgency.</div>
+  </div>
+  <div class="sw">
+    <div class="chip" style="background:#3CC1D3"><span class="tag">positive</span></div>
+    <div class="name">Serene Aqua 500</div><div class="hex">#3CC1D3</div>
+    <div class="note">Chart positives, clarity.</div>
+  </div>
+  <div class="sw">
+    <div class="chip" style="background:#B68A4C"><span class="tag">reserved</span></div>
+    <div class="name">Bronze 400</div><div class="hex">#B68A4C</div>
+    <div class="note">Line-drawing icons, stationery.</div>
+  </div>
+</div>
+</body></html>

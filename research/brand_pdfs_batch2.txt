@@ -1,0 +1,852 @@
+
+
+===== Farther BG_Cover.pdf =====
+Brand 	Guidelines 	December 2025
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_TOC.pdf =====
+01
+Strategy
+
+02
+Messaging
+03
+Identity
+04
+Typography
+05
+Color
+06
+Graphic Elements
+07
+Art Direction
+08
+In Practice
+09
+Advisor Brand Architecture
+10
+Nomenclature
+FARTHER BRAND GUIDELINES
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_01_Strategy.pdf =====
+Strategy
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_02_Strategy_Market Context.pdf =====
+Strategy 	market context
+market contexT
+Significant growth sits on the horizon for financial firms.
+
+
+Through 2048, firms are faced with the largest wealth transfer in history. This, while
+McKinsey reports a simultaneous shortage of ~100K advisors, at the same time they’re
+needed to manage that vast wealth.
+$84T – $124T 
+“Great Wealth Transfer”
+(from Boomers to tech-forward Gens X + Z)
+
+
+50%+ 
+Transfers from HNW/UHNW households
+(2% of all HH)
+
+
+57%
+Millennials will collect $1MM+
+(with 26% anticipated at $3MM+)
+
+
+72%%
+Believe stocks and bonds alone won't drive
+their greater returns. They seek institutional-
+grade solutions typically reserved for family
+officest
+88% 
+Relatedly interested in private markets
+
+
+50%–65%
+Gen X, Y, Z beneficiaries expect stronger
+digital and tech-first solutions
+
+
+81% 
+Beneficiaries intend to switch from
+their parents’ advisors
+
+
+70% 
+Women stand to gain majority of wealth
+transfer
+*Sources (ahead of BAV persona validation): OpenAI prompt informed by commonalities across past financial services
+and luxury DTC persona clusters. Sourcing from Capgemini World Wealth Report, PwC High-Net-Worth Survey, UBS
+Billionaire Ambitions, Bain + McKinsey Wealth Management insights, plus Prince & Baeckström, FPA behavioral finance
+literature.
+the opportunity
+Significant opportunity for financial
+advisors to capture the ‘great wealth
+transfer’. Growth-minded and AI-
+enabled advisors will be best positioned
+to win.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_03_Strategy_WhyFarther.pdf =====
+Strategy 	Why farther
+Category truth Traditional wealth management is built on yesterday's infrastructure. Technology is
+bolted-on — hindering the client experience with administrative and manual
+friction.
+
+
+Farther is built for tomorrow's opportunities.
+Market friction When wealth management is constrained by operational friction, everyone suffers.
+Clients miss opportunities. Advisors lose focus. Unoptimized returns leave money
+on the table.
+Farther’s
+differentiated
+solution
+Farther flips the entire approach. We've rebuilt wealth management systems
+from the ground up, as opposed to layering new tech onto old systems. We isolate
+points of friction in the traditional experience, and build intelligent solutions to
+overcome them.
+
+
+The result: An intelligent platform that eliminates friction to give advisors time back
+and regain control; and surfaces new opportunities to grow client wealth and instill
+confidence in their financial future.
+
+
+Farther is the Intelligent Wealth Platform, built from the ground up to unlock
+greater wealth for clients throughout their financial lives.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_04_Strategy_Differentiated Valvue.pdf =====
+Strategy 	Differentiated value
+Market approach Farther welcomes the world to Intelligent Wealth — and the measurable outcomes
+unlocked by fusing intelligent wealth solutions with human expertise to free clients
+and advisors from the pain points of traditional wealth management.
+Differentiated
+value
+Greater wealth-building opportunities/experience
+benefit to clients & advisors
+Farther is the Intelligent
+Wealth Platform, built ground
+up to unlock greater wealth
+for clients throughout their
+financial lives
+Tech retrofits on
+legacy ops & systems Wealth tech natively built to solve
+legacy wealth-building limitations	what the brand delivers
+“Legacy-limited” wealth-building
+opportunities/experience
+Competitive
+positioning
+Traditional wealth management firms trapped by bolted-on retrofits and
+disconnected systems that create administrative drag and provide lower returns for
+clients.
+Farther's 	winning
+difference
+Farther occupies the Winning Quadrant — combining native technology
+velocity with advisory excellence to deliver greater client returns.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_05_Strategy_How we differ.pdf =====
+Strategy 	HOW WE DIFFER
+AI overlaid on legacy systems
+Surface-level improvements (UX)
+Core constraints remain
+Enhances experience, still legacy-limited
+OUTCOMES
+Wirehouse / private banks 
+Limited payouts, constricted growth, and lack of independence.
+
+
+Legacy firm 
+Fragmented tech stacks with multiple vendors, integration friction,
+and inefficient processes. 
+
+Mass-market fintech / robo 
+Digital skin without the bespoke engineering, alpha-generating
+strategies, or human-expertise layer of a private bank.
+Native technology, no fragmentation
+End-to-end operational support
+Intelligent ecosystem
+Enhances experience and outcomes
+drivers
+Natively built technology
+
+Marketing and lead gen support
+
+Back-office, planning, and transition support
+
+Client service and paraplanning teams
+
+Expert advisors backed by cutting-edge
+OUTCOMES
+3 	x advisor book growth
+
+90% advisor time spent on client relationships
+and wealth building strategies (not admin)
+
+Greater wealth building opportunities
+
+Industry leading payouts
+
+Institutional-grade strategies otherwise only
+exclusively available
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_06_Strategy_Core Positioning.pdf =====
+Strategy 	Core Positioning
+Brand house Farther is natively built to mitigate the pain points of traditional wealth management firms,
+whose client wealth-building experience is limited by the subpar technology bolted onto
+their legacy systems.
+Core belief 	Everyone deserves the opportunity to realize their full financial potential.
+Purpose 	To connect our clients to the greatest wealth-building opportunities throughout their financial lives.
+Positioning Farther is the Intelligent Wealth Platform, built from the ground up to unlock greater wealth
+for clients throughout their financial lives.
+Formula 
+(to deliver our purpose) Optimized Core Returns 	Elevated Financial Advice 	Access to Private Markets
+Brand promise 	Welcome to Intelligent Wealth
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_07_Strategy_BrandHouse.pdf =====
+Strategy 	brand house
+Brand
+architecture
+A branded house architecture to drive deep brand understanding and differentiation.
+Farther brand will take
+top billing
+(to accrue all value/understanding
+to the main brand)
+Individual advisor brands
+are sponsored by the
+main Farther brand
+FUEST & KLEIN
+
+wealth advisors 	ANCHORPOINTE
+In the early stages of building audience relationships, it is critical that people clearly understand how we
+are different, what we stand for, and why we matter to them. At this stage, consistency is essential. To avoid
+confusion in the market, we should limit variations of the brand and lock-up.
+ 
+All lines of business will adopt the standard Farther logo, with supporting text used to provide context for
+specific business lines where needed. As brand equity grows over time, we will have greater flexibility to
+evolve and diversify our brand expression.
+ 
+Going forward, all advisors joining Farther will be required to adopt the Farther logo alongside their team
+name. This ensures advisors benefit from the halo of the Farther brand while reinforcing a unified identity
+that strengthens the value of the broader Farther family.
+Why?
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_09_Audience_Summary.pdf =====
+Audience 	Summary
+Objective
+To replace the traditional wealth management industry with an Intelligent Wealth Platform that
+combines expert advice with modern technology — redefining how wealth is managed, grown,
+and scaled.
+Positioning
+Farther is the Intelligent Wealth
+Platform, built from the ground up
+to unlock greater wealth throughout
+your financial life.
+How we deliver
+We combine the judgment of expert advisors with the precision of proprietary technology
+to automate complexity, unlock wealth potential, and empower advisors to scale.
+Insight
+Most wealth management isn't built for change. It relies on rigid, legacy systems that leave
+clients unprepared for evolving goals and advisors bogged down by operational complexity.
+Audience
+Modern Wealth Builders 
+High-net-worth individuals ($1M–10M+) seeking clarity, returns, and confidence.
+
+
+Elite Advisors 
+Forward-thinking professionals seeking autonomy, efficiency, and scale.
+Reasons to Believe
+U 	nified Clarity 
+A "Live Balance Sheet" and secure vault centralized in one place.
+
+
+Wealth Maximization 
+Up to 1–3% greater after-tax returns via automated optimization.
+
+
+Elite Access 
+Exclusive “velvet-rope” opportunities in private markets.
+
+
+Intelligent Execution 
+Greater execution accuracy with native technology.
+
+
+Human Expertise 
+Premier advisors focused on strategy, not administration.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_10_Audience_WhoWeWorkWith.pdf =====
+audience 	who we work with
+Who they are
+Clients
+H/UHNW individuals ($1M+ Investable Assets)
+
+Successful individuals navigating sophisticated wealth.
+Refusing to settle for preservation-focused advice or
+fragmented experiences.
+Core motivation
+The mindset
+Core pain points
+The need
+To achieve financial freedom and build generational wealth,
+focusing on growth, not just preservation
+Growth-oriented, tech-savvy, and optimistic, but currently
+overwhelmed by financial complexity
+Opaque free structures, fragmented accounts, legacy-
+limited investment opportunities
+A unified financial picture. Frustrated by fragmented accounts
+and opaque fees, they want one platform that offers proactive
+advice and surfaces new wealth building opportunities.
+Why Farther They seek a partner who leverages innovative tech to unlock
+new wealth-building opportunities
+Advisors
+High-performing RIAs and Breakaway Brokers ($50M–$500M+
+AUM)
+
+Forward-thinking fiduciaries at scale. Unwilling to compromise
+autonomy, client outcomes, or operational efficiency for legacy
+systems.
+To break through operational ceilings and scale their book of business
+without adding administrative drag
+Fiduciaries who are growth-minded but bogged down by back-office
+tasks and legacy friction
+Operational burden, hindered client service, slow organic growth,
+capped payouts, succession uncertainty
+Operational freedom. Tired of legacy tech that slows them down.They
+need an intelligent, native platform that automates the heavy lifting so
+they can focus on client relationships.
+They want a platform that eases administrative burden while delivering
+better client returns
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_13_Audience_ClientMessagingMatrix.pdf =====
+Audience
+Value Prop 1
+client messaging matrix
+Value Prop 2 	Value Prop 3 	Headline 	Key Proof Point 1 	Key Proof Point 2 	Key Proof Point 3 	CTA
+Advisor
+RIA
+Scale Seeker
+Wirehouse Breakaway 
+Breakaway Builder
+
+IBD 
+Tech Upgrader
+Bank / Captiva 
+Upmarket Transition
+Operating leverage
+(AI‑native
+technology)
+Independence,
+not isolation
+Unified 
+platform
+Elevated
+advice delivery
+Concierge
+support teams
+Transition and
+CX muscle
+Execution
+accuracy
+Holistic
+wealth toolkit
+Growth 
+support
+Premium
+outcomes
+Less
+admin
+Client
+retention
+Scale without
+adding headcount.
+Break away
+without losing
+sophistication.
+Replace vendor
+sprawl with one
+IWP
+Go planning-first —
+and move upmarket.
+More control of your book
+of business and higher
+payouts.
+Dedicated support teams
+and modern platform
+keep the client experience
+seamless.
+Single login. Less friction.
+Upgraded tech without
+upgraded fees.
+IWP supports planning,
+investments, and
+collaboration in one place.
+Spend 90% of your time
+on client wealth strategy
+(not admin).
+Keep autonomy while
+gaining operational
+leverage and higher
+payouts. Grow 3x faster.
+Digital onboarding and
+tracked workflows reduce
+NIGO.
+Tax optimization, alts,
+lending/insurance solutions)
+supports HNW complexity.
+Advisors grow their
+books 3x faster than
+the industry average
+Deliver advanced
+strategies and tax-
+intelligent execution
+without rebuilding ops.
+Built-in planning,
+investments, rebalancer,
+models — in one platform.
+Stronger client experience
+and transparency supports
+retention and wallet share.
+See how RIAs
+scale with Farther.
+Explore how
+breakaway advisors
+are winning.
+Explore the
+unified platform
+for IBDs.
+Go upmarket
+with Farther.
+Client
+Care for my family 
+Legacy builder
+
+Fuel my ambitions 
+Independent optimizer
+Maximize life’s experiences 
+Lifestyle maximizer
+Ease my anxiety
+Security Seeker
+Unified family
+wealth view
+Private
+markets access
+Time 
+back
+Total
+clarity
+Tax‑intelligent
+investing
+Institutional-grade
+strategies
+Simplified 
+wealth
+Wealth
+protection
+Elevated
+advice
+Optimized after-
+tax returns
+Elevated
+advice
+Confidence
+Built for families
+who think in
+generations.
+Invest like a family
+office — without the
+friction.
+Wealth should fund
+the life you want, not
+consume it.
+Know exactly where
+you stand — at all
+times.
+Integrated planning: share
+securely with CPA/attorney/
+family — in one hub.
+Access private market
+opportunities to expand
+the investable universe.
+One place for your full
+financial life — fewer logins,
+fewer loose ends.
+Unified view: accounts and
+performance and documents
+in one secure portal.
+Strategic asset location
+and household-level tax
+optimization improves
+after‑tax outcomes.
+Advanced building blocks:
+direct indexing, SMAs/
+sleeves, custom models.
+Monitor with ease — anytime,
+anywhere. Let your advisor
+handle everything else.
+Tax guardrails to
+reduce “surprise”
+outcomes.
+Planning tools keep
+goals, decisions, and
+accountability aligned
+over time.
+Orchestrate your
+family wealth with
+Farther.
+Always-on tax optimization
+(not just year-end) to
+reduce tax drag.
+Institutional-grade
+strategies built for
+high-performers.
+Proactive guidance keeps
+your investments on track
+while you focus on living.
+Experience wealth
+management that
+respects your time.
+Ongoing oversight:
+technology and advisor
+guidance reduces anxiety
+during volatility.
+Get clarity
+and confidence.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_14_Messaging.pdf =====
+Messaging
+Farther Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_15_Messaing_ToneOfVoice.pdf =====
+Messaging 	Tone of Voice
+The Intelligent
+Wealth Platform
+Farther is built on a fundamental truth: traditional wealth management is riddled
+with complexity. Our Intelligent Wealth Platform frees clients and advisors from
+legacy friction by fusing expert judgment with native technology.
+
+
+Our voice is Proactive, Precise, and Empowering. We speak with the clarity
+of a technology innovator and the conviction of a trusted partner. We don't just
+manage wealth — we engineer possibility.
+we are
+Visionary, but not idealistic 
+Forward-thinking, grounded in data and mechanics
+
+
+Precise, but not cold 
+Specific, outcome-focused, human-centered
+
+
+Candid, but not combative 
+Direct, honest, respectful
+
+
+Accessible, but not simplistic 
+Expert without jargon, sophisticated/premium without gatekeeping
+
+
+Grounded, but not nostalgic 
+Modern but rooted, innovative but reliable
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_16_Messaing_TonalGuidance.pdf =====
+Messaging 	Tonal Guidance
+Visionary, but
+not idealistic
+DO SAY: Our platform builds
+optimized roadmaps that evolve
+as your life evolves.
+
+
+DON’T SAY: Imagine a world where
+financial freedom is effortless and
+you never have to worry about money
+again.
+WHY: Forward-looking, but rooted in
+real mechanics — believable, not
+vaporware.
+Precise, but
+not cold
+DO SAY: We use direct indexing
+and asset location to optimize your
+portfolio's tax efficiency without
+sacrificing diversification.
+
+
+DON’T SAY: We leverage our
+algorithms to optimize your alpha
+coefficient and minimize beta drag.
+
+
+WHY: Specific and outcome-oriented
+without jargon — expertise that’s still
+human.
+Candid, but
+not combative
+DO SAY: By automating complex
+strategies that others often miss,
+clients can gain up to 1–3% greater
+after-tax returns.
+
+
+DON’T SAY: Stop losing money
+with outdated advisors. We beat the
+market and slash your tax bill better
+than anyone else.
+
+
+WHY: Direct and confident without
+attacking competitors — trust-
+building, not salesy.
+Accessible, but
+not simplistic
+DO SAY: We provide exclusive
+access to top-tier investment
+strategies typically reserved for
+family offices.
+
+
+DON’T SAY: We make investing
+super easy — no complicated stuff,
+just easy money.
+
+
+WHY: Premium and clear —
+respects the audience’s intelligence
+without gatekeeping.
+Grounded, but
+not nostalgic
+DO SAY: Advisors on Farther achieve
+4x organic AUM growth compared to
+the industry average. Our clients can
+gain up to 1–3% greater after-tax
+returns.
+
+
+DON’T SAY: We cordially invite you
+to take part in our heritage of
+bespoke white-glove stewardship
+for the discerning investor.
+
+
+WHY: Modern credibility comes from
+substantiated outcomes, not legacy-
+bank nostalgia.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_17_Messaing_BrandVocabulary.pdf =====
+Messaging 	Brand Vocabulary
+Every word choice reinforces who we are. These standards ensure our voice feels
+modern, precise, and trustworthy across all touchpoints.
+"Intelligent wealth management" / not "wealth management" 
+Signals our specific positioning and evolution beyond the category
+
+
+"Intelligent Wealth Platform”
+
+Our primary platform descriptor
+Category
+ownership
+Platform
+qualifiers
+Use
+
+Native, Unified, Proactive, Precise, Active
+
+
+Avoid
+
+Revolutionary, Disruptive, Advanced (too trendy, not grounded)
+Audience
+language
+Clients
+"Modern wealth builders" (not "HNW individuals" or "our customers")
+
+
+Advisors
+"Elite advisors" or "expert advisors" (not "our partners" or "FA's")
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_18_Messaing_Implementation.pdf =====
+IMPLEMENTATION
+Capitalization
+and punctuation
+Sentence case throughout — Signals modern, accessible, not corporate-formal
+
+Title case reserved for data viz, tables, reports — Creates visual hierarchy
+
+No periods in headlines (unless multiple sentences) — Keeps energy forward
+
+"And" not "&" wherever space allows — Reads more humanized, less corporate
+
+Oxford commas in lists — Clarity wins over style
+
+Em dashes (—) with spaces for emphasis — Reads more sophisticated
+
+En dashes (–) without spaces for number ranges — 2024–2026, not hyphen
+
+Hanging punctuation for inline quotes, numbered list, and bullet lists
+
+Numeric abbreviations: T, B, M, k — Clean, modern (not "Trillion," "Billion," etc.)
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_19_Messaing_Implementation.pdf =====
+Messaging 	IMPLEMENTATION
+Inclusive language When referring to individuals and groups, we always use their preferred language. Use
+LGBTQ (or most current)
+
+When referring to a group, use non-gendered identifiers (e.g., folks or everybody)
+
+Use “woman” and “women” instead of “female” and “man” or “men” instead of “male”
+
+When featuring an individual, always defer to how they self identify
+
+Only identify a person’s race, ethnicity, or national origin if it is relevant
+
+Capitalize and do not pluralize Black
+
+When referring to those with disabilities, emphasize the person first (e.g., “A person with a
+disability” not “disabled person” or “handicapped person”)
+
+
+Also be sure to research the origin of any idiom before using it in copy.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+
+
+
+===== Farther BG_20_Messaing_SampleCopy.pdf =====
+Messaging
+One-liners
+Built for greater wealth
+Complexity, clarified
+Action over admin
+Expert advisors,
+powered by intelligent
+wealth technology
+Unified financial
+ecosystem, total
+financial clarity
+Unlock your full
+financial potential
+Maximize your returns with
+tax-intelligent technology
+Sample Copy
+Short
+Intelligent technology for the modern
+wealth builder
+Medium
+Where expert advisors backed by cutting-edge
+technology deliver wealth growth
+Long
+Farther is the Intelligent Wealth Platform built to unlock
+greater wealth-building opportunities for modern clients
+and elite advisors
+Expert advisors, supercharged — grow your book faster
+while spending 90% of your time on strategy, not
+paperwork
+Our concierge team connects you with a dedicated
+advisor aligned with your specific financial ambitions,
+backed by Farther’s Intelligent Wealth Platform.
+Farther unifies your entire financial life in one place, giving
+you the clarity and control to make smarter decisions and
+build wealth throughout your financial life.
+Grow your book 3x faster 	We empower advisors with autonomy and backend
+automation to grow their books 3x faster than the
+industry average
+Unlock up to 1–3% greater after-tax returns with
+intelligent wealth technology
+Maximize your returns through
+intelligence
+Total clarity, zero blind spots 	Farther unifies your investments, banking, and
+liabilities into a single "Live Balance Sheet"
+Elevator Pitches
+For clients 	Farther is the Intelligent Wealth Platform built from the ground up to unlock greater wealth throughout your financial life. We combine the judgment of
+expert advisors with the precision of proprietary technology to give you total clarity on your finances, automate complex strategies to earn 1–3% greater
+after-tax return potential, and connect you with a dedicated advisor aligned with your specific financial ambitions.
+For advisors 	Farther is the Intelligent Wealth Platform built for advisors like you. We replace administrative friction with intelligent execution—so you spend 90% of
+your time on strategy and client relationships, not paperwork. Plus, you get 20x greater execution accuracy, exclusive access to private markets, and
+industry-leading payouts to grow your book faster than ever.
+FARTHER Brand Guidelines
+
+-- 1 of 1 --
+

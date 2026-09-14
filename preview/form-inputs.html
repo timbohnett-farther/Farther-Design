@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Form inputs" subtitle="Text fields, selects, checks" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Form inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:22px 26px;background:var(--surface-canvas);}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.lbl{font-family:var(--font-sans);font-size:11px;color:var(--fg-secondary);letter-spacing:.02em;}
+.inp{font-family:var(--font-sans);font-size:14px;padding:11px 14px;background:#fff;border:1px solid var(--border-hairline-warm);border-radius:10px;color:var(--fg-primary);transition:border-color var(--dur-quick) var(--ease-wave);}
+.inp:focus{outline:none;border-color:#3B5A69;box-shadow:0 0 0 3px rgba(59,90,105,.12);}
+.inp.filled{background:#F8F4F0;border-color:#E3D3C5;}
+.chk{display:flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:13px;color:var(--fg-primary);}
+.box{width:16px;height:16px;border:1px solid #888;border-radius:4px;background:#fff;display:inline-flex;align-items:center;justify-content:center;}
+.box.on{background:#3B5A69;border-color:#3B5A69;color:#fff;}
+.pill{font-family:var(--font-sans);font-size:12px;font-weight:500;padding:5px 12px;border-radius:9999px;background:#EBF0F3;color:#3B5A69;display:inline-block;margin-right:6px;}
+.pill.on{background:#3B5A69;color:#F8F4F0;}
+</style></head>
+<body>
+<div class="grid">
+ <div class="field"><div class="lbl">Full name</div><input class="inp" placeholder="Rick Benjamin"></div>
+ <div class="field"><div class="lbl">Email</div><input class="inp filled" value="rick@benjamin.com"></div>
+ <div class="field"><div class="lbl">Investable assets</div><input class="inp" value="$2.5M"></div>
+ <div class="field"><div class="lbl">Advisor firm</div><input class="inp" placeholder="Optional"></div>
+</div>
+<div style="margin-top:14px;display:flex;gap:18px;align-items:center;">
+ <div class="chk"><span class="box on">✓</span>Accredited investor</div>
+ <div class="chk"><span class="box"></span>Send updates</div>
+</div>
+<div style="margin-top:14px;">
+ <span class="pill on">All</span><span class="pill">Stocks</span><span class="pill">Private markets</span><span class="pill">Tax</span>
+</div>
+</body></html>

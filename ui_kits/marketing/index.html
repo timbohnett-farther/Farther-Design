@@ -1,0 +1,211 @@
+<!-- @dsCard group="Marketing site" viewport="1440x900" name="farther.com" subtitle="Marketing site UI kit" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Farther — Intelligent Wealth Platform</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body{margin:0;background:var(--surface-canvas);color:var(--fg-primary);}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 48px;}
+  /* Header */
+  header{position:sticky;top:0;background:rgba(248,244,240,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-hairline-warm);z-index:10;}
+  header .bar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+  header img.word{height:24px;}
+  nav ul{list-style:none;display:flex;gap:32px;margin:0;padding:0;}
+  nav a{font-family:var(--font-sans);font-size:14px;color:var(--fg-primary);border:none;}
+  nav a:hover{opacity:.7;}
+  .cta{display:flex;gap:8px;}
+  .btn{font-family:var(--font-sans);font-size:14px;font-weight:500;padding:10px 22px;border-radius:9999px;border:0;cursor:pointer;}
+  .btn.primary{background:var(--steel-700);color:var(--limestone-50);}
+  .btn.primary:hover{background:var(--steel-800);}
+  .btn.ghost{background:transparent;color:var(--fg-primary);}
+  .btn.ghost:hover{background:rgba(51,51,51,.06);}
+
+  /* Hero */
+  .hero{position:relative;padding:96px 0 120px;overflow:hidden;background:#3C5864;color:var(--limestone-50);}
+  .hero .waves{position:absolute;inset:0;pointer-events:none;background-image:url("../../assets/waves/steel.png");background-size:cover;background-position:center;}
+  .hero .waves::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,36,44,.55) 0%,rgba(20,36,44,.3) 45%,rgba(20,36,44,.55) 100%);}
+  .hero .eye{font-family:var(--font-sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-secondary);display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;}
+  .hero .eye::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--bronze-400);}
+  .hero h1{font-family:var(--font-display);font-weight:300;font-size:96px;line-height:1;letter-spacing:-.03em;color:var(--limestone-50);margin:0 0 28px;max-width:960px;position:relative;}
+  .hero h1 em{font-style:italic;font-weight:400;color:#A3D9E1;}
+  .hero p{font-family:var(--font-sans);font-size:19px;line-height:1.45;color:rgba(248,244,240,.82);max-width:640px;margin:0 0 36px;position:relative;}
+  .hero .eye{color:rgba(248,244,240,.75);position:relative;}
+  .hero .actions{display:flex;gap:12px;position:relative;}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .btn.ghost{color:var(--limestone-50);border:1px solid rgba(248,244,240,.3);}
+  .hero .btn.ghost:hover{background:rgba(248,244,240,.08);}
+
+  /* Stats strip — full width, no outer .wrap constraint */
+  .stats{padding:48px 48px;border-top:1px solid var(--border-hairline-warm);border-bottom:1px solid var(--border-hairline-warm);display:grid;grid-template-columns:repeat(4,1fr);background:var(--limestone-50);}
+  .stat{padding:8px 32px;border-right:1px solid var(--border-hairline-warm);text-align:center;}
+  .stat:last-child{border-right:none;}
+  .stat .n{font-family:var(--font-display);font-weight:300;font-size:72px;letter-spacing:-.03em;line-height:1;color:var(--charcoal-900);}
+  .stat .l{font-family:var(--font-sans);font-size:12px;color:var(--fg-muted);letter-spacing:.14em;text-transform:uppercase;margin-top:14px;}
+
+  /* Value prop section */
+  section{padding:120px 0;}
+  .eyebrow{font-family:var(--font-sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-secondary);display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;}
+  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--bronze-400);}
+  h2{font-family:var(--font-display);font-weight:300;font-size:64px;line-height:1.05;letter-spacing:-.03em;color:var(--charcoal-900);margin:0 0 28px;max-width:880px;}
+  h2 em{font-style:italic;font-weight:400;}
+  .lead{font-family:var(--font-sans);font-size:18px;line-height:1.5;color:var(--fg-secondary);max-width:640px;}
+
+  /* Feature grid */
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;}
+  .feature{background:var(--surface-card);border:1px solid var(--border-hairline-warm);border-radius:16px;padding:32px;}
+  .feature .iconwrap{width:56px;height:56px;border-radius:14px;background:var(--limestone-100);display:flex;align-items:center;justify-content:center;color:var(--bronze-400);margin-bottom:24px;}
+  .feature .iconwrap svg{width:26px;height:26px;stroke-width:1.5;}
+  .feature h3{font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.15;letter-spacing:-.03em;margin:0 0 10px;}
+  .feature p{font-family:var(--font-sans);font-size:15px;line-height:1.55;color:var(--fg-secondary);margin:0;}
+
+  /* Advisor showcase */
+  .advisors{background:var(--charcoal-900);color:var(--limestone-50);}
+  .advisors .eyebrow{color:var(--charcoal-300);}
+  .advisors h2{color:var(--limestone-50);}
+  .advisors .lead{color:var(--charcoal-300);}
+  .advisor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;}
+  .advisor{background:rgba(248,244,240,.04);border:1px solid rgba(248,244,240,.1);border-radius:16px;overflow:hidden;}
+  .advisor .photo{aspect-ratio:4/5;background:linear-gradient(160deg,var(--limestone-300),var(--clay-500));position:relative;}
+  .advisor .photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(0,0,0,0),rgba(0,0,0,.25));}
+  .advisor .info{padding:24px;}
+  .advisor h4{font-family:var(--font-display);font-weight:400;font-size:22px;letter-spacing:-.03em;margin:0 0 6px;}
+  .advisor .meta{font-family:var(--font-sans);font-size:13px;color:var(--charcoal-300);}
+  .advisor .loc{display:flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;color:var(--charcoal-400);}
+
+  /* Quote */
+  .quote-block{background:var(--limestone-100);border-radius:24px;padding:64px;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center;}
+  .q-portrait{aspect-ratio:4/5;border-radius:16px;background:linear-gradient(160deg,var(--clay-300),var(--limestone-600));}
+  .q-text .big{font-family:var(--font-display);font-weight:300;font-size:44px;line-height:1.15;letter-spacing:-.03em;color:var(--charcoal-900);margin:0 0 24px;}
+  .q-text p{font-family:var(--font-sans);font-size:16px;line-height:1.55;color:var(--fg-secondary);margin:0 0 24px;}
+  .q-author{display:flex;align-items:center;gap:12px;}
+  .q-author .avatar{width:48px;height:48px;border-radius:50%;background:var(--steel-700);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-sans);font-weight:600;}
+  .q-author .name{font-family:var(--font-sans);font-weight:500;font-size:14px;}
+  .q-author .role{font-family:var(--font-sans);font-size:12px;color:var(--fg-muted);}
+
+  /* CTA */
+  .cta-band{background:var(--steel-700);color:var(--limestone-50);border-radius:24px;padding:72px 64px;display:flex;align-items:center;justify-content:space-between;gap:48px;}
+  .cta-band h2{color:var(--limestone-50);margin:0;font-size:52px;max-width:680px;}
+  .cta-band .btn.primary{background:var(--limestone-50);color:var(--charcoal-900);}
+  .cta-band .btn.primary:hover{background:var(--limestone-100);}
+
+  /* Footer */
+  footer{background:var(--charcoal-900);color:var(--limestone-100);padding:80px 0 32px;}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(248,244,240,.1);}
+  footer img.word{height:26px;}
+  footer .taglockup{font-family:var(--font-sans);font-size:13px;color:var(--charcoal-300);margin-top:16px;max-width:320px;line-height:1.55;}
+  footer h5{font-family:var(--font-sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--charcoal-300);margin:0 0 18px;font-weight:500;}
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;}
+  footer a{color:var(--limestone-100);border:none;font-size:14px;}
+  footer a:hover{color:var(--limestone-50);}
+  footer .bottom{display:flex;justify-content:space-between;padding-top:28px;font-size:12px;color:var(--charcoal-400);}
+</style>
+</head>
+<body data-screen-label="01 Marketing home">
+  <header>
+    <div class="wrap bar">
+      <img class="word" src="../../assets/logos/wordmark-navy.svg" alt="Farther">
+      <nav>
+        <ul>
+          <li><a>For clients</a></li>
+          <li><a>For advisors</a></li>
+          <li><a>Platform</a></li>
+          <li><a>About</a></li>
+          <li><a>Insights</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <button class="btn ghost">Sign in</button>
+        <button class="btn primary">Find an advisor</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="waves"></div>
+    <div class="wrap">
+      <div class="eye">Welcome to Intelligent Wealth</div>
+      <h1>Experienced advisors,<br><em>smarter</em> technology,<br>stronger outcomes</h1>
+      <p>Farther is the Intelligent Wealth Platform — built from the ground up to unlock greater wealth for clients throughout their financial lives.</p>
+      <div class="actions">
+        <button class="btn primary">Find an advisor</button>
+        <button class="btn ghost">Explore the platform →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><div class="n">$7B+</div><div class="l">Assets under management</div></div>
+    <div class="stat"><div class="n">3×</div><div class="l">Advisor book growth</div></div>
+    <div class="stat"><div class="n">1–3%</div><div class="l">Greater after-tax returns</div></div>
+    <div class="stat"><div class="n">90%</div><div class="l">Time on strategy, not admin</div></div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">The platform</div>
+      <h2>High-touch client experiences, driven by <em>proprietary</em> technology</h2>
+      <div class="lead">Our Intelligent Wealth Platform is built in-house to deliver smarter insights, faster decisions, and seamless experiences no off-the-shelf tool can match.</div>
+      <div class="features">
+        <div class="feature"><div class="iconwrap"><i data-lucide="compass"></i></div><h3>Unified clarity</h3><p>A Live Balance Sheet and secure vault centralize your entire financial life in one place.</p></div>
+        <div class="feature"><div class="iconwrap"><i data-lucide="trending-up"></i></div><h3>Wealth maximization</h3><p>Automated optimization delivers up to 1–3% greater after-tax returns, always-on.</p></div>
+        <div class="feature"><div class="iconwrap"><i data-lucide="gem"></i></div><h3>Elite access</h3><p>Exclusive "velvet-rope" opportunities in private markets, previously reserved for family offices.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advisors">
+    <div class="wrap">
+      <div class="eyebrow">Top-tier talent</div>
+      <h2>Our advisors represent the <em>brightest</em> minds in wealth management</h2>
+      <div class="lead">Each shares a commitment to raising the bar in every aspect of client experience.</div>
+      <div class="advisor-grid">
+        <div class="advisor"><div class="photo"></div><div class="info"><h4>Janice Rowland</h4><div class="meta">VP, Wealth Advisor</div><div class="loc"><i data-lucide="map-pin"></i>New York, NY</div></div></div>
+        <div class="advisor"><div class="photo" style="background:linear-gradient(160deg,var(--steel-400),var(--granite-700));"></div><div class="info"><h4>Eleanor Ray</h4><div class="meta">Managing Director</div><div class="loc"><i data-lucide="map-pin"></i>Fort Worth, TX</div></div></div>
+        <div class="advisor"><div class="photo" style="background:linear-gradient(160deg,var(--limestone-300),var(--clay-600));"></div><div class="info"><h4>Lauren Moone</h4><div class="meta">Managing Director</div><div class="loc"><i data-lucide="map-pin"></i>San Francisco, CA</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="quote-block">
+        <div class="q-portrait"></div>
+        <div class="q-text">
+          <div class="eyebrow">Client story</div>
+          <div class="big">"I required financial planning for a $40M liquidity event."</div>
+          <p>After my startup saw significant growth, Farther helped us utilize a GRAT, a CRUT strategy, and a donor-advised fund — efficiently managing our assets and philanthropic goals.</p>
+          <div class="q-author"><div class="avatar">R</div><div><div class="name">Rick</div><div class="role">Founder, Startup · Parent, Home</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Join our <em>fast-growing</em> team of advisors</h2>
+        <button class="btn primary">Become an advisor →</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <img class="word" src="../../assets/logos/wordmark-cream.svg" alt="Farther">
+          <div class="taglockup">The Intelligent Wealth Platform — built from the ground up to unlock greater wealth throughout your financial life.</div>
+        </div>
+        <div><h5>Platform</h5><ul><li><a>For clients</a></li><li><a>For advisors</a></li><li><a>Private markets</a></li><li><a>Planning</a></li></ul></div>
+        <div><h5>Company</h5><ul><li><a>About</a></li><li><a>Careers</a></li><li><a>Press</a></li><li><a>Insights</a></li></ul></div>
+        <div><h5>Contact</h5><ul><li><a>Find an advisor</a></li><li><a>Become an advisor</a></li><li><a>Support</a></li><li><a>@fartherfinance</a></li></ul></div>
+      </div>
+      <div class="bottom"><div>© 2026 Farther. All rights reserved.</div><div>Terms · Privacy · Disclosures</div></div>
+    </div>
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- @dsCard group="Components" viewport="700x240" name="Buttons" subtitle="Primary / secondary / ghost, sizes, states" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:22px 26px;background:var(--surface-canvas);}
+.row{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap;}
+.label{font-family:var(--font-mono);font-size:10px;color:var(--fg-muted);width:90px;flex:0 0 auto;}
+.btn{font-family:var(--font-sans);font-size:14px;font-weight:500;letter-spacing:-.005em;padding:12px 22px;border-radius:9999px;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background var(--dur-quick) var(--ease-wave);}
+.btn.primary{background:#3B5A69;color:#F8F4F0;}
+.btn.primary:hover{background:#334D59;}
+.btn.secondary{background:transparent;color:#333;border:1px solid #4F4F4F;}
+.btn.secondary:hover{background:rgba(51,51,51,.06);}
+.btn.ghost{background:transparent;color:#333;padding:12px 14px;}
+.btn.ghost:hover{background:rgba(51,51,51,.06);}
+.btn.inverse{background:#F8F4F0;color:#333;}
+.btn.sm{padding:8px 14px;font-size:12px;}
+.arrow{width:14px;height:14px;}
+</style></head>
+<body>
+<div class="row"><div class="label">Primary</div>
+ <button class="btn primary">Find an advisor</button>
+ <button class="btn primary">Become an advisor <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></button>
+ <button class="btn primary sm">Sign in</button>
+</div>
+<div class="row"><div class="label">Secondary</div>
+ <button class="btn secondary">Learn more</button>
+ <button class="btn secondary sm">Explore</button>
+</div>
+<div class="row"><div class="label">Ghost / Link</div>
+ <button class="btn ghost">See how RIAs scale →</button>
+</div>
+<div class="row"><div class="label">On dark</div>
+ <div style="background:#333;padding:10px 14px;border-radius:12px;display:inline-flex;gap:10px;">
+  <button class="btn inverse">Client login</button>
+  <button class="btn" style="background:#3B5A69;color:#F8F4F0;">Sign up</button>
+ </div>
+</div>
+</body></html>

@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" viewport="700x220" name="UI icons" subtitle="Lucide substitution for line-drawing set" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>UI icons (Lucide)</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>body{margin:0;padding:20px 24px;background:var(--surface-canvas);font-family:var(--font-sans);}
+.grid{display:grid;grid-template-columns:repeat(10,1fr);gap:10px;}
+.cell{aspect-ratio:1;background:#fff;border-radius:10px;border:1px solid var(--border-hairline-warm);display:flex;align-items:center;justify-content:center;color:#3B5A69;}
+.cell svg{width:22px;height:22px;stroke-width:1.5;}
+.caption{font-family:var(--font-sans);font-size:11px;color:var(--fg-muted);margin-top:10px;}
+.bronze{color:#B68A4C;}
+</style>
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="grid">
+ <div class="cell"><i data-lucide="trending-up"></i></div>
+ <div class="cell"><i data-lucide="wallet"></i></div>
+ <div class="cell"><i data-lucide="landmark"></i></div>
+ <div class="cell"><i data-lucide="shield-check"></i></div>
+ <div class="cell"><i data-lucide="line-chart"></i></div>
+ <div class="cell"><i data-lucide="pie-chart"></i></div>
+ <div class="cell"><i data-lucide="users"></i></div>
+ <div class="cell"><i data-lucide="calendar"></i></div>
+ <div class="cell"><i data-lucide="bell"></i></div>
+ <div class="cell"><i data-lucide="search"></i></div>
+ <div class="cell bronze"><i data-lucide="compass"></i></div>
+ <div class="cell bronze"><i data-lucide="target"></i></div>
+ <div class="cell bronze"><i data-lucide="key-round"></i></div>
+ <div class="cell bronze"><i data-lucide="scale"></i></div>
+ <div class="cell bronze"><i data-lucide="gem"></i></div>
+ <div class="cell bronze"><i data-lucide="sparkles"></i></div>
+ <div class="cell bronze"><i data-lucide="briefcase"></i></div>
+ <div class="cell bronze"><i data-lucide="hand-coins"></i></div>
+ <div class="cell bronze"><i data-lucide="globe"></i></div>
+ <div class="cell bronze"><i data-lucide="leaf"></i></div>
+</div>
+<div class="caption">Lucide substitute for Farther's custom line-drawing library · Steel for UI, Bronze for conceptual diagrams. Stroke 1.5 · rounded caps/joins.</div>
+<script>lucide.createIcons();</script>
+</body></html>
