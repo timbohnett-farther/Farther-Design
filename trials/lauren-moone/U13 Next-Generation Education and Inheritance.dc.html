@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_ds_bundle.js"></script>
+<meta name="omelette-owns-print" content="letter">
+<style>
+body{margin:0;background:#e9e5e0;font-family:"Fakt Pro",system-ui,sans-serif}
+a{color:#3B5A69}a:hover{color:#31465C}
+@page{size:8.5in 11in;margin:0}
+@media print{
+ html,body{background:#fff!important;margin:0!important;padding:0!important}
+ [data-print-root]{gap:0!important;padding:0!important;align-items:flex-start!important}
+ [data-print-root]>*{break-after:page;page-break-after:always;break-inside:avoid;page-break-inside:avoid;zoom:1.33333}
+ [data-print-root]>*:last-child{break-after:auto;page-break-after:auto}
+ [data-screen-label],[data-print-root] [style*="box-shadow"]{box-shadow:none!important} [data-nav]{display:none!important}
+}
+</style></helmet>
+
+<div data-print-root style="display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0">
+
+<div data-nav style="position:sticky;top:0;z-index:20;width:612px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:14px;background:rgba(248,244,240,.94);backdrop-filter:blur(10px);border:1px solid #E3D3C5;border-radius:9999px;padding:7px 12px">
+  <a href="Intelligent%20Wealth%20Series%20Catalog.dc.html#architecture" style="display:flex;align-items:center;gap:7px;font-size:11px;color:#3B5A69;text-decoration:none;flex:none" style-hover="color:#31465C">← All topics</a>
+  <div style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Architecture · 13 of 21</div>
+  <div style="display:flex;align-items:center;gap:7px;flex:none">
+    <a href="U12%20Liquidity%20Engineering.dc.html" title="Liquidity Engineering" style="display:flex;align-items:center;gap:6px;font-size:11px;color:#3B5A69;text-decoration:none;padding:6px 11px;border:1px solid #E3D3C5;border-radius:9999px;background:#fff" style-hover="border-color:#3B5A69">Previous</a>
+    <a href="U14%20Philanthropy%20Architecture.dc.html" title="Philanthropy Architecture" style="display:flex;align-items:center;gap:6px;font-size:11px;color:#3B5A69;text-decoration:none;padding:6px 11px;border:1px solid #E3D3C5;border-radius:9999px;background:#fff" style-hover="border-color:#3B5A69">Next</a>
+    <button data-print type="button" style="font-family:inherit;font-size:11px;color:#F8F4F0;background:#3B5A69;border:1px solid #3B5A69;border-radius:9999px;padding:6px 13px;cursor:pointer" style-hover="background:#31465C;border-color:#31465C">Print or PDF</button>
+  </div>
+</div>
+
+<div style="width:612px;height:792px;box-sizing:border-box;background:#F8F4F0;color:#333;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div style="position:relative;height:396px;overflow:hidden;background:#31465C">
+    <img src="../../assets/images/library/melbin-jacob-r28l78gxgum-unsplash.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,51,51,.62) 0%,rgba(51,51,51,.34) 46%,rgba(51,51,51,.14) 100%)"></div>
+    <div style="position:absolute;top:44px;left:48px;right:48px;display:flex;flex-direction:column;gap:14px">
+      <img src="../../library/assets/wordmark-iw-light.svg" alt="Farther" style="width:112px;display:block;">
+      <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#F8F4F0;font-weight:500;max-width:430px;line-height:1.5">Intelligent wealth strategies: Next-generation education and inheritance</div>
+    </div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:44px 48px 40px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#9F8E75">Client education guide</div>
+      <div style="font-family:'ABC Arizona Text','Arizona Text',Georgia,serif;font-weight:300;font-size:38px;line-height:1.08;letter-spacing:-.03em;color:#333;max-width:470px;text-wrap:pretty">Next-generation education and inheritance</div>
+      <div style="font-size:13.5px;line-height:1.45;color:#5B6A71;max-width:440px;text-wrap:pretty">For parents who have built something substantial and want their children capable of carrying it, not just entitled to it.</div>
+      <div style="height:1px;background:#E3D3C5"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;max-width:516px">
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text','Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">25%</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71;text-wrap:pretty">Share of failed wealth transitions attributed to heirs who were not prepared for the responsibility</div></div>
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text','Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">45% vs 6%</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71;text-wrap:pretty">Heirs who plan to keep their benefactor&#39;s advisor, against those who would leave over performance</div></div>
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text','Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">$6.9M</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71;text-wrap:pretty">Difference in balance at age 50 between the prepared and unprepared heir in the illustration inside</div></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="height:1px;background:#E3D3C5"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <div data-advisor-slot style="display:flex;align-items:center;gap:9px"><div data-advisor="headshot-wrap" style="width:34px;height:34px;border-radius:50%;background:#C5CFD4;overflow:hidden;flex:none"><img data-advisor="headshot" src="https://cdn.sanity.io/images/c4sm4c5k/production/9c73c6c5a1a9324ab6cd84921b8a644c39972d43-726x800.avif?fm=jpg&q=90" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div><div style="display:flex;flex-direction:column;gap:1px"><div data-advisor="name" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:12.5px;line-height:1.15;color:#333;white-space:nowrap">Lauren Moone, CFA, CFP®, CPWA®</div><div data-advisor="title" style="font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;color:#9F8E75;white-space:nowrap">Managing Director</div><div style="display:flex;gap:8px;font-size:8.5px;color:#5B6A71;white-space:nowrap"><span data-advisor="email">lauren@farther.com</span></div></div></div>
+        <div style="font-size:8px;letter-spacing:.06em;color:#9F8E75">Stewardship-08-07-26</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="02 Guide" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:32px 40px 18px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:11px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Family governance · intelligent wealth series</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Family governance</div>
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:25px;line-height:1.08;max-width:500px;text-wrap:pretty">Judgment is learned. It does not arrive with the money</div>
+      <div style="font-size:10px;line-height:1.45;color:#5B6A71;max-width:492px;text-wrap:pretty">In one survey of inheritors, fewer than half said they planned to keep their benefactor&#39;s advisor, and only a small share cited poor performance as the reason they would leave. The other departures are not about returns. They are about a relationship that never included the person who eventually inherited.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="display:grid;grid-template-columns:1fr 1.05fr;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:6px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">What the handoff data shows (illustrative, aggregated from industry surveys)</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:2;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Finding</div><div style="flex:0.7;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Figure</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:2;font-size:8.5px;line-height:1.3">Investors keeping their benefactor&#39;s advisor</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">45%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:2;font-size:8.5px;line-height:1.3">Who would leave over poor performance</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">6%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:2;font-size:8.5px;line-height:1.3">Retention when a spouse inherits</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">72%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:2;font-size:8.5px;line-height:1.3">Advisors calling the transfer an existential threat</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">Over 4 in 10</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:2;font-size:8.5px;line-height:1.3">Advisors who have already lost significant assets</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">22%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0"><div style="flex:2;font-size:8.5px;line-height:1.3">US adults who struggle with basic financial concepts</div><div style="flex:0.7;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">Two-thirds</div></div>
+      </div>
+      <div style="font-size:6.4px;line-height:1.4;color:#8a8580;font-style:italic">Heirs do not leave because the money was managed badly. They leave because the arrangement was somebody else&#39;s.</div>
+    </div></div>
+        <div style="display:flex;flex-direction:column;gap:8px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">Literacy is not capability</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.2;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">What most programs teach</div><div style="flex:1.4;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">What the transition requires</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.2;font-size:8.5px;line-height:1.3">Budgeting and saving</div><div style="flex:1.4;font-size:8.5px;line-height:1.38;color:#5B6A71">Choosing among competing uses of capital</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.2;font-size:8.5px;line-height:1.3">How compounding works</div><div style="flex:1.4;font-size:8.5px;line-height:1.38;color:#5B6A71">Judging whether a return justifies its risk</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.2;font-size:8.5px;line-height:1.3">What a trust is</div><div style="flex:1.4;font-size:8.5px;line-height:1.38;color:#5B6A71">Working with a trustee who is able to say no</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.2;font-size:8.5px;line-height:1.3">How to read a statement</div><div style="flex:1.4;font-size:8.5px;line-height:1.38;color:#5B6A71">Evaluating professional advice, including this document</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0"><div style="flex:1.2;font-size:8.5px;line-height:1.3">Tax basics</div><div style="flex:1.4;font-size:8.5px;line-height:1.38;color:#5B6A71">Understanding why a structure exists before asking to change it</div></div>
+      </div>
+      <div style="font-size:6.4px;line-height:1.4;color:#8a8580;font-style:italic">An heir who can define an index fund and has never made a decision that cost them something is not prepared.</div>
+    </div></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">A progression that actually works</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Stage</div><div style="flex:1.4;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">What is practiced</div><div style="flex:1.4;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Where the stakes are real</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1;font-size:9.1px;line-height:1.3">Childhood</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Earning, saving, waiting</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Allowance and small paid work</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1;font-size:9.1px;line-height:1.3">Teens</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Budgeting, a first invested account, giving decisions</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Small amounts, entirely their choice</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1;font-size:9.1px;line-height:1.3">Early twenties</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Independence, a Roth funded by earned income</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Their own money, their own consequences</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1;font-size:9.1px;line-height:1.3">Late twenties</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Attending family meetings, meeting the advisors</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Observation first, then a voice</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1;font-size:9.1px;line-height:1.3">Thirties</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Managing a defined pool, serving on a committee</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Decisions that matter and are reviewed</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0"><div style="flex:1;font-size:9.1px;line-height:1.3">Forties</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Fiduciary or governance responsibility</div><div style="flex:1.4;font-size:9.1px;line-height:1.38;color:#5B6A71">Accountability for others, not just themselves</div></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">Incentive provisions, and how they age</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.3;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Provision</div><div style="flex:1.6;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Common result</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:9.1px;line-height:1.3">Distributions matched to earned income</div><div style="flex:1.6;font-size:9.1px;line-height:1.38;color:#5B6A71">Penalizes caregivers, teachers, artists, public servants</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:9.1px;line-height:1.3">Fixed distributions at set ages</div><div style="flex:1.6;font-size:9.1px;line-height:1.38;color:#5B6A71">A large sum arrives on a birthday regardless of readiness</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:9.1px;line-height:1.3">Milestone conditions, a degree or business plan</div><div style="flex:1.6;font-size:9.1px;line-height:1.38;color:#5B6A71">Ages badly as circumstances change</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0"><div style="flex:1.3;font-size:9.1px;line-height:1.3">Fully discretionary with a capable trustee</div><div style="flex:1.6;font-size:9.1px;line-height:1.38;color:#5B6A71">Judgment applied to actual circumstances</div></div>
+      </div>
+      <div style="font-size:6.4px;line-height:1.4;color:#8a8580;font-style:italic">The most durable answer is usually the last one, and it only works if the heir knows the trustee before the trustee is the one deciding.</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+      <div style="font-size:9px;color:#5B6A71">The Intelligent Wealth Series · farther.com</div>
+      <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Stewardship-08-07-26</div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="03 In practice" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:32px 40px 18px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:11px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Next-generation readiness · what the numbers look like</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">What the numbers look like in practice</div>
+      <div style="font-size:9.8px;line-height:1.5;color:#333;text-wrap:pretty">A composite family holds $25 million. Two children, ages 24 and 27. The trust distributes in thirds at 30, 35, and 40, so roughly $4 million reaches each child at age 30. Neither has managed an investment account, attended a family meeting, met the advisor, or been told what the estate is worth.</div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:6px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">Twenty years after the first distribution</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.7;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Measure at age 50</div><div style="flex:1;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Unprepared</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Amount received at age 30</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">$4,000,000</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Annual withdrawal rate</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">8%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Net annual return achieved</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">5%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;background:#FBF9F6"><div style="flex:1.7;font-size:8.5px;line-height:1.3;font-weight:600">Balance remaining at age 50</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right;color:#3B5A69">$32,000</div></div>
+      </div>
+      <div style="font-size:6.4px;line-height:1.4;color:#8a8580;font-style:italic">Nothing dramatic happened. No catastrophe, no fraud. A spending rate slightly too high met a return slightly too low, and twenty years did the rest.</div>
+    </div></div>
+        <div style="display:flex;flex-direction:column;gap:8px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">A preparation program over the prior decade</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.7;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Component</div><div style="flex:1;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Incremental cost</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Custodial and Roth accounts funded from age 14</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">Uses gifting already planned</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Family meeting participation from age 18</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">None</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">A personal philanthropic budget from age 16</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">$10,000 a year</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">Twice-yearly meetings with advisors from age 22</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">Included</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:8.5px;line-height:1.3">A $250,000 pool to manage at 25, with accountability</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">An advance of principal</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;background:#FBF9F6"><div style="flex:1.7;font-size:8.5px;line-height:1.3;font-weight:600">Incremental cost over a decade, per child</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right;color:#3B5A69">About $100,000</div></div>
+      </div>
+    </div></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">Side by side</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.7;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Measure</div><div style="flex:1;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Unprepared</div><div style="flex:1.1;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Prepared</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.1px;line-height:1.3">Amount received at age 30</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">$4,000,000</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">$4,000,000</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.1px;line-height:1.3">Prior experience managing capital</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">None</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">Eleven years</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.1px;line-height:1.3">Annual withdrawal rate</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">8%</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">4%</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.1px;line-height:1.3">Net annual return achieved</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">5%</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">6%</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.1px;line-height:1.3">Balance at age 50</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">$32,000</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right">$6,943,000</div></div>
+        <div style="display:flex;gap:9px;padding:4.4px 0;background:#FBF9F6"><div style="flex:1.7;font-size:9.1px;line-height:1.3;font-weight:600">Difference in outcome</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right;color:#3B5A69">—</div><div style="flex:1.1;font-family:'ABC Arizona Text',Georgia,serif;font-size:10.7px;text-align:right;color:#3B5A69">$6,911,000</div></div>
+      </div>
+      <div style="font-size:6.4px;line-height:1.4;color:#8a8580;font-style:italic">The two variables that produced that gap are a spending rate and a return. Both are behavioral. Neither is taught by a document.</div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">What this illustration assumes</div>
+      <div style="font-size:9.1px;line-height:1.5;color:#5B6A71;text-wrap:pretty">It assumes preparation changes behavior, which is a reasonable expectation and not a certainty. Prepared heirs sometimes make poor decisions and unprepared heirs sometimes do well. The withdrawal rates and returns shown represent plausible outcomes at each end rather than measured averages. What is not an assumption is that a person who has never made a consequential financial decision will be making one for the first time with four million dollars.</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+      <div style="font-size:9px;color:#5B6A71">The Intelligent Wealth Series · farther.com</div>
+      <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Stewardship-08-07-26</div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="04 Summary and disclosures" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:32px 40px 18px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:11px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Summary · how Farther approaches this</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:6px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">What we covered</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.9;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Measure</div><div style="flex:0.9;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">The number</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Failed transitions from unprepared heirs</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">25%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Investors retaining their benefactor&#39;s advisor</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">45%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Who would leave over investment performance</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">6%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Households above $3M disclosing little to children</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">64%</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Illustration: cost of preparation per child</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">$100,000</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0"><div style="flex:1.9;font-size:8.5px;line-height:1.3">Illustration: difference in balance at age 50</div><div style="flex:0.9;font-family:'ABC Arizona Text',Georgia,serif;font-size:9.9px;text-align:right">$6.9M</div></div>
+      </div>
+    </div></div>
+        <div style="display:flex;flex-direction:column;gap:8px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">Three points carry the piece</div>
+      <div style="font-size:9.1px;line-height:1.5;color:#5B6A71;text-wrap:pretty">Financial literacy and financial capability are different things, and only the second survives a large inheritance. Heirs who leave their parents&#39; advisor almost never leave over performance, which means the relationship, not the returns, is what failed to transfer. And preparation is a decade of small decisions with real consequences, which means it starts long before anyone thinks it is necessary.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">How Farther approaches this</div>
+      <div style="font-size:9.1px;line-height:1.5;color:#5B6A71;text-wrap:pretty">Most firms meet the next generation at the reading of a will. There is no minimum that makes a twenty-five year old with a $250,000 account uninteresting, and no product that makes them interesting for the wrong reason. Advisors freed from administrative work have time to sit with your children more than once.</div>
+    </div></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #E3D3C5;padding-top:10px;display:flex;flex-direction:column;gap:5px">
+      <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:6px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">What that looks like in practice</div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:9px;line-height:1.45">Meeting your children years before any distribution, at an age when the conversation is low stakes</div></div>
+        <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:9px;line-height:1.45">Managing small, real accounts so decisions have consequences at a survivable scale</div></div>
+        <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:9px;line-height:1.45">Building a disclosure schedule with you, so what gets shared and when is a decision rather than a default</div></div>
+        <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:9px;line-height:1.45">Introducing heirs to the trustee, attorney, and accountant while everyone can still explain</div></div>
+        <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:9px;line-height:1.45">Reviewing distribution provisions against how your children are actually turning out</div></div>
+      </div>
+    </div></div>
+        <div style="display:flex;flex-direction:column;gap:8px">    <div style="display:flex;flex-direction:column;gap:5px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.2px;color:#3B5A69">The questions worth asking</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.3;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Question</div><div style="flex:1.3;font-size:6.8px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Why it matters</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:8.5px;line-height:1.3">Has either child managed money with real consequences?</div><div style="flex:1.3;font-size:8.5px;line-height:1.38;color:#5B6A71">The first time should not involve seven figures</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:8.5px;line-height:1.3">Do they know our advisor, or know of our advisor?</div><div style="flex:1.3;font-size:8.5px;line-height:1.38;color:#5B6A71">Only one of those transfers</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:8.5px;line-height:1.3">What do they think they will receive, and when?</div><div style="flex:1.3;font-size:8.5px;line-height:1.38;color:#5B6A71">They have a number in mind, and it is probably wrong</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0;border-bottom:1px solid #efece8"><div style="flex:1.3;font-size:8.5px;line-height:1.3">Do our trust provisions fit the people they became?</div><div style="flex:1.3;font-size:8.5px;line-height:1.38;color:#5B6A71">Most were drafted when they were children</div></div>
+        <div style="display:flex;gap:9px;padding:3.8px 0"><div style="flex:1.3;font-size:8.5px;line-height:1.3">Who will they call the week after?</div><div style="flex:1.3;font-size:8.5px;line-height:1.38;color:#5B6A71">If the answer is nobody, that is the gap</div></div>
+      </div>
+    </div></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:7px;border-top:1px solid #E3D3C5;padding-top:11px">
+      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Important disclosures</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">Farther Finance Advisors, LLC (&quot;Farther&quot;) is an investment adviser registered with the U.S. Securities and Exchange Commission. Registration as an investment adviser does not imply any level of skill or training. Farther&#39;s Form ADV Part 2A Brochure and Form CRS (Client Relationship Summary) contain additional important information about our advisory services, fees, and conflicts of interest, and are available upon request or at www.adviserinfo.sec.gov.</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">This material is provided for educational and informational purposes only. It does not constitute investment, tax, legal, or accounting advice, and it is not a recommendation to buy or sell any security or to adopt any investment strategy. It is not an offer or solicitation in any jurisdiction where such an offer or solicitation would be unlawful.</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">Any examples presented are hypothetical, are provided for illustrative purposes only, and do not represent the experience of any actual client. Hypothetical results have inherent limitations and do not reflect the impact of fees, expenses, or taxes other than those expressly stated. Individual results will vary based on personal circumstances. Diversification and asset allocation do not ensure a profit or protect against loss in a declining market.</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">Alternative and private market investments involve a high degree of risk, including illiquidity, limited transparency, and the potential loss of the entire investment, and are suitable only for investors who can bear such risks. Tax figures reflect federal law in effect as of the publication date and are subject to legislative change. State tax treatment varies and may differ materially. Farther does not provide tax or legal advice. Consult your qualified tax advisor and attorney before acting on any information contained in this material.</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">Third-party data is obtained from sources believed to be reliable, but its accuracy and completeness are not guaranteed. Views expressed are as of the publication date and are subject to change without notice. Past performance is not indicative of future results. Investing involves risk, including the possible loss of principal.</div>
+      <div style="font-size:6.1px;line-height:1.4;color:#8a8580">Farther does not practice law and is not a licensed provider of family counseling services. Trust distribution provisions, incentive clauses, custodial account arrangements, and gifting structures are legal and tax matters requiring qualified counsel. Decisions about what financial information to share with family members, and when, are personal decisions with family consequences that no advisor can evaluate fully from the outside. The illustration assumes specific withdrawal rates, returns, and horizons chosen to represent plausible outcomes rather than measured averages, and assumes that preparation influences behavior. No representation is made that financial education produces any particular investment result, spending behavior, or family outcome. Survey findings are drawn from published third-party sources with differing methodologies, populations, and dates.</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <div style="font-size:7px;color:#8a8580;font-style:italic">The Intelligent Wealth Series | Ref: Stewardship-08-07-26 v1.0</div>
+        <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Stewardship-08-07-26</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ const b=document.querySelector('[data-print]'); if(b) b.addEventListener('click', ()=>window.print()); this.fit(); window.addEventListener('load', ()=>this.fit()); setTimeout(()=>this.fit(), 400); setTimeout(()=>this.fit(), 1500); }
+  componentDidUpdate(){ this.fit(); }
+  fit(){
+    document.querySelectorAll('[data-fit]').forEach(el=>{
+      el.style.cssText = el.style.cssText.replace(/transform:[^;]*;?/g,'').replace(/width:[^;]*;?/g,'');
+      const box = el.parentElement.clientWidth - parseFloat(getComputedStyle(el.parentElement).paddingLeft) - parseFloat(getComputedStyle(el.parentElement).paddingRight);
+      const avail = el.clientHeight, need = el.scrollHeight;
+      let s = 1;
+      if(need > avail - 8) s = Math.max(0.72, (avail - 8)/need);
+      el.style.setProperty('transform', 'scale('+s+')');
+      el.style.setProperty('width', (box/s)+'px');
+      if(Math.abs(el.getBoundingClientRect().width - box) > 1){
+        el.style.setProperty('width', (box/s)+'px', 'important');
+      }
+    });
+  }
+}
+</script>
+</body>
+</html>

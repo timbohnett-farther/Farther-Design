@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="../../colors_and_type.css"><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="../../templates/why-farther/why-farther.css"><script src="../../templates/why-farther/deck-stage.js"></script><script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script><script src="https://unpkg.com/qrcode-generator@1.4.4/qrcode.js"></script><script src="../../assets/icons/farther-icons.js"></script><script src="../../templates/why-farther/deck-init.js"></script></helmet>
+<deck-stage width="1920" height="1080">
+
+  <!-- 01 · Cover -->
+  <section class="wave" data-label="01 · Cover" style="padding-bottom:200px">
+    <div class="bgimg"></div>
+    <div class="brandline"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="inner">
+      <div class="eye"><span>Farther Intelligent Wealth Management</span></div>
+      <h1>A more <em>coordinated</em> way to<br>manage family wealth</h1>
+      <p class="lede" style="margin-top: 36px; max-width: 1180px;">For families with significant complexity, wealth management should feel clear, connected, and deeply personal. Farther brings investments, tax strategy, estate planning, cash management, and family coordination into one relationship.</p>
+    </div>
+<div data-advisor-slot style="position:absolute;left:100px;bottom:40px;z-index:2;display:flex;align-items:center;gap:20px">
+      <div data-advisor="headshot-wrap" style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:#31465C;border:2px solid rgba(248,244,240,.5);flex:none"><img data-advisor="headshot" alt="Advisor headshot" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div data-advisor="name" style="font-family:var(--font-display);font-weight:300;font-size:30px;line-height:1.1;color:#F8F4F0">Advisor Name</div>
+        <div data-advisor="title" style="font-family:var(--font-sans);font-size:24px;line-height:1.3;color:#D8BD96">Title</div>
+        <div style="font-family:var(--font-sans);font-size:24px;line-height:1.3;color:rgba(248,244,240,.82)"><span data-advisor="email">email@farther.com</span> &middot; <span data-advisor="phone">(000) 000-0000</span></div>
+      </div>
+    </div>
+    <div class="pgnum">01 / 19</div>
+  </section>
+
+  <!-- 02 · The client problem -->
+  <section data-label="02 · The client problem">
+    <div class="head">
+      <div class="eye"><span>The client problem</span></div>
+      <h2>Why affluent families outgrow traditional wealth management</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 740px; gap: 80px; flex: 1; min-height: 0; margin-top: 36px;">
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        <p>As wealth grows, complexity grows with it. Accounts multiply. Entities stack up. Advisors operate in silos. Important decisions get made without the full picture.</p>
+        <div class="keys">
+          <p class="klabel">Families with wealth often find themselves managing</p>
+          <ul>
+            <li><span>Multiple advisors and institutions</span></li>
+            <li><span>Trusts, LLCs, partnerships, and business interests</span></li>
+            <li><span>Concentrated positions and low-basis assets</span></li>
+            <li><span>Real estate, private investments, and lending needs</span></li>
+            <li><span>Tax, estate, and family decisions that affect one another</span></li>
+          </ul>
+        </div>
+        <p class="closing-line" style="margin-top: 12px;">The result is not a lack of advice. It is a lack of <em>coordination</em>.</p>
+      </div>
+      <svg viewBox="0 0 760 700" style="width: 740px; height: 100%;" aria-label="Fragmentation map: a family at the center of disconnected advisors and entities">
+        <!-- center-to-node dashed lines -->
+        <g stroke="#F8F4F0" stroke-width="2" stroke-dasharray="3 9" opacity="0.35">
+          <line x1="380" y1="350" x2="380" y2="80"></line>
+          <line x1="380" y1="350" x2="640" y2="200"></line>
+          <line x1="380" y1="350" x2="640" y2="500"></line>
+          <line x1="380" y1="350" x2="380" y2="620"></line>
+          <line x1="380" y1="350" x2="120" y2="500"></line>
+          <line x1="380" y1="350" x2="120" y2="200"></line>
+        </g>
+        <!-- perimeter cross-talk -->
+        <g stroke="#C9A36A" stroke-width="2" stroke-dasharray="2 10" opacity="0.6">
+          <line x1="380" y1="80" x2="640" y2="200"></line>
+          <line x1="640" y1="200" x2="640" y2="500"></line>
+          <line x1="640" y1="500" x2="380" y2="620"></line>
+          <line x1="380" y1="620" x2="120" y2="500"></line>
+          <line x1="120" y1="500" x2="120" y2="200"></line>
+          <line x1="120" y1="200" x2="380" y2="80"></line>
+        </g>
+        <!-- satellite nodes -->
+        <g>
+          <rect x="270" y="50" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="380" y="88" text-anchor="middle" font-size="24" fill="#F8F4F0">CPA</text>
+          <rect x="530" y="170" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="640" y="208" text-anchor="middle" font-size="24" fill="#F8F4F0">Estate attorney</text>
+          <rect x="530" y="470" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="640" y="508" text-anchor="middle" font-size="24" fill="#F8F4F0">Private banker</text>
+          <rect x="270" y="590" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="380" y="628" text-anchor="middle" font-size="24" fill="#F8F4F0">Asset managers</text>
+          <rect x="10" y="470" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="120" y="508" text-anchor="middle" font-size="24" fill="#F8F4F0">Business counsel</text>
+          <rect x="10" y="170" width="220" height="60" rx="12" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+          <text x="120" y="208" text-anchor="middle" font-size="24" fill="#F8F4F0">Trusts and entities</text>
+        </g>
+        <!-- family center -->
+        <circle cx="380" cy="350" r="92" fill="#F8F4F0"></circle>
+        <text x="380" y="344" text-anchor="middle" font-size="26" fill="#3B5A69">Your</text>
+        <text x="380" y="378" text-anchor="middle" font-size="26" fill="#3B5A69">family</text>
+      </svg>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">02 / 19</div>
+  </section>
+
+  <!-- 03 · The Farther view -->
+  <section class="split-img" data-label="03 · The Farther view">
+    <div class="photo" style="background-image: url('../../assets/images/library/luca-bravo-o453m2liufs-unsplash.jpg');"></div>
+    <div class="copy">
+      <div class="eye"><span>The Farther view</span></div>
+      <h2 style="font-size: 76px; margin-bottom: 44px;">Wealth should be managed as one connected whole</h2>
+      <p class="lede" style="max-width: 820px; margin-bottom: 28px;">Farther was built to serve modern wealth differently. The goal is not more technology for its own sake. The goal is a more organized, more proactive, and more complete way to manage financial life.</p>
+      <p class="lede" style="max-width: 820px;">At Farther, your wealth is coordinated around your life, not divided across disconnected providers, outdated systems, or isolated conversations.</p>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">03 / 19</div>
+  </section>
+
+  <!-- 04 · What Intelligent Wealth Management means -->
+  <section data-label="04 · What it means">
+    <div class="head">
+      <div class="eye"><span>What Intelligent Wealth Management means</span></div>
+      <h2>A single relationship with broader reach</h2>
+    </div>
+    <p class="lede" style="margin: 34px 0 40px;">Farther is designed for families who need more than investment management alone. It creates a central point of coordination across the key financial decisions that shape long-term outcomes.</p>
+    <div class="keys" style="margin-bottom: 22px;"><p class="klabel" style="margin: 0;">This includes</p></div>
+    <div class="grid4">
+      <div class="cell"><span data-farther-icon="goals"></span><span class="cname">Financial planning</span></div>
+      <div class="cell"><span data-farther-icon="growth"></span><span class="cname">Investment and portfolio management</span></div>
+      <div class="cell"><span data-farther-icon="tax"></span><span class="cname">Tax-aware strategy</span></div>
+      <div class="cell"><span data-farther-icon="estate"></span><span class="cname">Trust and estate coordination</span></div>
+      <div class="cell"><span data-farther-icon="family"></span><span class="cname">Generational planning</span></div>
+      <div class="cell"><span data-farther-icon="investment"></span><span class="cname">Alternative investments</span></div>
+      <div class="cell"><span data-farther-icon="cash"></span><span class="cname">Private banking and lending support</span></div>
+      <div class="cell"><span data-farther-icon="business"></span><span class="cname">Small business and institutional coordination where needed</span></div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">04 / 19</div>
+  </section>
+
+  <!-- 05 · Who we serve -->
+  <section class="split-img img-left" data-label="05 · Who we serve">
+    <div class="photo" style="background-image: url('../../assets/images/library/adobestock-364495860.jpg');"></div>
+    <div class="copy">
+      <div class="eye"><span>Who we serve</span></div>
+      <h2 style="margin-bottom: 32px;">Built for families with complexity</h2>
+      <p style="margin-bottom: 30px; max-width: 860px;">This offering is built for families navigating one or more of the following:</p>
+      <ul class="checks" style="margin-bottom: 38px;">
+        <li><i data-lucide="check"></i><span>Meaningful family wealth across accounts and entities</span></li>
+        <li><i data-lucide="check"></i><span>Concentrated equity positions</span></li>
+        <li><i data-lucide="check"></i><span>Trust structures and multi-entity ownership</span></li>
+        <li><i data-lucide="check"></i><span>Liquidity events or business transitions</span></li>
+        <li><i data-lucide="check"></i><span>Real estate holdings across entities</span></li>
+        <li><i data-lucide="check"></i><span>Multi-generational planning needs</span></li>
+        <li><i data-lucide="check"></i><span>A desire for one team to help coordinate the full picture</span></li>
+      </ul>
+      <p class="closing-line" style="font-size: 34px; max-width: 880px;">This is not a mass-market service model. It is built for families who need thoughtful coordination, sound judgment, and high-touch execution.</p>
+    </div>
+    <div class="foot" style="left: auto; right: var(--pad-x);"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum" style="right: auto; left: 60px; color: rgba(248,244,240,.8);">05 / 19</div>
+  </section>
+
+  <!-- 06 · Our approach -->
+  <section class="dark" data-label="06 · Our approach">
+    <div class="head">
+      <div class="eye"><span>Our approach</span></div>
+      <h2 style="font-size: 72px;">Advice first. Platform enabled. Coordination always.</h2>
+    </div>
+    <p class="lede" style="margin: 34px 0 42px; max-width: 1340px;">The Farther experience combines experienced advisors, specialized planning support, and a connected technology platform that brings your financial life into view.</p>
+    <div class="keys" style="margin-bottom: 22px;"><p class="klabel" style="margin: 0;">That means</p></div>
+    <div class="cardrow cols2" style="margin-bottom: 44px;">
+      <div class="dcard"><span data-farther-icon="ledger"></span><span>A clearer understanding of assets, liabilities, and ownership structures</span></div>
+      <div class="dcard"><span data-farther-icon="transfer"></span><span>Better coordination across planning, investing, tax, and estate considerations</span></div>
+      <div class="dcard"><i data-lucide="clock"></i><span>More timely decisions around liquidity, risk, and opportunity</span></div>
+      <div class="dcard"><i data-lucide="refresh-ccw"></i><span>Ongoing adjustments as life, markets, and laws change</span></div>
+    </div>
+    <p class="closing-line">The plan is not static. <em>It evolves with your family.</em></p>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">06 / 19</div>
+  </section>
+
+  <!-- 07 · Financial planning -->
+  <section class="svc" data-label="07 · Financial planning">
+    <div class="head">
+      <div class="eye"><span>Our services · Financial planning</span></div>
+      <h2>Planning that reflects the full picture</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>At higher wealth levels, planning becomes more connected and more consequential. Cash flow decisions affect tax outcomes. Estate structures influence investment strategy. Business, real estate, and family decisions often need to be evaluated together, not one at a time.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther builds planning around the full financial picture, not a single account or isolated goal. The relationship is designed to connect planning decisions across entities, family priorities, liquidity needs, and long-term wealth transfer objectives.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients gain more clarity on what to do, when to do it, and how one decision may affect the rest of the plan. That can lead to better sequencing, fewer blind spots, and more confidence around major decisions.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz">
+        <div class="vhead"><span class="vtitle">One timeline, interdependent decisions</span></div>
+        <svg viewBox="0 0 1100 290" aria-label="Scenario timeline showing how major decisions depend on one another">
+          <g fill="none" stroke="#B6D0ED" stroke-width="2" opacity="0.6">
+            <path d="M140 178 Q 360 56 580 178"></path>
+            <path d="M360 178 Q 580 84 800 178"></path>
+            <path d="M580 178 Q 800 56 1020 178"></path>
+            <path d="M140 172 Q 580 -24 1020 172" opacity="0.45"></path>
+          </g>
+          <line x1="60" y1="190" x2="1060" y2="190" stroke="rgba(216,189,150,0.7)" stroke-width="2"></line>
+          <g fill="#D8BD96" stroke="#3B5A69" stroke-width="4">
+            <circle cx="140" cy="190" r="12"></circle>
+            <circle cx="360" cy="190" r="12"></circle>
+            <circle cx="580" cy="190" r="12"></circle>
+            <circle cx="800" cy="190" r="12"></circle>
+            <circle cx="1020" cy="190" r="12"></circle>
+          </g>
+          <g font-size="24" fill="#F8F4F0" text-anchor="middle">
+            <text x="140" y="238">Sell the business</text>
+            <text x="360" y="238">Fund the trust</text>
+            <text x="580" y="238">Retire</text>
+            <text x="800" y="238">Gift to family</text>
+            <text x="1020" y="238">Rebalance</text>
+          </g>
+        </svg>
+      </div>
+      <div class="keys">
+        <p class="klabel">Key areas include</p>
+        <ul>
+          <li><span>Multi-entity planning</span></li>
+          <li><span>Cash flow and liquidity strategy</span></li>
+          <li><span>Retirement and financial independence modeling</span></li>
+          <li><span>Scenario planning for major transitions</span></li>
+          <li><span>Education, philanthropy, and legacy priorities</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">07 / 19</div>
+  </section>
+
+  <!-- 08 · Investment management -->
+  <section class="svc" data-label="08 · Investment management">
+    <div class="head">
+      <div class="eye"><span>Our services · Investment management</span></div>
+      <h2>Portfolio strategy informed by your whole balance sheet</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Families with significant wealth often hold assets across taxable accounts, trusts, retirement accounts, business interests, and legacy positions with different tax and liquidity characteristics. Managing those assets in isolation can create unnecessary risk, missed tax opportunities, and portfolios that do not reflect the full picture.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther approaches investment management as part of the broader wealth plan. Portfolios are built with awareness of concentrated positions, entity structures, liquidity needs, tax sensitivity, and the client's long-term priorities, rather than through a one-size-fits-all allocation process.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients receive portfolio management that is more personalized, more coordinated, and more useful in real life. The portfolio is not just designed to perform. It is designed to support the family's actual needs, constraints, and objectives.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz" style="justify-content: center;">
+        <div class="vhead"><span class="vtitle">One household balance sheet</span></div>
+        <div class="bsbar">
+          <div class="bseg" style="width: 28%; background: var(--sky-300);"></div>
+          <div class="bseg" style="width: 19%; background: var(--smalt-500);"></div>
+          <div class="bseg" style="width: 16%; background: var(--clay-400);"></div>
+          <div class="bseg" style="width: 14%; background: var(--bronze-400);"></div>
+          <div class="bseg" style="width: 13%; background: var(--limestone-200);"></div>
+          <div class="bseg" style="width: 10%; background: var(--granite-800);"></div>
+        </div>
+        <div class="bslegend">
+          <div class="li"><span class="sw" style="background: var(--sky-300);"></span><span>Taxable accounts</span></div>
+          <div class="li"><span class="sw" style="background: var(--smalt-500);"></span><span>Trusts</span></div>
+          <div class="li"><span class="sw" style="background: var(--clay-400);"></span><span>Retirement accounts</span></div>
+          <div class="li"><span class="sw" style="background: var(--bronze-400);"></span><span>Business interests</span></div>
+          <div class="li"><span class="sw" style="background: var(--limestone-200);"></span><span>Concentrated stock</span></div>
+          <div class="li"><span class="sw" style="background: var(--granite-800);"></span><span>Alternatives</span></div>
+        </div>
+      </div>
+      <div class="keys">
+        <p class="klabel">Key areas include</p>
+        <ul>
+          <li><span>Customized portfolio construction</span></li>
+          <li><span>Separately managed accounts</span></li>
+          <li><span>Direct indexing</span></li>
+          <li><span>Cross-account tax coordination</span></li>
+          <li><span>Concentrated position planning</span></li>
+          <li><span>Risk management tied to family goals</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">08 / 19</div>
+  </section>
+
+  <!-- 09 · Tax strategy -->
+  <section class="svc" data-label="09 · Tax strategy">
+    <div class="head">
+      <div class="eye"><span>Our services · Tax strategy</span></div>
+      <h2>Improving what you keep, not just what you earn</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Taxes are one of the largest lifetime drags on wealth. For affluent families, tax exposure often comes from several directions at once, including investment gains, business income, real estate activity, trust structures, and future estate transfers.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther treats tax strategy as an ongoing part of wealth management, not a once-a-year exercise. Investment decisions, liquidity events, charitable planning, and distribution strategy are reviewed with tax impact in mind before action is taken.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients are better positioned to keep more of what they build over time. They also benefit from stronger coordination with CPAs and other outside professionals, which can make the overall planning process more proactive and less reactive.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz">
+        <div class="vhead"><span class="vtitle">Net wealth over time, after taxes</span></div>
+        <svg viewBox="0 0 1240 300" aria-label="Line chart comparing tax-aware and standard implementation over twenty years">
+          <path d="M30 252 C 340 244, 640 195, 960 64 L 960 148 C 660 220, 340 248, 30 252 Z" fill="#B6D0ED" opacity="0.12"></path>
+          <line x1="30" y1="260" x2="1200" y2="260" stroke="rgba(248,244,240,0.25)" stroke-width="2"></line>
+          <path d="M30 252 C 340 248, 660 220, 960 148" fill="none" stroke="rgba(248,244,240,0.45)" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M30 252 C 340 244, 640 195, 960 64" fill="none" stroke="#B6D0ED" stroke-width="5" stroke-linecap="round"></path>
+          <line x1="968" y1="68" x2="968" y2="144" stroke="rgba(248,244,240,0.4)" stroke-width="2"></line>
+          <g font-size="24">
+            <text x="985" y="58" fill="#B6D0ED">Tax-aware</text>
+            <text x="985" y="88" fill="#B6D0ED">implementation</text>
+            <text x="985" y="120" fill="rgba(248,244,240,0.6)" font-style="italic">The compounding gap</text>
+            <text x="985" y="150" fill="rgba(248,244,240,0.6)">Standard</text>
+            <text x="985" y="180" fill="rgba(248,244,240,0.6)">implementation</text>
+          </g>
+          <g font-size="24" fill="rgba(248,244,240,0.55)">
+            <text x="30" y="294">Today</text>
+            <text x="495" y="294" text-anchor="middle">Year 10</text>
+            <text x="960" y="294" text-anchor="end">Year 20</text>
+          </g>
+        </svg>
+      </div>
+      <div class="keys">
+        <p class="klabel">Key areas include</p>
+        <ul>
+          <li><span>Tax-loss harvesting</span></li>
+          <li><span>Asset location strategy</span></li>
+          <li><span>Pre-trade tax awareness</span></li>
+          <li><span>Roth conversion analysis</span></li>
+          <li><span>Concentrated low-basis stock planning</span></li>
+          <li><span>CPA coordination and planning reviews</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">09 / 19</div>
+  </section>
+
+  <!-- 10 · Trust and estate coordination -->
+  <section class="svc" data-label="10 · Trust and estate">
+    <div class="head">
+      <div class="eye"><span>Our services · Trust and estate coordination</span></div>
+      <h2>Helping preserve wealth across generations</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Estate planning affects control, flexibility, family outcomes, and tax efficiency. Families with complex estates, closely held businesses, or multi-generational priorities often need more than documents in place. They need a plan that is reviewed, understood, and coordinated over time.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther helps keep estate conversations active and connected to the rest of the wealth plan. That means bringing together the advisor, estate attorney, tax professionals, and family stakeholders so decisions are informed by the full context.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients can make more intentional decisions about transfer strategy, family support, charitable goals, and long-term stewardship. Good coordination can also reduce the risk that strong legal documents are undermined by weak implementation or outdated assumptions.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz">
+        <div class="vhead"><span class="vtitle">How wealth moves</span></div>
+        <div class="flow">
+          <div class="fstage">
+            <span class="fname">Assets</span>
+            <span class="fsub">Investment accounts · Real estate · Business interests</span>
+          </div>
+          <span class="farrow">→</span>
+          <div class="fstage">
+            <span class="fname">Entities and trusts</span>
+            <span class="fsub">Trusts · LLCs · Partnerships</span>
+          </div>
+          <span class="farrow">→</span>
+          <div class="fstage">
+            <span class="fname">Heirs and philanthropy</span>
+            <span class="fsub">Beneficiaries · Charitable structures</span>
+          </div>
+        </div>
+        <div class="floop">
+          <i data-lucide="refresh-ccw"></i>
+          <span><strong>Reviewed and coordinated over time</strong> — advisor, estate attorney, tax professionals, family stakeholders</span>
+        </div>
+      </div>
+      <div class="keys">
+        <p class="klabel">Key areas include</p>
+        <ul>
+          <li><span>Estate plan review and coordination</span></li>
+          <li><span>Trust planning support</span></li>
+          <li><span>Advanced transfer strategy discussions</span></li>
+          <li><span>Beneficiary and inheritance planning</span></li>
+          <li><span>Business succession coordination</span></li>
+          <li><span>Philanthropic planning structures</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">10 / 19</div>
+  </section>
+
+  <!-- 11 · Generational planning -->
+  <section class="svc" data-label="11 · Generational planning">
+    <div class="head">
+      <div class="eye"><span>Our services · Generational planning</span></div>
+      <h2>Preparing heirs, not just transferring assets</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Wealth can create opportunity, but it can also create confusion, dependency, or conflict if the next generation is not prepared. Families who want wealth to endure often need to focus as much on communication and education as they do on financial structure.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther approaches generational planning as an ongoing part of the advisory relationship. The focus is not only on transfer mechanics, but also on helping families define values, prepare heirs, and create productive conversations around responsibility and stewardship.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients can move from simply passing down assets to building a stronger long-term family framework. That can help future generations understand the purpose of the wealth, how decisions are made, and how to participate responsibly.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz">
+        <div class="vhead"><span class="vtitle">Two sides of wealth transfer</span></div>
+        <div class="panes">
+          <div class="pane">
+            <p class="pname">Transferring assets</p>
+            <div class="prow"><span data-farther-icon="contract"></span><span>Documents and structures</span></div>
+            <div class="prow"><span data-farther-icon="transfer"></span><span>Transfer mechanics</span></div>
+            <div class="prow"><span data-farther-icon="estate"></span><span>Entities and titling</span></div>
+          </div>
+          <span class="pmid">+</span>
+          <div class="pane lead">
+            <p class="pname">Preparing heirs</p>
+            <div class="prow"><span data-farther-icon="education"></span><span>Education</span></div>
+            <div class="prow"><span data-farther-icon="family"></span><span>Governance</span></div>
+            <div class="prow"><span data-farther-icon="goals"></span><span>Values</span></div>
+            <div class="prow"><span data-farther-icon="advisor"></span><span>Communication</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="keys">
+        <p class="klabel">Key areas include</p>
+        <ul>
+          <li><span>Next-generation education</span></li>
+          <li><span>Family governance support</span></li>
+          <li><span>Wealth transfer planning</span></li>
+          <li><span>Communication frameworks</span></li>
+          <li><span>Family meeting preparation</span></li>
+          <li><span>Values and philanthropic alignment</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">11 / 19</div>
+  </section>
+
+  <!-- 12 · Coordinated wealth management -->
+  <section class="svc" data-label="12 · Coordinated wealth management">
+    <div class="head">
+      <div class="eye"><span>Our services · Coordinated wealth management</span></div>
+      <h2>Coordinated support across the full financial picture</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>As wealth becomes more complex, families often find themselves acting as the coordinator between advisors, attorneys, accountants, bankers, and investment providers. That creates friction, consumes time, and increases the chance that important issues fall between the cracks.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther is built to serve as a coordinating relationship across the moving parts of wealth. Rather than leaving the client to connect each conversation, Farther helps organize planning priorities, align outside professionals, and keep the overall strategy moving in the same direction.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients spend less time managing the process and more time making informed decisions. The experience becomes more organized, more consistent, and better aligned with the family's broader goals.</p>
+      </div>
+    </div>
+    <div class="band full" style="display: flex; flex-direction: column;">
+      <div class="keys" style="margin-bottom: 22px;"><p class="klabel" style="margin: 0;">This can help reduce</p></div>
+      <div class="cardrow cols4">
+        <div class="lcard"><span data-farther-icon="allocation"></span><span>Fragmented decision-making</span></div>
+        <div class="lcard"><i data-lucide="calendar-x"></i><span>Missed planning opportunities</span></div>
+        <div class="lcard"><i data-lucide="clock"></i><span>Administrative friction</span></div>
+        <div class="lcard"><span data-farther-icon="advisor"></span><span>Communication gaps across providers</span></div>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">12 / 19</div>
+  </section>
+
+  <!-- 13 · Alternative investments -->
+  <section class="svc" data-label="13 · Alternative investments">
+    <div class="head">
+      <div class="eye"><span>Our services · Alternative investments</span></div>
+      <h2>Access where appropriate, discipline always</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Alternative investments can offer diversification, return potential, and access to opportunities outside traditional public markets. They also introduce complexity around liquidity, fees, manager selection, capital calls, valuation, and portfolio fit.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther evaluates alternatives within the context of the full wealth plan, not as standalone ideas. The emphasis is on selectivity, suitability, and disciplined allocation rather than presenting alternatives as a badge of exclusivity.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients can make more informed decisions about whether an opportunity truly belongs in the portfolio, how much exposure makes sense, and how it affects liquidity and overall risk across the family balance sheet.</p>
+      </div>
+    </div>
+    <div class="band full" style="display: flex; flex-direction: column;">
+      <div class="keys" style="margin-bottom: 22px;"><p class="klabel" style="margin: 0;">Areas may include</p></div>
+      <div class="chips">
+        <span class="chip"><span data-farther-icon="business"></span><span>Private equity</span></span>
+        <span class="chip"><span data-farther-icon="cash"></span><span>Private credit</span></span>
+        <span class="chip"><span data-farther-icon="real-estate"></span><span>Real asset strategies</span></span>
+        <span class="chip"><span data-farther-icon="security"></span><span>Qualified purchaser opportunities</span></span>
+        <span class="chip"><span data-farther-icon="allocation"></span><span>Allocation design within the broader plan</span></span>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">13 / 19</div>
+  </section>
+
+  <!-- 14 · Private banking and lending -->
+  <section class="svc" data-label="14 · Private banking and lending">
+    <div class="head">
+      <div class="eye"><span>Our services · Private banking and lending</span></div>
+      <h2>Liquidity and borrowing as part of the strategy</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>Borrowing, liquidity, and banking decisions can affect taxes, investment flexibility, estate planning, and short-term decision-making. For affluent families, these choices are often tied to broader strategy rather than isolated financing needs.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther helps evaluate lending and banking options within the context of the entire balance sheet. The focus is not simply on finding a product. It is on making sure the solution fits the client's cash needs, asset structure, risk tolerance, and long-term plan.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients can use liquidity more intentionally and avoid making financing decisions that create unnecessary disruption elsewhere in the plan. Better coordination can also improve speed, flexibility, and confidence around major opportunities or obligations.</p>
+      </div>
+    </div>
+    <div class="band">
+      <div class="viz">
+        <div class="vhead"><span class="vtitle">Liquidity within the full balance sheet</span></div>
+        <svg viewBox="0 0 1100 300" aria-label="Liquidity ecosystem connecting cash, credit, portfolio assets, business equity, and taxes">
+          <g stroke="rgba(248,244,240,0.35)" stroke-width="2">
+            <line x1="250" y1="64" x2="400" y2="136"></line>
+            <line x1="250" y1="240" x2="400" y2="172"></line>
+            <line x1="850" y1="64" x2="700" y2="136"></line>
+            <line x1="850" y1="240" x2="700" y2="172"></line>
+            <line x1="550" y1="62" x2="550" y2="118"></line>
+          </g>
+          <g>
+            <rect x="80" y="36" width="170" height="56" rx="28" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+            <text x="165" y="71" text-anchor="middle" font-size="24" fill="#F8F4F0">Cash</text>
+            <rect x="80" y="212" width="170" height="56" rx="28" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+            <text x="165" y="247" text-anchor="middle" font-size="24" fill="#F8F4F0">Credit</text>
+            <rect x="850" y="36" width="220" height="56" rx="28" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+            <text x="960" y="71" text-anchor="middle" font-size="24" fill="#F8F4F0">Portfolio assets</text>
+            <rect x="850" y="212" width="220" height="56" rx="28" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+            <text x="960" y="247" text-anchor="middle" font-size="24" fill="#F8F4F0">Business equity</text>
+            <rect x="465" y="10" width="170" height="52" rx="26" fill="rgba(248,244,240,0.06)" stroke="rgba(248,244,240,0.28)"></rect>
+            <text x="550" y="43" text-anchor="middle" font-size="24" fill="#F8F4F0">Taxes</text>
+          </g>
+          <rect x="400" y="118" width="300" height="72" rx="16" fill="#F8F4F0"></rect>
+          <text x="550" y="162" text-anchor="middle" font-size="26" fill="#3B5A69">Liquidity strategy</text>
+          <text x="550" y="272" text-anchor="middle" font-size="24" fill="rgba(248,244,240,0.55)" font-style="italic">One balance sheet, one set of decisions</text>
+        </svg>
+      </div>
+      <div class="keys">
+        <p class="klabel">Areas may include</p>
+        <ul>
+          <li><span>Securities-backed lines of credit</span></li>
+          <li><span>Real estate financing coordination</span></li>
+          <li><span>Liquidity planning</span></li>
+          <li><span>Cash management support</span></li>
+          <li><span>Banking relationships aligned with the wealth plan</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">14 / 19</div>
+  </section>
+
+  <!-- 15 · Business owner and institutional support -->
+  <section class="svc" data-label="15 · Business owner support">
+    <div class="head">
+      <div class="eye"><span>Our services · Business owner and institutional support</span></div>
+      <h2>Advice that can extend beyond the household</h2>
+    </div>
+    <div class="whys">
+      <div class="why">
+        <p class="wlabel">Why it matters to clients</p>
+        <p>For many affluent families, personal wealth is closely tied to a business, executive role, or institutional responsibility. That creates planning issues that cannot be separated neatly between personal and professional financial life.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why Farther does it differently</p>
+        <p>Farther helps clients connect household planning with the realities of business ownership, executive compensation, entity strategy, and future liquidity events. The goal is to keep those decisions aligned rather than allowing them to develop on parallel tracks.</p>
+      </div>
+      <div class="why">
+        <p class="wlabel">Why that matters</p>
+        <p>Clients can make better decisions around timing, structure, liquidity, and long-term family impact. That is especially important when a business transition or executive event may reshape the entire balance sheet.</p>
+      </div>
+    </div>
+    <div class="band full" style="display: flex; flex-direction: column;">
+      <div class="keys" style="margin-bottom: 22px;"><p class="klabel" style="margin: 0;">Farther can help coordinate around</p></div>
+      <div class="chips">
+        <span class="chip"><span data-farther-icon="business"></span><span>Business owner planning</span></span>
+        <span class="chip"><i data-lucide="timer"></i><span>Liquidity event preparation</span></span>
+        <span class="chip"><span data-farther-icon="wallet"></span><span>Executive compensation complexity</span></span>
+        <span class="chip"><span data-farther-icon="global"></span><span>Entity-level planning conversations</span></span>
+        <span class="chip"><span data-farther-icon="estate"></span><span>Institutional relationships that affect family wealth</span></span>
+      </div>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">15 / 19</div>
+  </section>
+
+  <!-- 16 · Why Farther -->
+  <section class="steel" data-label="16 · Why Farther">
+    <div class="head">
+      <div class="eye"><span>Why Farther</span></div>
+      <h2 style="font-size: 76px;">What makes the experience different</h2>
+    </div>
+    <p class="lede" style="margin: 36px 0 44px; max-width: 1280px;">Farther brings together three things families often struggle to find in one place:</p>
+    <div class="cardrow cols3" style="margin-bottom: 52px;">
+      <div class="dcard"><span class="dnum">01</span><span>Personal advice grounded in trust and judgment</span></div>
+      <div class="dcard"><span class="dnum">02</span><span>A platform that creates visibility across the full picture</span></div>
+      <div class="dcard"><span class="dnum">03</span><span>Coordination across the decisions that matter most</span></div>
+    </div>
+    <p class="closing-line" style="max-width: 1300px;">The value is not just access to services. <em>The value is how those services work together.</em></p>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">16 / 19</div>
+  </section>
+
+  <!-- 17 · Your advisor -->
+  <section class="adv" data-label="17 · Your advisor">
+    <div class="brandline"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="grid">
+      <div class="portrait">
+        <div data-advisor="headshot-wrap" data-advisor-slot style="position:relative;z-index:1;width:600px;height:820px;background:#2F3F58"><img data-advisor="headshot" alt="Advisor headshot" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      </div>
+      <div class="copy">
+        <div class="eye"><span>Your advisor</span></div>
+        <h2 class="aname" data-advisor="name">Advisor Name</h2>
+        <p class="arole"><span data-advisor="title">Title</span></p>
+        <p class="abio">Your advisor leads your Farther relationship and serves as the single point of coordination across planning, investments, tax, and estate decisions, supported by Farther's specialist teams and connected platform.</p>
+        <div class="advmeta cols2">
+          <div class="mitem" data-advisor="credentials-wrap">
+            <p class="mlabel">Credentials</p>
+            <p class="mval" data-advisor="credentials"><span>Credential</span></p>
+          </div>
+          <div class="mitem">
+            <p class="mlabel">Contact</p>
+            <p class="mval"><span data-advisor="email">email@farther.com</span><span data-advisor="phone">(000) 000-0000</span><span data-advisor="location">City, ST</span></p>
+          </div>
+        </div>
+        <div class="sched">
+          <div class="qr" data-advisor-qr="ADVISOR_PROFILE_URL"></div>
+          <div class="stext">
+            <p class="stitle">Learn more or schedule a meeting</p>
+            <p class="slink"><a data-advisor="profile" href="https://www.farther.com">farther.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pgnum">17 / 19</div>
+  </section>
+
+  <!-- 18 · Closing -->
+  <section class="wave" data-label="18 · Closing">
+    <div class="bgimg"></div>
+    <div class="brandline"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="inner">
+      <h1 style="font-size: 92px;">A higher standard for <em>family wealth</em></h1>
+      <p class="lede" style="margin-top: 34px; max-width: 1240px;">Families with complexity need more than periodic advice and disconnected providers. They need a relationship built to bring clarity, coordination, and confidence to the full financial picture.</p>
+      <p class="closing-line" style="margin-top: 40px; color: var(--limestone-50); font-size: 40px;">Farther was built for exactly that purpose.</p>
+    </div>
+    <div class="pgnum">18 / 19</div>
+  </section>
+
+
+  <!-- 19 · Important disclosures -->
+  <section class="steel" data-label="19 · Important disclosures">
+    <div class="head"><div class="eye"><span>Important Disclosures</span></div></div>
+    <div style="margin-top:16px">
+      <p style="font-family:var(--font-sans);font-size:24px;line-height:1.45;color:#C9C9C9;margin:0 0 20px;max-width:1640px">This material is for informational and educational purposes only and is not investment, tax, or legal advice or a recommendation to buy or sell securities or pursue any strategy. Farther Finance Advisors, LLC (&ldquo;Farther&rdquo;) is an SEC-registered investment adviser; registration does not imply a particular level of skill or training.</p>
+      <p style="font-family:var(--font-sans);font-size:24px;line-height:1.45;color:#C9C9C9;margin:0 0 20px;max-width:1640px">Examples and projections are hypothetical, illustrative only, and do not guarantee future results. Investing involves risk, including possible loss of principal. Tax and legal outcomes depend on individual circumstances and applicable law.</p>
+      <p style="font-family:var(--font-sans);font-size:24px;line-height:1.45;color:#C9C9C9;margin:0 0 20px;max-width:1640px">Farther does not provide tax or legal advice or prepare tax returns. Consult qualified professionals before acting. For Farther&rsquo;s Form ADV Part 2A Brochure and Form CRS, visit adviserinfo.sec.gov or contact Christopher Powers, Chief Compliance Officer, at 628-246-8004</p>
+      <p style="font-family:var(--font-sans);font-size:24px;line-height:1.45;color:#C9C9C9;margin:0 0 20px;max-width:1640px">Charts in this presentation are conceptual illustrations, not actual or projected client results. Alternative investments are speculative, may be illiquid, can lose their entire value, and are available only to investors who meet eligibility requirements. Securities-backed lending involves risks, including the possibility that a decline in collateral value requires additional collateral or the sale of securities. Farther does not practice law; estate documents must be drafted by a qualified attorney.</p>
+    </div>
+    <div class="foot"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther"></div>
+    <div class="pgnum">19 / 19</div>
+  </section>
+
+</deck-stage>
+</x-dc>
+</body>
+</html>

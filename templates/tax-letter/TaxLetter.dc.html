@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Tax Season Letter" description="Client letter for filing season: tax forms to expect by account, and the year's events the tax preparer must know about (donor-advised fund gifts, 60-day rollovers, Roth conversions, HSA contributions), plus key dates" -->
+<helmet><script src="./ds-base.js"></script><script src="../../assets/compliance/disclosure.js"></script><style>body{margin:0;background:#E9E5E0}a{color:#3B5A69}a:hover{color:#31465C}</style></helmet>
+<div style="padding:48px 24px;display:flex;flex-direction:column;align-items:center;gap:40px;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333333">
+
+<div data-screen-label="01 Forms to expect" style="width:816px;height:1056px;box-sizing:border-box;background:#F8F4F0;box-shadow:0 8px 24px rgba(51,51,51,.08);display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(90deg,rgba(49,70,92,.95) 0%,rgba(49,70,92,.86) 48%,rgba(49,70,92,.4) 100%),url('../../assets/images/library/thomas-griggs-8ylzxjzqkjq-unsplash.jpg') center 40%/cover no-repeat #31465C;padding:30px 64px 26px;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;justify-content:space-between;align-items:center"><img src="../../library/assets/wordmark-iw-light.svg" alt="Farther" style="height:20px"><div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B6D0ED">2025 Tax Season Letter</div></div>
+<div style="display:flex;flex-direction:column;gap:12px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:40px;line-height:1.08;letter-spacing:-.02em;color:#F8F4F0;text-wrap:pretty">Getting ready to file your 2025 taxes</div><div style="font-size:16px;line-height:1.5;color:#F8F4F0;max-width:600px;text-wrap:pretty">Below are the tax forms we expect you to receive and four events from 2025 your tax preparer will need to know about. Please share this letter with them along with your forms.</div></div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-top:1px solid #567EA1;padding-top:14px"><div style="font-size:15px;color:#F8F4F0">Prepared for Marcus and Elena Reyes</div><div style="font-size:12px;color:#B6D0ED">Prepared January 2026</div></div>
+</div>
+<div style="flex:1;padding:24px 64px 0;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:24px;color:#31465C">Tax forms to expect</div><div style="font-size:12px;color:#5B6A71">Check each one off as it arrives</div></div>
+<div style="display:flex;flex-direction:column;font-size:14px">
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;padding:0 4px 8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#5B6A71;border-bottom:1px solid #D1B6A0"><span>Account</span><span>Form</span><span>Usually arrives</span><span style="text-align:center">Received</span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;align-items:center;padding:8px 4px;border-bottom:1px solid #E3D3C5"><span>Online savings account</span><span>1099-INT</span><span style="color:#5B6A71">Early February</span><span style="display:flex;justify-content:center"><span style="width:16px;height:16px;border:1.5px solid #3B5A69;border-radius:3px"></span></span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;align-items:center;padding:8px 4px;border-bottom:1px solid #E3D3C5"><span>Joint brokerage: interest, dividends and gains</span><span>Consolidated 1099</span><span style="color:#5B6A71">Mid-February</span><span style="display:flex;justify-content:center"><span style="width:16px;height:16px;border:1.5px solid #3B5A69;border-radius:3px"></span></span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;align-items:center;padding:8px 4px;border-bottom:1px solid #E3D3C5"><span>Marcus: Vanguard 401(k) rollover</span><span>1099-R</span><span style="color:#5B6A71">Early February</span><span style="display:flex;justify-content:center"><span style="width:16px;height:16px;border:1.5px solid #3B5A69;border-radius:3px"></span></span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;align-items:center;padding:8px 4px;border-bottom:1px solid #E3D3C5"><span>Marcus: Roth conversion, Fidelity IRA</span><span>1099-R</span><span style="color:#5B6A71">Early February</span><span style="display:flex;justify-content:center"><span style="width:16px;height:16px;border:1.5px solid #3B5A69;border-radius:3px"></span></span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 170px 150px 70px;align-items:center;padding:8px 4px;border-bottom:1px solid #E3D3C5"><span>Elena: Roth conversion, Fidelity IRA</span><span>1099-R</span><span style="color:#5B6A71">Early February</span><span style="display:flex;justify-content:center"><span style="width:16px;height:16px;border:1.5px solid #3B5A69;border-radius:3px"></span></span></div>
+</div>
+<div style="font-size:12.5px;line-height:1.5;color:#5B6A71;text-wrap:pretty">Brokerage firms sometimes send corrected 1099s into March. If yours has a "may be revised" note, ask your preparer whether to wait. HSA and IRA contribution forms (5498 and 5498-SA) arrive in May and are for your records only.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:24px;color:#31465C">Four things to tell your preparer</div>
+<div style="font-size:14px;line-height:1.5;color:#5B6A71;text-wrap:pretty">Your tax forms don't tell the whole story for these. Details for each are on the next page.</div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+<sc-if value="{{ showDaf }}" hint-placeholder-val="{{ true }}"><div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:2px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9F8E75">01 · Charitable gift</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:28px;color:#31465C">$21,750</div><div style="font-size:13px;color:#333333">Shares given to your donor-advised fund</div></div></sc-if>
+<sc-if value="{{ showRollover }}" hint-placeholder-val="{{ true }}"><div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:2px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9F8E75">02 · 60-day rollover</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:28px;color:#31465C">$60,000</div><div style="font-size:13px;color:#333333">401(k) money redeposited into an IRA</div></div></sc-if>
+<sc-if value="{{ showRoth }}" hint-placeholder-val="{{ true }}"><div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:2px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9F8E75">03 · Roth conversions</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:28px;color:#31465C">$40,000</div><div style="font-size:13px;color:#333333">Moved from traditional IRAs to Roth IRAs</div></div></sc-if>
+<sc-if value="{{ showHsa }}" hint-placeholder-val="{{ true }}"><div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:2px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9F8E75">04 · HSA contributions</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:28px;color:#31465C">$10,300</div><div style="font-size:13px;color:#333333">Added to your health savings accounts</div></div></sc-if>
+</div>
+</div>
+</div>
+<div style="padding:18px 64px 26px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E3D3C5">
+<div data-advisor-slot style="display:flex;align-items:center;gap:9px"><div data-advisor="headshot-wrap" style="width:34px;height:34px;border-radius:50%;background:#C5CFD4;overflow:hidden;flex:none"><img data-advisor="headshot" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div><div style="display:flex;flex-direction:column;gap:1px"><div data-advisor="name" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:12.5px;line-height:1.15;color:#333;white-space:nowrap">Advisor Name</div><div data-advisor="title" style="font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;color:#9F8E75;white-space:nowrap">Title</div><div style="display:flex;gap:8px;font-size:8.5px;color:#5B6A71;white-space:nowrap"><span data-advisor="email">email@farther.com</span><span data-advisor="phone">(000) 000-0000</span></div></div></div>
+<div style="font-size:11px;color:#5B6A71">Page 1 of 3 · farther.com</div>
+</div>
+</div>
+
+<div data-screen-label="02 What to tell your preparer" style="width:816px;height:1056px;box-sizing:border-box;background:#F8F4F0;box-shadow:0 8px 24px rgba(51,51,51,.08);display:flex;flex-direction:column;overflow:hidden;padding:30px 64px 26px;gap:18px">
+<div style="display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75;border-bottom:1px solid #E3D3C5;padding-bottom:12px"><span>2025 Tax Season Letter · Reyes</span><img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="height:13px"></div>
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:30px;letter-spacing:-.02em;color:#31465C">What your preparer needs to know</div>
+
+<sc-if value="{{ showDaf }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding-bottom:16px;border-bottom:1px solid #E3D3C5">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#9F8E75">01</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;color:#31465C">You gave shares to a donor-advised fund</div>
+<div style="font-size:13.5px;line-height:1.5;text-wrap:pretty">This counts as a charitable gift. Because the shares were held more than a year, the gift is generally deductible at market value and the gain on them is never taxed. Noncash gifts over $500 are reported on Form 8283.</div>
+<div style="display:flex;justify-content:space-between;gap:16px;background:#FFFFFF;border:1px solid #E3D3C5;border-radius:8px;padding:10px 14px;font-size:13px"><span>Nov 19, 2025 · 150 shares of NVDA at $145.00, bought Oct 24, 2022</span><span style="font-weight:600;white-space:nowrap">$21,750</span></div>
+<div style="font-size:12.5px;color:#5B6A71"><span style="font-weight:600;color:#3B5A69">Bring:</span> the fund's gift acknowledgment letter.</div>
+</div></div>
+</sc-if>
+
+<sc-if value="{{ showRollover }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding-bottom:16px;border-bottom:1px solid #E3D3C5">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#9F8E75">02</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;color:#31465C">Retirement money was redeposited within 60 days</div>
+<div style="font-size:13.5px;line-height:1.5;text-wrap:pretty">Your 1099-R will show this as a withdrawal. Custodians don't confirm whether a rollover met the 60-day rule, so it won't be marked tax-free. Your preparer reports it as a rollover so it isn't taxed.</div>
+<div style="display:flex;justify-content:space-between;gap:16px;background:#FFFFFF;border:1px solid #E3D3C5;border-radius:8px;padding:10px 14px;font-size:13px"><span>May 24, 2025 · Marcus · Vanguard 401(k) to Schwab IRA</span><span style="font-weight:600;white-space:nowrap">$60,000</span></div>
+<div style="font-size:12.5px;color:#5B6A71"><span style="font-weight:600;color:#3B5A69">Bring:</span> the Vanguard 1099-R and Schwab's deposit confirmation showing the date.</div>
+</div></div>
+</sc-if>
+
+<sc-if value="{{ showRoth }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding-bottom:16px;border-bottom:1px solid #E3D3C5">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#9F8E75">03</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;color:#31465C">You converted IRA money to Roth</div>
+<div style="font-size:13.5px;line-height:1.5;text-wrap:pretty">Conversions are reported on Form 8606. If either IRA ever held after-tax money, part of the conversion is tax-free. That share depends on all your traditional IRA balances on December 31.</div>
+<div style="display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E3D3C5;border-radius:8px;padding:4px 14px;font-size:13px"><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid #E3D3C5"><span>Jul 5, 2025 · Marcus · Fidelity IRA to Fidelity Roth IRA</span><span>$15,000</span></div><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid #E3D3C5"><span>Aug 19, 2025 · Elena · Fidelity IRA to Fidelity Roth IRA</span><span>$25,000</span></div><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;font-weight:600"><span>Total</span><span>$40,000</span></div></div>
+<div style="font-size:12.5px;color:#5B6A71"><span style="font-weight:600;color:#3B5A69">Bring:</span> both 1099-Rs, December 31 balances for every traditional IRA, and any past Form 8606.</div>
+</div></div>
+</sc-if>
+
+<sc-if value="{{ showHsa }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#9F8E75">04</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="font-size:16px;font-weight:600;color:#31465C">You contributed to health savings accounts</div>
+<div style="font-size:13.5px;line-height:1.5;text-wrap:pretty">If you were eligible, these are deductible on Form 8889 whether or not you itemize. Money taken out of a paycheck through an employer plan is handled differently, so your preparer needs to know these came from you directly.</div>
+<div style="display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E3D3C5;border-radius:8px;padding:4px 14px;font-size:13px"><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid #E3D3C5"><span>Dec 1, 2025 · Marcus · catch-up contribution</span><span>$1,000</span></div><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid #E3D3C5"><span>Dec 1, 2025 · Elena · family contribution and catch-up</span><span>$9,300</span></div><div style="display:flex;justify-content:space-between;gap:16px;padding:6px 0;font-weight:600"><span>Total</span><span>$10,300</span></div></div>
+<div style="font-size:12.5px;color:#5B6A71"><span style="font-weight:600;color:#3B5A69">Bring:</span> HSA contribution statements. Form 5498-SA follows in May.</div>
+</div></div>
+</sc-if>
+</div>
+
+<div data-screen-label="03 Dates and your advisor" style="width:816px;min-height:1056px;box-sizing:border-box;background:#F8F4F0;box-shadow:0 8px 24px rgba(51,51,51,.08);display:flex;flex-direction:column;padding:30px 64px 40px;gap:22px">
+<div style="display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75;border-bottom:1px solid #E3D3C5;padding-bottom:12px"><span>2025 Tax Season Letter · Reyes</span><img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="height:13px"></div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:30px;letter-spacing:-.02em;color:#31465C">Dates to know</div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative">
+<div style="position:absolute;left:8px;right:8px;top:7px;height:2px;background:#D1B6A0"></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-right:14px;position:relative"><div style="width:16px;height:16px;border-radius:50%;background:#7DA8DD;border:3px solid #F8F4F0;box-sizing:border-box"></div><div style="font-size:15px;font-weight:600;color:#31465C">Early February</div><div style="font-size:13px;line-height:1.45">Bank and retirement forms (1099-INT, 1099-R) arrive.</div></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-right:14px;position:relative"><div style="width:16px;height:16px;border-radius:50%;background:#7DA8DD;border:3px solid #F8F4F0;box-sizing:border-box"></div><div style="font-size:15px;font-weight:600;color:#31465C">Mid-February</div><div style="font-size:13px;line-height:1.45">Consolidated brokerage 1099s arrive.</div></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-right:14px;position:relative"><div style="width:16px;height:16px;border-radius:50%;background:#567EA1;border:3px solid #F8F4F0;box-sizing:border-box"></div><div style="font-size:15px;font-weight:600;color:#31465C">March</div><div style="font-size:13px;line-height:1.45">Corrected 1099s are still possible. Check before filing.</div></div>
+<div style="display:flex;flex-direction:column;gap:8px;position:relative"><div style="width:16px;height:16px;border-radius:50%;background:#31465C;border:3px solid #F8F4F0;box-sizing:border-box"></div><div style="font-size:15px;font-weight:600;color:#31465C">April 15, 2026</div><div style="font-size:13px;line-height:1.45">Filing deadline. Last day for 2025 IRA and HSA contributions. First 2026 estimated payment due.</div></div>
+</div>
+</div>
+<div style="background:#EAEEF4;border-radius:12px;padding:18px 22px;display:flex;flex-direction:column;gap:6px"><div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#3B5A69">Something missing from this list?</div><div style="font-size:14px;line-height:1.5;text-wrap:pretty">This letter covers the accounts and events we know about. Gifts, rollovers or accounts held elsewhere won't appear here. Please tell us and your preparer about anything else from 2025.</div></div>
+<div data-advisor-closing style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:22px 24px;display:flex;align-items:center;gap:20px">
+<div data-advisor="headshot-wrap" style="width:76px;height:76px;border-radius:50%;background:#C5CFD4;overflow:hidden;flex:none"><img data-advisor="headshot" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0"><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75">Your Farther advisor</div><div data-advisor="name" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:24px;color:#31465C">Advisor Name</div><div data-advisor="title" style="font-size:13px;color:#5B6A71">Title</div><div style="font-size:13px;color:#333333;margin-top:4px">Your preparer can contact us directly for account details.</div></div>
+<div style="display:flex;flex-direction:column;gap:4px;font-size:13.5px;text-align:right;color:#333333"><span data-advisor="email">email@farther.com</span><span data-advisor="phone">(000) 000-0000</span><span data-advisor="location">City, ST</span></div>
+</div>
+<div style="font-size:12px;line-height:1.55;color:#5B6A71">Sources: Farther account records as of December 31, 2025. Form arrival dates are typical, not guaranteed; custodians set their own mailing schedules.</div>
+<div data-farther-disclosure="print"></div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showDaf&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Events&quot;},&quot;showRollover&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Events&quot;},&quot;showRoth&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Events&quot;},&quot;showHsa&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Events&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this.paint(); }
+  componentDidUpdate() { this.paint(); }
+  paint() {
+    let tries = 0;
+    const go = () => { const D = window.FartherDisclosure; if (D) D.scan(); else if (tries++ < 40) setTimeout(go, 150); };
+    go();
+  }
+  renderVals() {
+    const p = this.props;
+    return { showDaf: p.showDaf ?? true, showRollover: p.showRollover ?? true, showRoth: p.showRoth ?? true, showHsa: p.showHsa ?? true };
+  }
+}
+</script>
+</body>
+</html>

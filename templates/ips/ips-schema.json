@@ -1,0 +1,64 @@
+{
+  "$comment": "IPS extraction output. Every field carries evidence and a status: verified (explicit in a document or meeting note), inferred (reasonable, cite the evidence), missing (needs advisor or client follow-up). Never invent a return objective, liquidity reserve, restriction or risk tolerance.",
+  "client_name": "",
+  "household_members": [],
+  "entities": [],
+  "accounts_in_scope": [],
+  "held_away_for_context": [],
+  "investment_authority": "",
+  "decision_makers": [],
+  "effective_date": "",
+  "next_review": "",
+  "primary_objective": "",
+  "secondary_objectives": [],
+  "success_definition": "",
+  "time_horizon": {
+    "near_term": "",
+    "intermediate": "",
+    "long_term": ""
+  },
+  "liquidity_need": {
+    "amount": null,
+    "purpose": "",
+    "timeframe": ""
+  },
+  "cash_flow": {
+    "annual_contributions": null,
+    "annual_withdrawals": null,
+    "known_large_outflows": [],
+    "charitable_gifts": null
+  },
+  "risk_willingness": "",
+  "risk_capacity": "",
+  "downside_tolerance": "",
+  "behavioral_guardrails": [],
+  "strategic_allocation": [
+    {
+      "asset_class": "",
+      "target": null,
+      "min": null,
+      "max": null,
+      "note": ""
+    }
+  ],
+  "tax_considerations": [],
+  "concentrated_positions": [],
+  "illiquid_alternatives_limit": null,
+  "leverage_derivatives_policy": "permitted | prohibited | prior_approval",
+  "restrictions_preferences": [],
+  "estate_charitable_considerations": [],
+  "rebalancing_triggers": [],
+  "review_triggers": [],
+  "source_evidence": [
+    {
+      "field": "",
+      "value": "",
+      "source": "",
+      "date": "",
+      "status": "verified | inferred | missing"
+    }
+  ],
+  "missing_information": [],
+  "conflicts": [],
+  "confidence_by_field": {}
+}

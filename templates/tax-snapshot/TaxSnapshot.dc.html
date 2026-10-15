@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Tax Snapshot" description="One-page client tax summary from a filed return: four key numbers, bracket position, three headroom meters, top observations, advisor block" -->
+<helmet><script src="./ds-base.js"></script><script src="../../assets/charts/farther-charts.js"></script><script src="../../assets/compliance/disclosure.js"></script><style>body{margin:0;background:#E9E5E0}a{color:#3B5A69}a:hover{color:#31465C}</style></helmet>
+<div style="padding:48px 24px;display:flex;justify-content:center;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333333">
+<div data-screen-label="01 Tax Snapshot" style="width:816px;min-height:1056px;box-sizing:border-box;background:#F8F4F0;box-shadow:0 8px 24px rgba(51,51,51,.08);display:flex;flex-direction:column">
+<div style="background:linear-gradient(90deg,rgba(49,70,92,.95) 0%,rgba(49,70,92,.86) 48%,rgba(49,70,92,.4) 100%),url('../../assets/images/library/thomas-griggs-8ylzxjzqkjq-unsplash.jpg') center 40%/cover no-repeat #31465C;padding:28px 48px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B6D0ED">2025 Tax Snapshot · Daniel and Priya Calloway</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:34px;line-height:1.1;letter-spacing:-.02em;color:#F8F4F0">A 12% bracket that behaves like 28%</div></div>
+<img src="../../library/assets/wordmark-iw-light.svg" alt="Farther" style="height:18px;flex:none;margin-bottom:6px">
+</div>
+<div style="flex:1;padding:22px 48px 30px;display:flex;flex-direction:column;gap:16px">
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px">
+<div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:4px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">AGI</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#31465C">$160,040</div></div>
+<div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:4px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Taxable income</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#31465C">$121,542</div></div>
+<div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:4px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Total tax</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#31465C">$13,334</div></div>
+<div style="background:#31465C;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:4px"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#B6D0ED">Average rate</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;color:#F8F4F0">8.3%</div></div>
+</div>
+<div style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:14px 20px;display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75">Where your income lands</div><div style="font-size:12px;color:#5B6A71">Gains and qualified dividends stack on top</div></div><div id="snap-brk" style="width:100%"></div></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+<div style="background:#EAEEF4;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:13px;font-weight:600;color:#31465C">Before 22%</span><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:20px;color:#31465C">$12,908</span></div><div style="height:8px;border-radius:4px;background:#FFFFFF;overflow:hidden"><div style="height:100%;width:86.7%;background:#3B5A69"></div></div><div style="font-size:12px;color:#5B6A71">$84,042 of $96,950</div></div>
+<div style="background:#EAEEF4;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:13px;font-weight:600;color:#31465C">Before IRMAA</span><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:20px;color:#31465C">$55,560</span></div><div style="height:8px;border-radius:4px;background:#FFFFFF;overflow:hidden"><div style="height:100%;width:74.5%;background:#3B5A69"></div></div><div style="font-size:12px;color:#5B6A71">MAGI $162,440 of $218,000</div></div>
+<div style="background:#EAEEF4;border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:13px;font-weight:600;color:#31465C">Before NIIT</span><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:20px;color:#31465C">$89,960</span></div><div style="height:8px;border-radius:4px;background:#FFFFFF;overflow:hidden"><div style="height:100%;width:64%;background:#3B5A69"></div></div><div style="font-size:12px;color:#5B6A71">MAGI $160,040 of $250,000</div></div>
+</div>
+<div style="display:flex;flex-direction:column"><div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75;margin-bottom:2px">Worth discussing</div>
+<div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid #E3D3C5"><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:19px;color:#9F8E75">01</span><span style="font-size:13.5px;line-height:1.45"><strong style="font-weight:600">IRA withdrawals and gains are linked.</strong> Each extra $1,000 of ordinary income costs about $280, because it pushes gains out of the 0% band.</span></div>
+<div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid #E3D3C5"><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:19px;color:#9F8E75">02</span><span style="font-size:13.5px;line-height:1.45"><strong style="font-weight:600">Roth conversion room.</strong> $12,908 before 22% and $55,560 before IRMAA. Compare about 28% now with your expected rate once required distributions begin.</span></div>
+<div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;padding:8px 0"><span style="font-family:'ABC Arizona Text',Georgia,serif;font-size:19px;color:#9F8E75">03</span><span style="font-size:13.5px;line-height:1.45"><strong style="font-weight:600">$1,766 refund.</strong> Your 2026 safe harbor is $14,667 (110% of this year's tax), so withholding could come down. Review with your CPA.</span></div>
+</div>
+<div data-advisor-closing style="background:#FFFFFF;border:1px solid #E3D3C5;border-radius:12px;padding:16px 20px;display:flex;align-items:center;gap:16px">
+<div data-advisor="headshot-wrap" style="width:60px;height:60px;border-radius:50%;background:#C5CFD4;overflow:hidden;flex:none"><img data-advisor="headshot" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:3px;min-width:0"><div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75">Your Farther advisor</div><div data-advisor="name" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:20px;color:#31465C">Advisor Name</div><div data-advisor="title" style="font-size:12px;color:#5B6A71">Title</div></div>
+<div style="display:flex;flex-direction:column;gap:3px;font-size:13px;text-align:right;color:#333333"><span data-advisor="email">email@farther.com</span><span data-advisor="phone">(000) 000-0000</span><span data-advisor="location">City, ST</span></div>
+</div>
+<div style="font-size:11px;color:#8A8A8A;line-height:1.5">Source: 2025 Form 1040 as filed · Illustrative household. 2025 IRS figures for married filing jointly; Medicare tiers use the latest published CMS figures. Federal tax only. Marginal-rate and headroom figures are planning estimates.</div>
+<div data-farther-disclosure="print" data-length="condensed"></div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this.paint(); }
+  componentDidUpdate() { this.paint(); }
+  paint() {
+    let tries = 0;
+    const go = () => {
+      const C = window.FartherCharts, D = window.FartherDisclosure;
+      const el = document.getElementById('snap-brk');
+      if (C && el && !el.firstChild) C.brackets(el, { width: 700, height: 190, brackets: [{ rate: 10, upTo: 23850 }, { rate: 12, upTo: 96950 }, { rate: 22, upTo: 206700 }], income: [{ label: 'Ordinary income', amount: 84042 }, { label: 'Gains and qualified dividends', amount: 37500 }], title: 'Taxable income by bracket' });
+      if (D) D.scan();
+      if ((!C || !D) && tries++ < 40) setTimeout(go, 150);
+    };
+    go();
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

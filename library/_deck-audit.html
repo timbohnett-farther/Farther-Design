@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Group deck audit</title>
+<style>body{font:13px system-ui;margin:16px;color:#333}a{color:#3B5A69}a:hover{color:#31465C}iframe{position:fixed;left:0;top:0;width:1920px;height:1080px;border:0;opacity:.01;pointer-events:none;z-index:-1}.bad{color:#CE3657;font-weight:600}.warn{color:#92643C}.ok{color:#3B5A69}div{padding:2px 0}</style></head>
+<body><h3 style="margin:0 0 8px">Group Education Decks: slide audit</h3><div id="out">Loading…</div>
+<script>
+// Per slide: content past the 1920×1080 frame, content running into the bottom margin, rendered text under 24px
+// (the 13px reference code excepted), broken images. Per deck: advisor slot count and slide count.
+const FILES=["G01 Your Total Wealth Blueprint.dc.html","G02 Retirement Confidence and Income.dc.html","G03 Tax-Smart Wealth Strategy.dc.html","G04 Investment Strategy and Portfolio Resilience.dc.html","G05 Estate Legacy and Family Wealth.dc.html","G06 Concentrated Wealth and Liquidity Events.dc.html","G07 Protecting Your Family and Wealth.dc.html","G08 Business Owner Wealth Plan.dc.html","G09 Private Markets and Alternative Investments.dc.html","G10 Purposeful Giving and Family Impact.dc.html","G11 Taxes in Retirement.dc.html","G12 The Five Years Before Retirement.dc.html","G13 Social Security Medicare and Taxes.dc.html","G14 Healthcare Long-Term Care and Longevity.dc.html","G15 Helping Aging Parents.dc.html","G16 Receiving an Inheritance.dc.html","G17 Executive Equity Compensation.dc.html","G18 Lifetime Family Giving.dc.html","G19 Women and Wealth Transitions.dc.html","G20 Year-End Planning.dc.html"];const DETAIL=/detail/.test(location.search);const SVGFIX=/svgfix/.test(location.search);const svgfix=[];const detail=[];
+// MessageChannel yields are not throttled when the preview tab is in the background (setTimeout is).
+const wait=ms=>new Promise(r=>{const end=performance.now()+ms,ch=new MessageChannel();ch.port1.onmessage=()=>performance.now()>=end?r():ch.port2.postMessage(0);ch.port2.postMessage(0);});
+const imgOk=u=>new Promise(r=>{const i=new Image();i.onload=()=>r(i.naturalWidth>0);i.onerror=()=>r(false);i.src=u;});
+(async()=>{try{
+  const out=document.getElementById('out');const rows=[];let issues=0;
+  for(const f of FILES){
+    const st=m=>out.innerHTML=rows.join('')+'<div class="warn">'+f+': '+m+'</div>';
+    const fr=document.createElement('iframe');const loaded=new Promise(r=>fr.onload=r);fr.src='pieces/'+encodeURIComponent(f);document.body.appendChild(fr);st('loading');
+    await Promise.race([loaded,wait(15000)]);st('loaded');
+    let d,deck;for(let t=0;t<60;t++){d=fr.contentDocument;deck=d&&d.querySelector('deck-stage');if(deck&&deck.querySelectorAll('section').length&&deck.goTo)break;await wait(150);}
+    await wait(400);const t0=performance.now();
+    const secs=[...deck.querySelectorAll(':scope > section')];
+    const slot=d.querySelectorAll('[data-advisor-slot]').length;
+    const probs=[];
+    const bgs=new Set();
+    for(let i=0;i<secs.length;i++){
+      deck.goTo(i);await wait(60);st('slide '+(i+1));
+      const s=secs[i],w=s.firstElementChild;const R=s.getBoundingClientRect();const k=R.width/1920||1;
+      const P=getComputedStyle(w);const padB=parseFloat(P.paddingBottom);const limit=1080-padB+6;
+      const p=[];
+      // 1. anything past the frame
+      let past=0,intoMargin=0;const absMemo=new Map([[w,false]]);
+      const isAbs=el=>{if(absMemo.has(el))return absMemo.get(el);const v=el.style.position==='absolute'||isAbs(el.parentElement);absMemo.set(el,v);return v;};
+      for(const el of w.querySelectorAll('*')){
+        if(el.closest('svg')&&el.tagName.toLowerCase()!=='svg')continue;
+        const r=el.getBoundingClientRect();if(!r.width||!r.height)continue;
+        const b=(r.bottom-R.top)/k,rt=(r.right-R.left)/k;
+        if(b>1082||rt>1922)past++;
+        if(b>limit&&!isAbs(el))intoMargin=Math.max(intoMargin,Math.round(b-limit+6));
+        const m=el.style.backgroundImage&&el.style.backgroundImage.match(/url\("?([^")]+)"?\)/);if(m)bgs.add(new URL(m[1],fr.contentWindow.location.href).href);
+      }
+      if(past)p.push(past+' element(s) past frame');
+      if(intoMargin)p.push('content '+intoMargin+'px into bottom margin');
+      // 2. small text
+      let small=0,min=99,tiny=0;
+      const walker=d.createTreeWalker(w,NodeFilter.SHOW_TEXT);let n;
+      while(n=walker.nextNode()){
+        if(!n.textContent.trim())continue;const el=n.parentElement;
+        let px=parseFloat(getComputedStyle(el).fontSize);
+        const svg=el.closest('svg');
+        if(svg){const vb=svg.viewBox&&svg.viewBox.baseVal;const sw=svg.getBoundingClientRect().width/k;if(vb&&vb.width)px=px*sw/vb.width;}
+        if(/^[A-Za-z]+-\d\d-\d\d-\d\d$/.test(n.textContent.trim()))continue;
+        if(px<23.5){small++;min=Math.min(min,px);if(px<22)tiny++;if(DETAIL)detail.push(f.slice(0,3)+' s'+(i+1)+' '+(svg?'svg '+el.getAttribute('font-size')+'/vb'+Math.round(svg.viewBox.baseVal.width)+'/w'+Math.round(svg.getBoundingClientRect().width/k):'html '+getComputedStyle(el).fontSize)+' → '+px.toFixed(1)+' | '+n.textContent.trim().slice(0,40));}
+      }
+      if(small)p.push(small+' text run(s) under 24px (smallest '+min.toFixed(1)+'px'+(tiny?', '+tiny+' under 22px':'')+')');
+      if(SVGFIX){const list=[...w.querySelectorAll('svg')].filter(v=>v.querySelector('text')&&v.viewBox&&v.viewBox.baseVal&&v.viewBox.baseVal.width);svgfix.push({f,i,svgs:list.map(v=>{const fac=v.viewBox.baseVal.width/(v.getBoundingClientRect().width/k);return +fac.toFixed(4);})});}
+      // 3. broken <img>
+      const broken=[...w.querySelectorAll('img')].filter(im=>im.complete&&!im.naturalWidth&&im.getAttribute('src'));
+      if(broken.length)p.push(broken.length+' broken image(s)');
+      if(p.length)probs.push('slide '+(i+1)+' ('+(s.dataset.label||'')+'): '+p.join('; '));
+    }
+    for(const u of bgs){if(!(await imgOk(u)))probs.push('broken background '+u);}
+    const bad=probs.length||slot!==1||secs.length!==11;if(bad)issues++;
+    rows.push(`<div class="${bad?'bad':'ok'}">${f} (${Math.round((performance.now()-t0)/1000)}s) | slides:${secs.length} | slots:${slot} | ${probs.length?probs.join(' · '):'clean'}</div>`);
+    out.innerHTML=rows.join('');fr.remove();
+  }
+  if(SVGFIX)rows.push('<pre id="svgfix" style="font-size:9px;white-space:pre-wrap;word-break:break-all">'+JSON.stringify(svgfix)+'</pre>');if(DETAIL)rows.push('<pre style="font-size:10px">'+detail.join('\n')+'</pre>');out.innerHTML=rows.join('')+`<div><b>Done.</b> ${FILES.length} decks, ${issues} with issues.</div>`;
+  window.__deckAudit={done:true,issues,rows:rows.map(r=>r.replace(/<[^>]+>/g,''))};
+}catch(e){document.getElementById('out').innerHTML+='<div class="bad">Audit error: '+e.message+' '+(e.stack||'').split('\n')[1]+'</div>';}})();
+</script></body></html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Benefits & Equity Guide" description="One-page US Letter advisor brief on a public company's benefits and equity program, or any data fact sheet" -->
+<helmet data-dc-atomics>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_ds_bundle.js"></script>
+<script src="./doc-page.js"></script>
+<style>
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;font-family:var(--font-sans)}
+a{color:var(--steel-700)} a:hover{color:var(--granite-blue)}
+doc-page:not(:defined){visibility:hidden}
+</style>
+</helmet>
+<doc-page size="letter">
+
+<section class="page" data-screen-label="01 Template">
+<div style="width:100%;height:100%;background:var(--limestone-50);position:relative;overflow:hidden;color:var(--charcoal-900);display:flex;flex-direction:column">
+
+  <div data-slot="header" style="background:var(--granite-blue);color:var(--limestone-50);padding:13px 40px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:baseline;gap:10px">
+      <span style="font-family:var(--font-display);font-weight:400;font-size:20px;letter-spacing:-.02em">Farther</span>
+      <span style="width:1px;height:15px;background:rgba(248,244,240,.4);display:inline-block;transform:translateY(2px)"></span>
+      <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--sky-300)">Advisor Intelligence</span>
+    </div>
+    <div style="text-align:right">
+      <div style="font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(182,208,237,.85)">Internal · Advisor Prep</div>
+      <div style="font-size:9px;color:rgba(248,244,240,.6);margin-top:2px">[Primary filings + dates, e.g. FY2025 10-K (Nov 2025) · 2026 DEF 14A]</div>
+    </div>
+  </div>
+
+  <div style="flex:1;padding:16px 40px 10px;display:flex;flex-direction:column;gap:8px;min-height:0">
+
+    <div data-slot="title" style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:1px solid var(--limestone-200);padding-bottom:10px">
+      <div>
+        <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--steel-700)">Employee Benefits &amp; Equity Brief</div>
+        <div style="font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05;letter-spacing:-.03em;margin-top:3px">[Company Legal Name]</div>
+      </div>
+      <div style="text-align:right;font-size:8.5px;line-height:1.5;color:var(--charcoal-600)">
+        <div style="font-size:11px;color:var(--charcoal-900);letter-spacing:.02em">[TICKER] · [Exchange]</div>
+        <div>[Sector — sub-industry] · [HQ city]</div>
+        <div>[FY end] · [Employees or shares outstanding]</div>
+      </div>
+    </div>
+
+    <div data-slot="overall-read" style="font-size:8.6px;line-height:1.45;color:var(--charcoal-700);font-style:italic">Overall read — [50–70 words. One-sentence characterization of the package, then where the planning value sits (2–3 items), then 1–2 watch items or resets the advisor must know before the meeting. Plain, factual, no hype.]</div>
+
+    <div data-slot="snapshot" style="display:grid;grid-template-columns:repeat(4,1fr);gap:9px">
+      <div style="background:var(--white);border:1px solid var(--charcoal-100);border-top:3px solid var(--aqua-500);border-radius:7px;padding:9px 11px">
+        <div style="font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--charcoal-500)">[Positive benefit]</div>
+        <div style="font-family:var(--font-display);font-weight:300;font-size:26px;line-height:1;letter-spacing:-.03em;margin:5px 0 3px">[Value]</div>
+        <div style="font-size:8px;color:var(--charcoal-600)">[≤ 5-word qualifier]</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--charcoal-100);border-top:3px solid var(--steel-700);border-radius:7px;padding:9px 11px">
+        <div style="font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--charcoal-500)">[Retirement metric]</div>
+        <div style="font-family:var(--font-display);font-weight:300;font-size:26px;line-height:1;letter-spacing:-.03em;margin:5px 0 3px">[Value]</div>
+        <div style="font-size:8px;color:var(--charcoal-600)">[≤ 5-word qualifier]</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--charcoal-100);border-top:3px solid var(--clay-400);border-radius:7px;padding:9px 11px">
+        <div style="font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--charcoal-500)">[Scale metric]</div>
+        <div style="font-family:var(--font-display);font-weight:300;font-size:26px;line-height:1;letter-spacing:-.03em;margin:5px 0 3px">[Value]</div>
+        <div style="font-size:8px;color:var(--charcoal-600)">[≤ 5-word qualifier]</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--charcoal-100);border-top:3px solid var(--pomegranate-500);border-radius:7px;padding:9px 11px">
+        <div style="font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--charcoal-500)">[Risk / watch metric]</div>
+        <div style="font-family:var(--font-display);font-weight:300;font-size:26px;line-height:1;letter-spacing:-.03em;margin:5px 0 3px">[Value]</div>
+        <div style="font-size:8px;color:var(--charcoal-600)">[≤ 5-word qualifier]</div>
+      </div>
+    </div>
+
+    <div data-slot="modules" style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="background:var(--white);border:1px solid var(--charcoal-100);border-radius:7px;padding:10px 12px">
+          <div style="font-size:9px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-700);margin-bottom:5px">Retirement &amp; Savings</div>
+          <ul style="margin:0;padding-left:12px;font-size:8.2px;line-height:1.45;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+            <li><b>[Match formula]</b> — [exact formula and max dollar value].</li>
+            <li><b>[Vesting]</b> — [schedule; flag if not immediate].</li>
+            <li>[Plan features: pre-tax / Roth / brokerage window / in-service].</li>
+            <li><b>[Pension / DB status]</b> — [present or absent + implication].</li>
+          </ul>
+          <div style="margin-top:7px;background:var(--aqua-500);border-radius:6px;padding:8px 10px;color:var(--granite-900)">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">[Highlight feature — e.g. Mega backdoor Roth: available]</div>
+            <div style="font-size:8px;line-height:1.4;margin-top:2px">[≤ 30 words: what it is, the dollar capacity, what to confirm.]</div>
+          </div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--charcoal-100);border-radius:7px;padding:10px 12px">
+          <div style="font-size:9px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-700);margin-bottom:5px">Equity &amp; Stock Plans</div>
+          <ul style="margin:0;padding-left:12px;font-size:8.2px;line-height:1.45;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+            <li><b>[Vehicle — RSUs / GSUs / options]</b> — [vesting schedule and cadence].</li>
+            <li><b>[Performance awards]</b> — [metrics, cliff, cap].</li>
+            <li>[Share reserve / plan-share request status].</li>
+            <li>[Buyback or dilution offset].</li>
+          </ul>
+          <div style="margin-top:7px;background:var(--steel-700);border-radius:6px;padding:8px 10px;color:var(--limestone-50)">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">[ESPP — discount, look-back; or "No ESPP"]</div>
+            <div style="font-size:8px;line-height:1.45;margin-top:3px;color:rgba(248,244,240,.92)">[≤ 35 words: pricing, offering periods, contribution limits, tax note.]</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="background:var(--white);border:1px solid var(--charcoal-100);border-radius:7px;padding:10px 12px">
+          <div style="font-size:9px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-700);margin-bottom:5px">Cash &amp; Bonus</div>
+          <ul style="margin:0;padding-left:12px;font-size:8.2px;line-height:1.45;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+            <li>[Bonus plan name + funding metrics].</li>
+            <li>[Payout cap and timing].</li>
+            <li>[Deferral eligibility, if any].</li>
+          </ul>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--charcoal-100);border-radius:7px;padding:10px 12px">
+          <div style="font-size:9px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-700);margin-bottom:5px">[Deferred Comp (NQDC) — or swap module]</div>
+          <ul style="margin:0;padding-left:12px;font-size:8.2px;line-height:1.45;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+            <li>[What can be deferred + company credit].</li>
+            <li>[409A election timing].</li>
+            <li><b>[Funding / creditor-risk note]</b> — [implication].</li>
+          </ul>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--charcoal-100);border-radius:7px;padding:10px 12px">
+          <div style="font-size:9px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-700);margin-bottom:5px">Health, Family &amp; Lifestyle</div>
+          <ul style="margin:0;padding-left:12px;font-size:8.2px;line-height:1.45;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+            <li>[Medical plan options + HSA seed].</li>
+            <li>[Dental / life / disability].</li>
+            <li>[PTO + parental leave + family benefits].</li>
+            <li>[Tuition / charitable match / other perks].</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-slot="executive" style="border:1px solid var(--limestone-200);border-radius:8px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;flex-shrink:0">
+      <div style="padding:10px 13px;border-right:1px solid var(--limestone-200)">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--granite-blue);margin-bottom:5px">Executive Programs — what they get</div>
+        <ul style="margin:0;padding-left:12px;font-size:8px;line-height:1.4;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+          <li>[Pay mix — % performance-based].</li>
+          <li>[CEO SCT total + key caps].</li>
+          <li>[Supplemental plans].</li>
+          <li>[Ownership guidelines · hedging/pledging policy].</li>
+        </ul>
+      </div>
+      <div style="padding:10px 13px;background:var(--limestone-100)">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--bronze-600);margin-bottom:5px">By design — what [Company] omits</div>
+        <ul style="margin:0;padding-left:12px;font-size:8px;line-height:1.4;color:var(--charcoal-700);display:flex;flex-direction:column;gap:2px">
+          <li>[Employment contracts?].</li>
+          <li>[Gross-ups / single-trigger CIC?].</li>
+          <li>[Pension / SERP?].</li>
+          <li><b>Advisor angle:</b> [what the omissions mean for planning].</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-slot="risk" style="background:#FBEDF0;border:1px solid var(--pomegranate-400);border-radius:7px;padding:9px 13px;display:flex;gap:10px;align-items:flex-start">
+      <div style="flex:none;width:20px;height:20px;border-radius:50%;background:var(--pomegranate-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;line-height:1">!</div>
+      <div>
+        <div style="font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--pomegranate-600)">[Concentration &amp; Risk — the defining exposure]</div>
+        <div style="font-size:8.2px;line-height:1.45;color:var(--charcoal-800);margin-top:2px">[50–70 words. How single-ticker exposure builds for this employee base; any company-specific risk (dilution, M&amp;A, cyclicality) with the figure; the fix — a written, rules-based diversification policy.]</div>
+      </div>
+    </div>
+
+    <div data-slot="anchors" style="background:var(--limestone-100);border:1px solid var(--limestone-200);border-radius:8px;padding:11px 14px;display:grid;grid-template-columns:1.12fr 1fr;gap:18px;margin-top:auto">
+      <div>
+        <div style="font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--granite-blue);margin-bottom:5px">★ Advisor Talking Points <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--charcoal-500)">— the meeting agenda</span></div>
+        <ol style="margin:0;padding-left:15px;font-size:8px;line-height:1.4;color:var(--charcoal-800);display:flex;flex-direction:column;gap:3px">
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+          <li><b>[Imperative action.]</b> [≤ 18-word rationale.]</li>
+        </ol>
+      </div>
+      <div>
+        <div style="font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--granite-blue);margin-bottom:5px">★ Key Dates</div>
+        <table style="width:100%;border-collapse:collapse;font-size:7.6px;line-height:1.3;color:var(--charcoal-800)">
+          <tr style="border-bottom:1px solid var(--limestone-300);color:var(--charcoal-500);text-transform:uppercase;letter-spacing:.06em;font-size:7px"><td style="padding:2px 4px 3px 0">Item</td><td style="padding:2px 4px 3px 0">Timing</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Equity vesting]</b></td><td style="padding:2px 4px 2px 0">[Cadence]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Performance vesting]</b></td><td style="padding:2px 4px 2px 0">[Cadence]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[ESPP purchases]</b></td><td style="padding:2px 4px 2px 0">[Dates]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Bonus payout]</b></td><td style="padding:2px 4px 2px 0">[Timing]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Annual grants]</b></td><td style="padding:2px 4px 2px 0">[Timing]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Deferral election]</b></td><td style="padding:2px 4px 2px 0">[Window]</td></tr>
+          <tr style="border-bottom:1px solid var(--limestone-200)"><td style="padding:2px 4px 2px 0"><b>[Annual meeting / blackouts]</b></td><td style="padding:2px 4px 2px 0">[Date]</td></tr>
+          <tr><td style="padding:2px 4px 2px 0"><b>[Open enrollment]</b></td><td style="padding:2px 4px 2px 0">[Timing]</td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div data-slot="footer" style="background:var(--charcoal-900);color:var(--limestone-50);padding:9px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+    <div style="font-size:7px;line-height:1.4;color:rgba(248,244,240,.72);max-width:560px"><b style="color:var(--limestone-50)">Internal use only — advisor preparation.</b> Information is based on Corporate Filings, SEC/EDGAR Documentation, and Public Documentation ([filing list + dates]); plan mechanics not in filings are externally sourced. Not tax or investment advice.</div>
+    <div style="text-align:right;font-size:7.5px;line-height:1.4;color:rgba(182,208,237,.9)">
+      <div style="font-weight:600;color:var(--limestone-50)">[Advisor Name]</div>
+      <div>[Title]</div>
+      <div>[email] · [phone]</div>
+    </div>
+  </div>
+</div>
+</section>
+
+</doc-page>
+</x-dc>
+</body>
+</html>

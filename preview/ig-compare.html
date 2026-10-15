@@ -1,0 +1,15 @@
+<!-- @dsCard group="Infographics" viewport="700x1125" name="Comparison infographics" subtitle="Compare, quadrant, cards" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Comparison infographics</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/icons/farther-icons.js"></script>
+<script src="../assets/infographics/farther-infographics.js"></script>
+<script src="../assets/infographics/farther-infographics-examples.js"></script>
+<style>body{margin:0;padding:20px 24px;background:#F8F4F0;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333;display:flex;flex-direction:column;gap:26px}a{color:#3B5A69}a:hover{color:#31465C}
+.eye{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75}.ttl{font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:17px;color:#3B5A69;margin:2px 0 12px}.fn{font-size:9px;color:#8A8A8A;font-family:ui-monospace,monospace}</style></head><body>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Compare</div><div class="fn">FartherInfographics.compare(el, spec)</div></div><div class="ttl">Roth vs traditional</div><div id="compare"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Quadrant</div><div class="fn">FartherInfographics.quadrant(el, spec)</div></div><div class="ttl">Risk tolerance vs risk capacity</div><div id="quadrant"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Cards</div><div class="fn">FartherInfographics.cards(el, spec)</div></div><div class="ttl">Five reasons to plan early</div><div id="cards"></div></div>
+<div style="font-size:8.5px;color:#8A8A8A">Hypothetical content for design reference.</div>
+<script>["compare","quadrant","cards"].forEach(k=>FartherInfographics[k](document.getElementById(k), FARTHER_INFOGRAPHIC_EXAMPLES[k]));</script>
+</body></html>

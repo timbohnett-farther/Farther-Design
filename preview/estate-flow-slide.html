@@ -1,0 +1,28 @@
+<!-- @dsCard group="Charts" viewport="1280x720" name="Estate flow: slide" subtitle="16:9 deck slide with order-of-death toggle" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Estate flow: slide</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/charts/estate-flow.js"></script>
+<script src="../assets/charts/estate-flow-example.js"></script>
+<style>html,body{margin:0;height:100%;background:#1E2A36;overflow:hidden;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333}a{color:#3B5A69}a:hover{color:#31465C}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+@page{size:1920px 1080px;margin:0}@media print{html,body{background:#fff}#stage{position:static;transform:none!important}}</style></head>
+<body>
+<div id="stage" data-screen-label="Estate flow" style="background:#F8F4F0;box-sizing:border-box;padding:56px 120px 44px;display:flex;flex-direction:column;gap:14px">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:14px"><div style="font-size:24px;letter-spacing:.18em;text-transform:uppercase;color:#9F8E75">How the estate passes</div><div style="font-size:22px;letter-spacing:.08em;text-transform:uppercase;color:#7A6654;background:#E6E3DB;border-radius:9999px;padding:4px 16px">Hypothetical</div></div>
+    <img src="../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:150px;display:block">
+  </div>
+  <div id="ttl" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:60px;line-height:1.05;letter-spacing:-.03em">Jaime predeceases Robert</div>
+  <div id="flow" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:6px"></div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;font-size:24px;color:#5B6A71">
+    <span>Dashed lines transfer at the survivor’s death. Assumes no growth or spending between deaths.</span>
+    <span style="color:#9F8E75">See important disclosures</span>
+  </div>
+</div>
+<script>
+FartherEstateFlow.mount(document.getElementById('flow'), Object.assign({}, ESTATE_FLOW_EXAMPLE, { orientation: 'horizontal', width: 1680, height: 700, scale: 1.45, columnGap: 44, cardHeight: 112, toggleScale: 2.2, rowGap: 12, halo: '#F8F4F0', onChange: s => { document.getElementById('ttl').textContent = s.title; } }));
+const fit = () => { const k = Math.min(innerWidth / 1920, innerHeight / 1080), st = document.getElementById('stage'); st.style.transform = 'scale(' + k + ') translate(-50%,-50%)'; st.style.transformOrigin = '0 0'; st.style.left = '50%'; st.style.top = '50%'; st.style.transform = 'translate(-50%,-50%) scale(' + k + ')'; st.style.transformOrigin = 'center'; };
+addEventListener('resize', fit); fit();
+</script>
+</body></html>

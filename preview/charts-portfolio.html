@@ -1,0 +1,14 @@
+<!-- @dsCard group="Charts" viewport="700x1030" name="Portfolio charts" subtitle="Allocation vs target, treemap, periodic table" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Portfolio charts</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/charts/farther-charts.js"></script>
+<script src="../assets/charts/farther-charts-examples.js"></script>
+<style>body{margin:0;padding:18px 24px;background:#F8F4F0;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333;display:flex;flex-direction:column;gap:18px}a{color:#3B5A69}a:hover{color:#31465C}
+.eye{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75}.ttl{font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:16px;color:#3B5A69;margin:2px 0 8px}.fn{font-size:9px;color:#8A8A8A;font-family:ui-monospace,monospace}</style></head><body>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Allocation vs target</div><div class="fn">FartherCharts.allocation(el, spec)</div></div><div class="ttl">Allocation vs target</div><div id="allocation"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Treemap</div><div class="fn">FartherCharts.treemap(el, spec)</div></div><div class="ttl">Holdings by weight</div><div id="treemap"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Periodic table of returns</div><div class="fn">FartherCharts.periodic(el, spec)</div></div><div class="ttl">Asset class returns by year</div><div id="periodic"></div></div>
+<div style="font-size:8.5px;color:#8A8A8A">Hypothetical data for design reference.</div>
+<script>["allocation","treemap","periodic"].forEach(k=>FartherCharts[k](document.getElementById(k), FARTHER_CHART_EXAMPLES[k]));</script>
+</body></html>

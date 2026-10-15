@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f0eee9;font-family:system-ui,sans-serif}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-opt:target .dv-oid{background:#3B5A69;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+a{color:#3B5A69}a:hover{color:#31465C}
+.pg{width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;display:flex;flex-direction:column}
+.h{font-family:'Architects Daughter',cursive}
+.m{font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
+.ln{height:6px;background:#ddd8d2;border-radius:3px}
+.bx{border:1px dashed #c3bcb3;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#a09890;font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase}
+.bar{background:#c9c2b9;border-radius:2px 2px 0 0}
+</style></helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Four layout systems for data-dense client education 1-pagers · US Letter</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Stat band + narrative — closest to your current pieces</div>
+<div class="dv-card">
+<div class="pg" style="padding:40px 44px 30px;gap:16px">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #333;padding-bottom:8px">
+    <div class="h" style="font-size:16px">Farther</div>
+    <div class="m" style="font-size:8px;color:#777">Client education guide · topic</div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div class="m" style="font-size:8px;color:#9F8E75">Category eyebrow</div>
+    <div class="h" style="font-size:30px;line-height:1.05">Headline sits here, two lines max</div>
+    <div style="display:flex;flex-direction:column;gap:5px;width:78%">
+      <div class="ln"></div><div class="ln"></div><div class="ln" style="width:62%"></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;border-top:1px solid #e3d3c5;border-bottom:1px solid #e3d3c5;padding:14px 0">
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:26px;color:#3B5A69">00%</div><div class="ln" style="width:90%"></div><div class="ln" style="width:70%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:26px;color:#3B5A69">00 / 00</div><div class="ln" style="width:90%"></div><div class="ln" style="width:60%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:26px;color:#3B5A69">~$000k</div><div class="ln" style="width:90%"></div><div class="ln" style="width:75%"></div></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:9px">
+    <div class="h" style="font-size:15px">How it works</div>
+    <div style="display:flex;flex-direction:column;gap:5px"><div class="ln"></div><div class="ln"></div><div class="ln" style="width:84%"></div></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:4px">
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7.5px;color:#9F8E75">Step 1</div><div class="ln"></div><div class="ln" style="width:80%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7.5px;color:#9F8E75">Step 2</div><div class="ln"></div><div class="ln" style="width:70%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7.5px;color:#9F8E75">Step 3</div><div class="ln"></div><div class="ln" style="width:85%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7.5px;color:#9F8E75">Step 4</div><div class="ln"></div><div class="ln" style="width:60%"></div></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:22px;flex:1">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="h" style="font-size:15px">Comparison table</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:8px;border-bottom:1px solid #333;padding-bottom:5px"><div class="m" style="font-size:7.5px;flex:1.4;color:#777">Scenario</div><div class="m" style="font-size:7.5px;flex:1;color:#777">Year 1</div><div class="m" style="font-size:7.5px;flex:1;color:#777">Year 10</div></div>
+        <div style="display:flex;gap:8px;align-items:center;border-bottom:1px solid #eee;padding:8px 0"><div class="ln" style="flex:1.4"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:1"></div></div>
+        <div style="display:flex;gap:8px;align-items:center;border-bottom:1px solid #eee;padding:8px 0"><div class="ln" style="flex:1.4"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:1"></div></div>
+        <div style="display:flex;gap:8px;align-items:center;padding:8px 0"><div class="ln" style="flex:1.4;background:#3B5A69"></div><div class="ln" style="flex:1;background:#3B5A69"></div><div class="ln" style="flex:1;background:#3B5A69"></div></div>
+      </div>
+      <div style="background:#f8f4f0;border:1px solid #e3d3c5;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:5px;margin-top:2px">
+        <div class="m" style="font-size:7.5px;color:#9F8E75">Callout</div><div class="ln"></div><div class="ln" style="width:72%"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="m" style="font-size:8px;color:#9F8E75">Chart title</div>
+      <div style="flex:1;display:flex;align-items:flex-end;gap:5px;border-bottom:1px solid #333;padding-bottom:2px">
+        <div class="bar" style="flex:1;height:22%"></div><div class="bar" style="flex:1;height:34%"></div><div class="bar" style="flex:1;height:45%"></div><div class="bar" style="flex:1;height:54%"></div><div class="bar" style="flex:1;height:62%"></div><div class="bar" style="flex:1;height:70%;background:#3B5A69"></div><div class="bar" style="flex:1;height:78%;background:#3B5A69"></div><div class="bar" style="flex:1;height:86%;background:#3B5A69"></div>
+      </div>
+      <div class="ln" style="width:80%"></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #e3d3c5;padding-top:8px;display:flex;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;gap:4px;width:62%"><div class="ln" style="height:4px"></div><div class="ln" style="height:4px;width:85%"></div></div>
+    <div class="m" style="font-size:7px;color:#9F8E75">Topic-MM-DD-YY</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Left spine — fixed rail of facts, modular right column</div>
+<div class="dv-card">
+<div class="pg" style="flex-direction:row">
+  <div style="width:190px;background:#333;color:#f8f4f0;padding:36px 24px 26px;display:flex;flex-direction:column;gap:20px">
+    <div class="h" style="font-size:15px">Farther</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="m" style="font-size:7.5px;color:#9F8E75">Eyebrow</div>
+      <div class="h" style="font-size:25px;line-height:1.08">Topic title, two or three lines</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px"><div class="ln" style="background:#5f5a55"></div><div class="ln" style="background:#5f5a55"></div><div class="ln" style="background:#5f5a55;width:70%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:4px">
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7px;color:#9F8E75">Key fact</div><div class="h" style="font-size:22px;color:#B6D0ED">$0,000</div><div class="ln" style="background:#5f5a55;width:85%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7px;color:#9F8E75">Key fact</div><div class="h" style="font-size:22px;color:#B6D0ED">Under 18</div><div class="ln" style="background:#5f5a55;width:75%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:7px;color:#9F8E75">Key fact</div><div class="h" style="font-size:22px;color:#B6D0ED">0.00%</div><div class="ln" style="background:#5f5a55;width:80%"></div></div>
+    </div>
+    <div style="flex:1"></div>
+    <div class="m" style="font-size:7px;color:#9F8E75;text-align:right">Topic-MM-DD-YY</div>
+  </div>
+  <div style="flex:1;padding:32px 30px 24px;display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;flex-direction:column;gap:7px">
+      <div class="h" style="font-size:14px">Section one</div>
+      <div class="ln"></div><div class="ln"></div><div class="ln" style="width:66%"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:7px">
+      <div class="h" style="font-size:14px">Data table</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;gap:8px;border-bottom:1px solid #333;padding-bottom:4px"><div class="m" style="font-size:7px;flex:1.6;color:#777">Source</div><div class="m" style="font-size:7px;flex:1;color:#777">Amount</div><div class="m" style="font-size:7px;flex:.7;color:#777">Cap</div><div class="m" style="font-size:7px;flex:.7;color:#777">Basis</div></div>
+        <div style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid #eee"><div class="ln" style="flex:1.6"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+        <div style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid #eee"><div class="ln" style="flex:1.6"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+        <div style="display:flex;gap:8px;padding:7px 0;border-bottom:1px solid #eee"><div class="ln" style="flex:1.6"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+        <div style="display:flex;gap:8px;padding:7px 0"><div class="ln" style="flex:1.6"></div><div class="ln" style="flex:1"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:13px">Sub-module</div><div class="ln"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:55%"></div></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:13px">Sub-module</div><div class="ln"></div><div class="ln" style="width:72%"></div><div class="ln" style="width:60%"></div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;flex:1">
+      <div class="h" style="font-size:14px">Growth graphic</div>
+      <div style="flex:1;border:1px dashed #c3bcb3;border-radius:4px;position:relative;display:flex;align-items:flex-end;padding:10px;gap:0;overflow:hidden">
+        <div style="width:100%;height:62%;background:linear-gradient(180deg,#dcd6ce 0%,#c9c2b9 100%);clip-path:polygon(0 100%,100% 0,100% 100%)"></div>
+        <div class="m" style="position:absolute;top:10px;left:12px;font-size:7.5px;color:#a09890">Area / stacked chart</div>
+      </div>
+      <div style="display:flex;justify-content:space-between"><div class="m" style="font-size:7px;color:#a09890">Start</div><div class="m" style="font-size:7px;color:#a09890">End</div></div>
+    </div>
+    <div class="ln" style="height:4px;width:100%"></div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Module grid — every block a swappable tile, densest option</div>
+<div class="dv-card">
+<div class="pg" style="padding:34px 36px 26px;gap:12px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #333;padding-bottom:9px">
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div class="m" style="font-size:7.5px;color:#9F8E75">Client guide · topic</div>
+      <div class="h" style="font-size:26px;line-height:1">Title goes here</div>
+    </div>
+    <div class="h" style="font-size:14px">Farther</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:6.5px;color:#9F8E75">Metric</div><div class="h" style="font-size:19px;color:#3B5A69">$0,000</div><div class="ln" style="height:4px"></div></div>
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:6.5px;color:#9F8E75">Metric</div><div class="h" style="font-size:19px;color:#3B5A69">00%</div><div class="ln" style="height:4px"></div></div>
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:6.5px;color:#9F8E75">Metric</div><div class="h" style="font-size:19px;color:#3B5A69">0–0 yr</div><div class="ln" style="height:4px"></div></div>
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:5px"><div class="m" style="font-size:6.5px;color:#9F8E75">Metric</div><div class="h" style="font-size:19px;color:#3B5A69">→ Next</div><div class="ln" style="height:4px"></div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:12px">
+    <div style="background:#f8f4f0;border-radius:4px;padding:12px;display:flex;flex-direction:column;gap:7px">
+      <div class="h" style="font-size:13px">What it is</div>
+      <div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln" style="width:70%"></div>
+    </div>
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:12px;display:flex;flex-direction:column;gap:7px">
+      <div class="h" style="font-size:13px">Donut / split</div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:64px;height:64px;border-radius:50%;background:conic-gradient(#3B5A69 0 72%,#d9d4cd 0 100%)"></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:6px"><div class="ln" style="width:90%"></div><div class="ln" style="width:70%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="m" style="font-size:7px;color:#9F8E75">01</div><div class="h" style="font-size:12px">Advantage</div><div class="ln"></div><div class="ln" style="width:85%"></div><div class="ln" style="width:60%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="m" style="font-size:7px;color:#9F8E75">02</div><div class="h" style="font-size:12px">Advantage</div><div class="ln"></div><div class="ln" style="width:75%"></div><div class="ln" style="width:65%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="m" style="font-size:7px;color:#9F8E75">03</div><div class="h" style="font-size:12px">Advantage</div><div class="ln"></div><div class="ln" style="width:88%"></div><div class="ln" style="width:52%"></div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;flex:1">
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:12px;display:flex;flex-direction:column;gap:7px">
+      <div class="h" style="font-size:13px">Before / after ledger</div>
+      <div style="display:flex;gap:8px;border-bottom:1px solid #333;padding-bottom:4px"><div class="m" style="font-size:6.5px;flex:1.5;color:#777">Line item</div><div class="m" style="font-size:6.5px;flex:.7;color:#777">Without</div><div class="m" style="font-size:6.5px;flex:.7;color:#777">With</div></div>
+      <div style="display:flex;gap:8px;align-items:center"><div class="ln" style="flex:1.5"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+      <div style="display:flex;gap:8px;align-items:center"><div class="ln" style="flex:1.5"></div><div class="ln" style="flex:.7"></div><div class="ln" style="flex:.7"></div></div>
+      <div style="display:flex;gap:8px;align-items:center;border-top:1px solid #eee;padding-top:6px"><div class="ln" style="flex:1.5;background:#3B5A69"></div><div class="ln" style="flex:.7;background:#3B5A69"></div><div class="ln" style="flex:.7;background:#3B5A69"></div></div>
+      <div style="flex:1"></div>
+      <div class="ln" style="height:4px;width:75%"></div>
+    </div>
+    <div style="border:1px solid #e3d3c5;border-radius:4px;padding:12px;display:flex;flex-direction:column;gap:8px">
+      <div class="h" style="font-size:13px">Chart module</div>
+      <div style="flex:1;display:flex;align-items:flex-end;gap:4px;border-bottom:1px solid #333">
+        <div class="bar" style="flex:1;height:30%"></div><div class="bar" style="flex:1;height:42%"></div><div class="bar" style="flex:1;height:38%"></div><div class="bar" style="flex:1;height:58%"></div><div class="bar" style="flex:1;height:66%;background:#3B5A69"></div><div class="bar" style="flex:1;height:80%;background:#3B5A69"></div>
+      </div>
+      <div class="ln" style="height:4px;width:60%"></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid #e3d3c5;padding-top:9px">
+    <div style="display:flex;flex-direction:column;gap:4px"><div class="m" style="font-size:6.5px;color:#9F8E75">Who it's for</div><div class="ln" style="height:4px"></div><div class="ln" style="height:4px;width:80%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:4px"><div class="m" style="font-size:6.5px;color:#9F8E75">Considerations</div><div class="ln" style="height:4px"></div><div class="ln" style="height:4px;width:70%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:4px;align-items:flex-end;justify-content:flex-end"><div class="ln" style="height:4px;width:70%"></div><div class="m" style="font-size:6.5px;color:#9F8E75">Topic-MM-DD-YY</div></div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Hero chart — one big graphic carries the page, data supports it</div>
+<div class="dv-card">
+<div class="pg" style="padding:0">
+  <div style="background:#f8f4f0;padding:34px 44px 22px;display:flex;flex-direction:column;gap:14px;border-bottom:1px solid #e3d3c5">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div class="m" style="font-size:7.5px;color:#9F8E75">Client education · topic</div>
+      <div class="h" style="font-size:14px">Farther</div>
+    </div>
+    <div style="display:flex;gap:26px;align-items:flex-end">
+      <div class="h" style="font-size:31px;line-height:1.04;flex:1.1">The single headline claim, stated plainly</div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div class="ln"></div><div class="ln"></div><div class="ln" style="width:70%"></div></div>
+    </div>
+  </div>
+  <div style="padding:22px 44px 0;display:flex;flex-direction:column;gap:9px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div class="h" style="font-size:15px">Hero chart — the one number people remember</div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div style="display:flex;gap:5px;align-items:center"><div style="width:9px;height:9px;background:#c9c2b9;border-radius:2px"></div><div class="ln" style="width:36px;height:4px"></div></div>
+        <div style="display:flex;gap:5px;align-items:center"><div style="width:9px;height:9px;background:#3B5A69;border-radius:2px"></div><div class="ln" style="width:36px;height:4px"></div></div>
+      </div>
+    </div>
+    <div style="height:210px;display:flex;align-items:flex-end;gap:7px;border-bottom:1px solid #333;padding-bottom:2px">
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:26%;gap:2px"><div class="bar" style="height:40%;background:#3B5A69"></div><div class="bar" style="height:60%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:40%;gap:2px"><div class="bar" style="height:30%;background:#3B5A69"></div><div class="bar" style="height:70%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:52%;gap:2px"><div class="bar" style="height:26%;background:#3B5A69"></div><div class="bar" style="height:74%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:62%;gap:2px"><div class="bar" style="height:22%;background:#3B5A69"></div><div class="bar" style="height:78%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:71%;gap:2px"><div class="bar" style="height:19%;background:#3B5A69"></div><div class="bar" style="height:81%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:79%;gap:2px"><div class="bar" style="height:16%;background:#3B5A69"></div><div class="bar" style="height:84%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:86%;gap:2px"><div class="bar" style="height:14%;background:#3B5A69"></div><div class="bar" style="height:86%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:92%;gap:2px"><div class="bar" style="height:12%;background:#3B5A69"></div><div class="bar" style="height:88%;border-radius:0"></div></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;gap:2px"><div class="bar" style="height:10%;background:#3B5A69"></div><div class="bar" style="height:90%;border-radius:0"></div></div>
+    </div>
+    <div style="display:flex;justify-content:space-between"><div class="m" style="font-size:7px;color:#a09890">Y1</div><div class="m" style="font-size:7px;color:#a09890">Y5</div><div class="m" style="font-size:7px;color:#a09890">Y10</div></div>
+    <div class="ln" style="height:4px;width:88%"></div>
+  </div>
+  <div style="padding:18px 44px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:23px;color:#3B5A69">00%</div><div class="ln"></div><div class="ln" style="width:70%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:23px;color:#3B5A69">$000k</div><div class="ln"></div><div class="ln" style="width:80%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:6px"><div class="h" style="font-size:23px;color:#3B5A69">0–0×</div><div class="ln"></div><div class="ln" style="width:62%"></div></div>
+  </div>
+  <div style="padding:18px 44px;display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:1">
+    <div style="display:flex;flex-direction:column;gap:7px"><div class="h" style="font-size:13px">Who this is for</div><div class="ln"></div><div class="ln" style="width:85%"></div><div class="ln" style="width:78%"></div><div class="ln" style="width:60%"></div></div>
+    <div style="display:flex;flex-direction:column;gap:7px"><div class="h" style="font-size:13px">Important considerations</div><div class="ln"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:72%"></div><div class="ln" style="width:55%"></div></div>
+  </div>
+  <div style="background:#333;padding:14px 44px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:4px;width:60%"><div class="ln" style="height:4px;background:#5f5a55"></div><div class="ln" style="height:4px;background:#5f5a55;width:80%"></div></div>
+    <div class="m" style="font-size:7px;color:#9F8E75">Topic-MM-DD-YY</div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "build <a class="dv-oid" href="#1c">1c</a> out with real content from one of the PDFs" · "make <a class="dv-oid" href="#1a">1a</a> a two-page version" · "new directions, more chart-forward"</p>
+</section>
+</x-dc>
+</body>
+</html>

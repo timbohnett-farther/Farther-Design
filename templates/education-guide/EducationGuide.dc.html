@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Client Education Guide" description="Four-page US Letter client education explainer: cover with three headline numbers, guide, fit and reference, data appendix with full disclosures" -->
+<helmet>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_ds_bundle.js"></script>
+<meta name="omelette-owns-print" content="letter">
+<style>
+body{margin:0;background:#e9e5e0;font-family:"Fakt Pro",system-ui,sans-serif}
+a{color:#3B5A69}a:hover{color:#31465C}
+@page{size:8.5in 11in;margin:0}
+@media print{
+ html,body{background:#fff!important;margin:0!important;padding:0!important}
+ [data-print-root]{gap:0!important;padding:0!important;align-items:flex-start!important}
+ [data-print-root]>*{break-after:page;page-break-after:always;break-inside:avoid;page-break-inside:avoid;zoom:1.33333}
+ [data-print-root]>*:last-child{break-after:auto;page-break-after:auto}
+ [data-screen-label],[data-print-root] [style*="box-shadow"]{box-shadow:none!important} [data-nav]{display:none!important}
+}
+</style></helmet>
+
+<div data-print-root style="display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 0">
+<div data-nav style="position:sticky;top:0;z-index:20;width:612px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:14px;background:rgba(248,244,240,.94);backdrop-filter:blur(10px);border:1px solid #E3D3C5;border-radius:9999px;padding:7px 12px">
+  <a href="[Catalog file].dc.html" style="display:flex;align-items:center;gap:7px;font-size:11px;color:#3B5A69;text-decoration:none;flex:none">← All topics</a>
+  <div style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9F8E75;white-space:nowrap">[Series] · [N] of [Total]</div>
+  <div style="display:flex;align-items:center;gap:7px;flex:none">
+    <a href="[Previous file].dc.html" style="font-size:11px;color:#3B5A69;text-decoration:none;padding:6px 11px;border:1px solid #E3D3C5;border-radius:9999px;background:#fff">Previous</a>
+    <a href="[Next file].dc.html" style="font-size:11px;color:#3B5A69;text-decoration:none;padding:6px 11px;border:1px solid #E3D3C5;border-radius:9999px;background:#fff">Next</a>
+    <button data-print type="button" style="font-family:inherit;font-size:11px;color:#F8F4F0;background:#3B5A69;border:1px solid #3B5A69;border-radius:9999px;padding:6px 13px;cursor:pointer" style-hover="background:#31465C;border-color:#31465C">Print or PDF</button>
+  </div>
+</div>
+
+<div data-screen-label="01 Cover" data-slot="cover" style="width:612px;height:792px;box-sizing:border-box;background:#F8F4F0;color:#333;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-slot="cover-image" style="position:relative;height:396px;overflow:hidden;background:#31465C">
+    <img src="assets/cover-placeholder.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,51,51,.62) 0%,rgba(51,51,51,.34) 46%,rgba(51,51,51,.14) 100%)"></div>
+    <div style="position:absolute;top:44px;left:48px;right:48px;display:flex;flex-direction:column;gap:14px">
+      <img src="assets/wordmark-iw-light.svg" alt="Farther" style="width:112px;display:block;">
+      <div data-slot="series-line" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#F8F4F0;font-weight:500;line-height:1.5">Intelligent wealth strategies: [Topic]</div>
+    </div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:44px 48px 40px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#9F8E75">[Series name] series</div>
+      <div data-slot="headline" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:38px;line-height:1.08;letter-spacing:-.03em;max-width:470px">[Topic headline, sentence case, no terminal period]</div>
+      <div data-slot="deck" style="font-size:13.5px;line-height:1.45;color:#5B6A71;max-width:440px">[One-line deck. What the reader gets from this piece.]</div>
+      <div style="height:1px;background:#E3D3C5"></div>
+      <div data-slot="headline-numbers" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;max-width:516px">
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">[$00k]</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">[Label, ≤ 14 words. These three numbers never repeat later.]</div></div>
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">[00%]</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">[Label for the second headline number]</div></div>
+        <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">[0x]</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">[Label for the third headline number]</div></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="height:1px;background:#E3D3C5"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <div style="font-size:10px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+        <div data-slot="compliance-mark" style="font-size:8px;letter-spacing:.06em;color:#9F8E75">[Topic]-[MM]-[DD]-[YY]</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="02 Guide" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:16px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">[Subject] · client education guide</div>
+    </div>
+    <div data-slot="guide-intro" style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">[Eyebrow: subject area]</div>
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:29px;line-height:1.08;max-width:495px">[Guide headline, ≤ 14 words, no terminal period]</div>
+      <div style="font-size:11px;line-height:1.5;color:#5B6A71;max-width:490px">[Deck, 35–55 words. The mechanics in plain language. Bold one key number with <b>font-weight:600</b>.]</div>
+    </div>
+    <div data-slot="how-it-works" style="border-top:1px solid #E3D3C5;padding-top:14px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">How it works</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px"><div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 1</div><div style="font-size:9.8px;line-height:1.45">[Step 1: one action, ≤ 20 words]</div></div><div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 2</div><div style="font-size:9.8px;line-height:1.45">[Step 2: one action, ≤ 20 words]</div></div><div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 3</div><div style="font-size:9.8px;line-height:1.45">[Step 3: one action, ≤ 20 words]</div></div><div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 4</div><div style="font-size:9.8px;line-height:1.45">[Step 4: one action, ≤ 20 words]</div></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid #E3D3C5;padding-top:14px">
+      <div data-slot="comparison" style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.5px;color:#3B5A69">[Scenario table title]</div>
+        <div style="display:flex;flex-direction:column"><div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.6;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">[Row]</div><div style="flex:1;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">[Col A]</div><div style="flex:1;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">[Col B]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Measure]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Measure]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Measure]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;background:#FBF9F6"><div style="flex:1.6;font-size:9.4px;line-height:1.32;font-weight:600">[Difference]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#3B5A69">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#3B5A69">[$0]</div></div></div>
+        <div style="background:#F8F4F0;border:1px solid #E3D3C5;border-radius:4px;padding:10px 12px;font-size:9.6px;line-height:1.5">[Callout, ≤ 35 words: the one sentence to remember]</div>
+      </div>
+      <div data-slot="chart" style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:15.5px;color:#3B5A69">[Chart title]</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Bar label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:100%;height:100%;background:#3B5A69;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Bar label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:64%;height:100%;background:#557A89;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Bar label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:38%;height:100%;background:#B6D0ED;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Negative value]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:18%;height:100%;background:#CE3657;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[−$00k]</div></div></div>
+        </div>
+        <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">[Hypothetical illustration only. State the assumptions: rate, horizon, bracket.]</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+      <div style="font-size:9px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+      <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">[Topic]-[MM]-[DD]-[YY]</div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="03 Fit and reference" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:16px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">[Subject] · fit and reference</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div data-slot="designed-for" style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:17px;color:#3B5A69">Who it's designed for</div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Profile 1]</div></div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Profile 2]</div></div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Profile 3]</div></div></div>
+      <div data-slot="key-benefits" style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:17px;color:#3B5A69">Key benefits</div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Benefit 1]</div></div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Benefit 2]</div></div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Benefit 3]</div></div><div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5">[Benefit 4]</div></div></div>
+    </div>
+    <div data-slot="considerations" style="border-top:1px solid #E3D3C5;padding-top:14px;display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:17px;color:#3B5A69">Important considerations</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px"><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">[Consideration 1]</div><div style="font-size:10px;line-height:1.52;color:#5B6A71">[Risk, limit, or trade-off, ≤ 30 words]</div></div><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">[Consideration 2]</div><div style="font-size:10px;line-height:1.52;color:#5B6A71">[Risk, limit, or trade-off, ≤ 30 words]</div></div><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">[Consideration 3]</div><div style="font-size:10px;line-height:1.52;color:#5B6A71">[Risk, limit, or trade-off, ≤ 30 words]</div></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:24px;border-top:1px solid #E3D3C5;padding-top:14px">
+      <div data-slot="quick-reference" style="background:#F8F4F0;border:1px solid #E3D3C5;border-radius:4px;padding:13px;display:flex;flex-direction:column;gap:8px;align-self:flex-start">
+        <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Quick reference</div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 1]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 2]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 3]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 4]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 5]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+        <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">[Parameter 6]</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[Value]</div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div data-slot="farther-approach" style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">How Farther approaches this</div><div style="font-size:10.4px;line-height:1.55;color:#5B6A71">[50–80 words. What Farther does, in the first person plural. No advisor names or contact details.]</div></div>
+        <div data-slot="questions" style="display:flex;flex-direction:column;gap:7px">
+          <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75;margin-top:2px">Questions worth asking your advisor</div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">01</div><div style="font-size:10px;line-height:1.52">[Question 1, second person]</div></div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">02</div><div style="font-size:10px;line-height:1.52">[Question 2, second person]</div></div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">03</div><div style="font-size:10px;line-height:1.52">[Question 3, second person]</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+      <div style="font-size:9px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+      <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">[Topic]-[MM]-[DD]-[YY]</div>
+    </div>
+  </div>
+</div>
+
+<div data-screen-label="04 Data appendix" style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div data-fit style="height:100%;display:flex;flex-direction:column;gap:16px;justify-content:space-between;transform-origin:top left">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+      <img src="assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+      <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Deep-dive data appendix</div>
+    </div>
+    <div data-slot="appendix-table" style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:17px;color:#3B5A69">[Appendix table title]</div>
+      <div style="display:flex;flex-direction:column"><div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:4px"><div style="flex:1.6;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">[Scenario]</div><div style="flex:1;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">[Col A]</div><div style="flex:1;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">[Col B]</div><div style="flex:1;font-size:6.9px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">[Col C]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Row]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Row]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Row]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;border-bottom:1px solid #efece8"><div style="flex:1.6;font-size:9.4px;line-height:1.32">[Row]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right">[$0]</div></div>
+<div style="display:flex;gap:9px;padding:5.6px 0;background:#FBF9F6"><div style="flex:1.6;font-size:9.4px;line-height:1.32;font-weight:600">[Total or difference]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#3B5A69">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#3B5A69">[$0]</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#3B5A69">[$0]</div></div></div>
+      <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">[Hypothetical illustration only. Assumptions and sources.]</div>
+    </div>
+    <div data-slot="appendix-chart" style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:17px;color:#3B5A69">[Second chart or table title]</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:100%;height:100%;background:#31465C;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+        <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:72%;height:100%;background:#3B5A69;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+        <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.4;font-size:9.2px;line-height:1.32">[Label]</div><div style="flex:2.4;display:flex;align-items:center;gap:7px"><div style="flex:1;height:20px;background:#F4F1EC;border-radius:2px"><div style="width:45%;height:100%;background:#557A89;border-radius:2px"></div></div><div style="flex:0 0 70px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right">[$000k]</div></div></div>
+      </div>
+      <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">[Source: named publication or regulator, year]</div>
+    </div>
+    <div data-slot="disclosures" style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Important disclosures</div>
+      <div style="font-size:6.3px;line-height:1.45;color:#8a8580">This material is for informational and educational purposes only and does not constitute investment, tax, or legal advice, and is not a recommendation to buy or sell any security or pursue any strategy. Farther Finance Advisors, LLC ("Farther") is registered as an investment adviser with the U.S. Securities and Exchange Commission (SEC); such registration does not imply a certain level of skill or training. All examples, figures, and projections in this material are hypothetical and for illustrative purposes only; they are not a guarantee of future performance, and there is no assurance that any strategy will be profitable or achieve its objective. Investing involves risk, including the possible loss of principal. Tax and legal outcomes depend on each client's individual facts and circumstances and are subject to change based on changes in law.</div>
+      <div style="font-size:6.3px;line-height:1.45;color:#8a8580">Farther provides investment advisory services on a wrap fee basis, generally charging a fee based on a percentage of assets under management (AUM). Because Farther's fee generally increases as the assets in a client's advisory account increase, Farther has an economic incentive to recommend that clients increase the assets it manages; this is a conflict of interest that clients should understand when evaluating any recommendation involving new deposits, consolidations, or rollovers.</div>
+      <div style="font-size:6.3px;line-height:1.45;color:#8a8580">Farther does not provide tax or legal advice, does not prepare tax returns, and does not serve as a law firm or accounting firm. Consult your own qualified tax advisor and attorney before implementing any strategy described here. Additional information about Farther, including its Form ADV Part 2A Brochure and Form CRS, is available at www.adviserinfo.sec.gov or by contacting Farther's Chief Compliance Officer, Christopher Powers, at 628-246-8004.</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <div style="font-size:7px;color:#8a8580;font-style:italic">The Intelligent Wealth Series | [Series] | Ref: [RefCode] v1.0 · Farther Wealth Management · farther.com</div>
+        <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">[Topic]-[MM]-[DD]-[YY]</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ const b=document.querySelector('[data-print]'); if(b) b.addEventListener('click', ()=>window.print()); this.fit(); window.addEventListener('load', ()=>this.fit()); setTimeout(()=>this.fit(), 400); setTimeout(()=>this.fit(), 1500); }
+  componentDidUpdate(){ this.fit(); }
+  fit(){
+    document.querySelectorAll('[data-fit]').forEach(el=>{
+      el.style.cssText = el.style.cssText.replace(/transform:[^;]*;?/g,'').replace(/width:[^;]*;?/g,'');
+      const box = el.parentElement.clientWidth - parseFloat(getComputedStyle(el.parentElement).paddingLeft) - parseFloat(getComputedStyle(el.parentElement).paddingRight);
+      const avail = el.clientHeight, need = el.scrollHeight;
+      let s = 1;
+      if(need > avail - 8) s = Math.max(0.72, (avail - 8)/need);
+      el.style.setProperty('transform', 'scale('+s+')');
+      el.style.setProperty('width', (box/s)+'px');
+      if(Math.abs(el.getBoundingClientRect().width - box) > 1){
+        el.style.setProperty('width', (box/s)+'px', 'important');
+      }
+    });
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_ds_bundle.js"></script>
+<style>
+body{margin:0;background:#e9e5e0;font-family:"Fakt Pro",system-ui,sans-serif}
+a{color:#3B5A69}a:hover{color:#31465C}
+</style></helmet>
+
+<div style="display:flex;flex-direction:column;gap:34px;padding:44px 24px 80px;min-width:1128px;box-sizing:border-box">
+
+<div style="width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:16px">
+  <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:160px;display:block;">
+  <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#9F8E75">The intelligent wealth series</div>
+  <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:42px;line-height:1.05;letter-spacing:-.03em">Report template and build spec</div>
+  <div style="font-size:13.5px;line-height:1.55;color:#5B6A71;max-width:720px;text-wrap:pretty">Every report in the library is four pages at 612 × 792 px, which is US Letter at 72dpi. This page shows the structure of each one with the exact values to copy. Grey blocks are content slots; the notes in Clay call out the rules that are easy to get wrong.</div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;border-top:1px solid #333;border-bottom:1px solid #E3D3C5;padding:16px 0 18px">
+  <div style="display:flex;flex-direction:column;gap:5px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1;color:#3B5A69">612 × 792</div><div style="font-size:10px;line-height:1.4;color:#5B6A71">Page box in px. Fixed height, never scrolls.</div></div>
+  <div style="display:flex;flex-direction:column;gap:5px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1;color:#3B5A69">38 / 44 / 22</div><div style="font-size:10px;line-height:1.4;color:#5B6A71">Padding: top, sides, bottom. Cover is 44 / 48 / 40.</div></div>
+  <div style="display:flex;flex-direction:column;gap:5px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1;color:#3B5A69">1.33333</div><div style="font-size:10px;line-height:1.4;color:#5B6A71">Print zoom. Maps 612px onto a full 8.5in sheet.</div></div>
+  <div style="display:flex;flex-direction:column;gap:5px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1;color:#3B5A69">4 pages</div><div style="font-size:10px;line-height:1.4;color:#5B6A71">Cover, guide, fit and reference, data appendix.</div></div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:grid;grid-template-columns:612px 1fr;gap:32px;align-items:start">
+  <div style="width:612px;height:792px;box-sizing:border-box;background:#F8F4F0;color:#333;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+    <div style="position:relative;height:396px;overflow:hidden;background:#31465C;display:flex;align-items:center;justify-content:center">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(248,244,240,.5)">Full-bleed topic image · exactly half the page · 396px</div>
+      <div style="position:absolute;top:44px;left:48px;right:48px;display:flex;flex-direction:column;gap:14px">
+        <img src="../../library/assets/wordmark-iw-light.svg" alt="Farther" style="width:112px;display:block;">
+        <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#F8F4F0;font-weight:500;line-height:1.5">Intelligent wealth strategies: topic name</div>
+      </div>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:44px 48px 40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#9F8E75">Client education guide</div>
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:38px;line-height:1.08;letter-spacing:-.03em;max-width:470px">Topic headline, 38px</div>
+        <div style="font-size:13.5px;line-height:1.45;color:#5B6A71;max-width:440px">One-line deck. Sentence case, no terminal period on a single sentence.</div>
+        <div style="height:1px;background:#E3D3C5"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;max-width:516px">
+          <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">$00,000</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">Headline number one. These three never repeat on later pages.</div></div>
+          <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">00%</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">Headline number two, with a label of roughly this length.</div></div>
+          <div style="display:flex;flex-direction:column;gap:7px"><div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:32px;line-height:1.04;letter-spacing:-.03em;color:#3B5A69">00 yrs</div><div style="font-size:9.5px;line-height:1.4;color:#5B6A71">Headline number three. Drop to 24px if longer than 9 characters.</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="height:1px;background:#E3D3C5"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end">
+          <div style="font-size:10px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+          <div style="font-size:8px;letter-spacing:.06em;color:#9F8E75">Topic-MM-DD-YY</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;padding-top:4px">
+    <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Page 1 · cover</div>
+    <div style="font-size:12px;line-height:1.6;color:#5B6A71;text-wrap:pretty">Image occupies the top half exactly, with a charcoal gradient over it so the cream wordmark and series line stay legible on any photograph. The series line sits directly under the wordmark and shares its left edge.</div>
+    <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">No disclosure on the cover.</strong> The full paragraph lives on the last page only.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">No advisor names or contact details</strong> anywhere. These are general education pieces for every advisor.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Pick the image for the topic.</strong> Architecture for business sales and equity comp, families for gifting and education, landscapes for time horizons, still-life details for deadlines and ordering decisions. Never alphabetically, and never the abstract neon set.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Compliance mark</strong> bottom right of every page, format <span style="font-family:ui-monospace,monospace;font-size:10.5px;background:#F4F1EC;padding:1px 5px;border-radius:3px">1Word-MM-DD-YY</span>, 7–8px, Clay 400, always the last element.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:grid;grid-template-columns:612px 1fr;gap:32px;align-items:start">
+  <div style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+    <div style="height:100%;display:flex;flex-direction:column;gap:18px;justify-content:space-between">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+        <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+        <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Category · client education guide</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:11px">
+        <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Eyebrow, 8px</div>
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:29px;line-height:1.08;max-width:495px">Page headline, 28–31px, Arizona Light</div>
+        <div style="font-size:11px;line-height:1.5;color:#5B6A71;max-width:490px">Deck paragraph, 11px on 1.5. Two or three sentences that set up what the reader is about to see.</div>
+      </div>
+      <div style="border-top:1px solid #E3D3C5;padding-top:16px;display:flex;flex-direction:column;gap:11px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">How it works</div>
+        <div style="font-size:10px;line-height:1.55;color:#5B6A71">Intro line, 10px on 1.55.</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2px">
+          <div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 1</div><div style="font-size:9.8px;line-height:1.45;color:#8a8580">Numbered step, 9.8px. Three to five steps.</div></div>
+          <div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 2</div><div style="font-size:9.8px;line-height:1.45;color:#8a8580">Rule above each step is 2px Steel Blue.</div></div>
+          <div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 3</div><div style="font-size:9.8px;line-height:1.45;color:#8a8580">Grid columns match the step count.</div></div>
+          <div style="display:flex;flex-direction:column;gap:7px;border-top:2px solid #3B5A69;padding-top:8px"><div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Step 4</div><div style="font-size:9.8px;line-height:1.45;color:#8a8580">Never leave a step half-empty; cut it.</div></div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #E3D3C5;padding-top:16px;display:grid;grid-template-columns:1.15fr 1fr;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">Seeing it in action</div>
+          <div style="font-size:10px;line-height:1.5;color:#5B6A71">Scenario setup, one or two lines.</div>
+          <div style="display:flex;flex-direction:column">
+            <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:5px"><div style="flex:1.7;font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Header row, 7px caps</div><div style="flex:1;font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Column</div><div style="flex:1;font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Column</div></div>
+            <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:10px;line-height:1.35;color:#8a8580">Row label, 10px Fakt</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div></div>
+            <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:10px;line-height:1.35;color:#8a8580">Figures are Arizona, right-aligned</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div></div>
+            <div style="display:flex;gap:9px;padding:7px 0;background:#FBF9F6"><div style="flex:1.7;font-size:10px;line-height:1.35;font-weight:600">Total row, tinted and 600</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#3B5A69">$00,000</div><div style="flex:1;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#3B5A69">$00,000</div></div>
+          </div>
+          <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">Hypothetical illustration note, 7px italic. Required under every illustrative figure.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">The data graphic</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:2px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;gap:8px"><div style="font-size:9px;color:#5B6A71">Steel Blue 700</div><div style="font-size:10px;font-weight:600;color:#3B5A69">$00,000</div></div><div style="height:14px;background:#F4F1EC;border-radius:2px;overflow:hidden"><div style="width:100%;height:100%;background:#3B5A69"></div></div></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;gap:8px"><div style="font-size:9px;color:#5B6A71">Smalt Blue 500</div><div style="font-size:10px;font-weight:600;color:#3B5A69">$00,000</div></div><div style="height:14px;background:#F4F1EC;border-radius:2px;overflow:hidden"><div style="width:68%;height:100%;background:#557A89"></div></div></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;gap:8px"><div style="font-size:9px;color:#5B6A71">Sky Blue 300</div><div style="font-size:10px;font-weight:600;color:#3B5A69">$00,000</div></div><div style="height:14px;background:#F4F1EC;border-radius:2px;overflow:hidden"><div style="width:41%;height:100%;background:#B6D0ED"></div></div></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;gap:8px"><div style="font-size:9px;color:#5B6A71">Pomegranate, negatives only</div><div style="font-size:10px;font-weight:600;color:#3B5A69">−$00,000</div></div><div style="height:14px;background:#F4F1EC;border-radius:2px;overflow:hidden"><div style="width:24%;height:100%;background:#CE3657"></div></div></div>
+          </div>
+          <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">Track is Limestone. Bars are 14px in a column, 22px full width.</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+        <div style="font-size:9px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+        <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Topic-MM-DD-YY</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;padding-top:4px">
+    <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Page 2 · guide</div>
+    <div style="font-size:12px;line-height:1.6;color:#5B6A71;text-wrap:pretty">Header rule, eyebrow, headline, deck, then how it works, then a two-column base pairing the scenario table with the data graphic. Every page carries the same header and footer.</div>
+    <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">At least one chart per piece.</strong> Build it from the piece's own figures, and let it replace the table it would otherwise duplicate. Never invent numbers to fill a graphic.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Charts stay in the blues.</strong> Steel Blue 700, Smalt 500, Sky Blue 300 on a Limestone track. Pomegranate only for negative values.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Bold the number that carries the point.</strong> Tint the total row, weight it 600, and set it in Steel Blue.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Use <span style="font-family:ui-monospace,monospace;font-size:10.5px;background:#F4F1EC;padding:1px 5px;border-radius:3px">justify-content:space-between</span></strong> on the page wrapper so whitespace distributes rather than pooling at the bottom.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:grid;grid-template-columns:612px 1fr;gap:32px;align-items:start">
+  <div style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+    <div style="height:100%;display:flex;flex-direction:column;gap:18px;justify-content:space-between">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+        <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+        <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Topic · fit and reference</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">Who this is designed for</div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">Steel Blue bullets on the left column. Four or five items.</div></div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">Each one a single sentence, no terminal period.</div></div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">Written in second person</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">Important considerations</div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">Clay bullets on the right, for the cautions.</div></div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">The two columns should balance in length.</div></div>
+          <div style="display:flex;gap:9px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:5.5px;flex:none"></div><div style="font-size:10px;line-height:1.5;color:#8a8580">Candid, never alarmist</div></div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #E3D3C5;padding-top:17px;display:flex;flex-direction:column;gap:10px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">Three things to keep separate</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+          <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">Sub-module one</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Clay rule here, Steel Blue on page 2. Keeps the two pages distinguishable.</div></div>
+          <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">Sub-module two</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Bold lead line, then explanation at 10px on 1.5.</div></div>
+          <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #9F8E75;padding-top:8px"><div style="font-size:10px;font-weight:600">Sub-module three</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Two or three columns. Drop to two if the copy runs long.</div></div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #E3D3C5;padding-top:17px;display:grid;grid-template-columns:1fr 1.15fr;gap:26px">
+        <div style="background:#F8F4F0;border:1px solid #E3D3C5;border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:9px;align-self:flex-start">
+          <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Quick reference</div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">Label</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">Six rows</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">Limestone card</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">Hairline border</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">4px radius</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:10px;color:#5B6A71">Self-aligned to top</div><div style="font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">How Farther approaches this</div>
+          <div style="font-size:10px;line-height:1.5;color:#8a8580">One paragraph. Names the Intelligent Wealth Platform and the fiduciary, fee-based model, and says specifically what we do about this topic. Never a sales close, never a call to action.</div>
+          <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75;margin-top:4px">Questions worth asking your advisor</div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">01</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Three questions, numbered in Clay</div></div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">02</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Each one answerable, not rhetorical</div></div>
+          <div style="display:flex;gap:9px"><div style="font-size:10px;color:#9F8E75;flex:none">03</div><div style="font-size:10px;line-height:1.5;color:#8a8580">Phrased the way a client would ask it</div></div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:8px">
+        <div style="font-size:9px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+        <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Topic-MM-DD-YY</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;padding-top:4px">
+    <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Page 3 · fit and reference</div>
+    <div style="font-size:12px;line-height:1.6;color:#5B6A71;text-wrap:pretty">Who it is for and what to watch, then a three-column strip, then the quick-reference card paired with the Farther approach and three client questions.</div>
+    <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Never leave a module half-empty.</strong> If the content will not fill it, cut the module rather than padding it.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">The layout is a skeleton, not a straitjacket.</strong> Swap a bar chart for a donut, drop a module, or add a row when the content calls for it.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Do not repeat the cover's three numbers.</strong> They appear once, on page 1.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:grid;grid-template-columns:612px 1fr;gap:32px;align-items:start">
+  <div style="width:612px;height:792px;box-sizing:border-box;background:#fff;color:#333;padding:38px 44px 22px;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+    <div style="height:100%;display:flex;flex-direction:column;gap:18px;justify-content:space-between">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+        <img src="../../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+        <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Deep-dive data appendix</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:18px;color:#3B5A69">The hero chart</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.35;font-size:9.5px;line-height:1.35;color:#8a8580">Row label, 9.5px</div><div style="flex:2.65;display:flex;align-items:center;gap:7px"><div style="flex:1;height:22px;background:#F4F1EC;border-radius:2px"><div style="width:100%;height:100%;background:#3B5A69;border-radius:2px"></div></div><div style="flex:0 0 84px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div></div></div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.35;font-size:9.5px;line-height:1.35;color:#8a8580">Bars 22px full width</div><div style="flex:2.65;display:flex;align-items:center;gap:7px"><div style="flex:1;height:22px;background:#F4F1EC;border-radius:2px"><div style="width:66%;height:100%;background:#557A89;border-radius:2px"></div></div><div style="flex:0 0 84px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div></div></div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1.35;font-size:9.5px;line-height:1.35;color:#8a8580">Value column is fixed at 84px</div><div style="flex:2.65;display:flex;align-items:center;gap:7px"><div style="flex:1;height:22px;background:#F4F1EC;border-radius:2px"><div style="width:34%;height:100%;background:#B6D0ED;border-radius:2px"></div></div><div style="flex:0 0 84px;font-family:'ABC Arizona Text',Georgia,serif;font-size:12px;text-align:right;color:#8a8580">$00,000</div></div></div>
+        </div>
+        <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">Hypothetical illustration note.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;letter-spacing:-.02em;font-size:16px;color:#3B5A69">Supporting table, 16px heading</div>
+        <div style="display:flex;flex-direction:column">
+          <div style="display:flex;gap:9px;border-bottom:1px solid #333;padding-bottom:5px"><div style="flex:1.7;font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71">Item</div><div style="flex:1.5;font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:#5B6A71;text-align:right">Value</div></div>
+          <div style="display:flex;gap:9px;padding:5px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.5px;line-height:1.35;color:#8a8580">Compact rows, 9.5px label</div><div style="flex:1.5;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;gap:9px;padding:5px 0;border-bottom:1px solid #efece8"><div style="flex:1.7;font-size:9.5px;line-height:1.35;color:#8a8580">Hairline between rows</div><div style="flex:1.5;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+          <div style="display:flex;gap:9px;padding:5px 0"><div style="flex:1.7;font-size:9.5px;line-height:1.35;color:#8a8580">No rule under the last row</div><div style="flex:1.5;font-family:'ABC Arizona Text',Georgia,serif;font-size:11.5px;text-align:right;color:#8a8580">Value</div></div>
+        </div>
+        <div style="font-size:7px;line-height:1.45;color:#8a8580;font-style:italic">Source line, 7px italic. Cite where the figures came from.</div>
+      </div>
+      <div style="border-top:1px solid #E3D3C5;padding-top:12px;display:flex;flex-direction:column;gap:9px">
+        <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Important disclosures</div>
+        <div style="font-size:6.2px;line-height:1.45;color:#8a8580">Paragraph one, 6.2px on 1.45. The registered-adviser statement and the scope of the material. Four or five paragraphs total, plus a topic-specific one where the subject requires it — legal for trusts and titling, actuarial for insurance, options risk for derivatives.</div>
+        <div style="font-size:6.2px;line-height:1.45;color:#8a8580">Paragraph two. Hypothetical illustrations, past performance, and the risk of loss.</div>
+        <div style="font-size:6.2px;line-height:1.45;color:#8a8580">Paragraph three. Source reliability, and the fact that figures reflect rules as of the publication date.</div>
+        <div style="font-size:6.2px;line-height:1.45;color:#8a8580">Paragraph four. No tax or legal advice, plus Form ADV Part 2A and Form CRS availability at adviserinfo.sec.gov.</div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end">
+          <div style="font-size:7px;color:#8a8580;font-style:italic">The Intelligent Wealth Series | Client Education Guide | Ref: Topic-MM-DD-YY v1.0</div>
+          <div style="font-size:7.5px;letter-spacing:.06em;color:#9F8E75">Topic-MM-DD-YY</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;padding-top:4px">
+    <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Page 4 · data appendix</div>
+    <div style="font-size:12px;line-height:1.6;color:#5B6A71;text-wrap:pretty">The deep-dive chart and tables, ending with the full disclosure block and the reference line. This is the only page that carries the disclosures.</div>
+    <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #E3D3C5;padding-top:12px">
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Add a topic-specific disclosure paragraph</strong> where the subject demands it, on top of the standard four.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">Every non-cover page ends</strong> with <span style="font-family:ui-monospace,monospace;font-size:10.5px;background:#F4F1EC;padding:1px 5px;border-radius:3px">Farther Wealth Management · farther.com</span> and the compliance mark.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#9F8E75;margin-top:6px;flex:none"></div><div style="font-size:11.5px;line-height:1.55"><strong style="color:#333">6.2px is the floor.</strong> Disclosures never go smaller, even to fit.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px;border-top:1px solid #333;padding-top:22px">
+  <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1.1;letter-spacing:-.025em">The values to copy</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69;border-bottom:1px solid #E3D3C5;padding-bottom:7px">Type</div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Page headline</div><div style="font-size:11.5px;text-align:right">Arizona Light 28–31px / −.02em</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Module heading</div><div style="font-size:11.5px;text-align:right">Arizona Light 18px, Steel Blue</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Sub-heading</div><div style="font-size:11.5px;text-align:right">Arizona Light 16px</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Eyebrow</div><div style="font-size:11.5px;text-align:right">Fakt 8px / .16em caps, Clay</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Body</div><div style="font-size:11.5px;text-align:right">Fakt 10–11px / 1.5</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Table label</div><div style="font-size:11.5px;text-align:right">Fakt 9.5–10px / 1.35</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Table figure</div><div style="font-size:11.5px;text-align:right">Arizona 11.5–12px, right</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Table header</div><div style="font-size:11.5px;text-align:right">Fakt 7px / .12em caps</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Illustration note</div><div style="font-size:11.5px;text-align:right">Fakt 7px italic</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Disclosure</div><div style="font-size:11.5px;text-align:right">Fakt 6.2px / 1.45</div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69;border-bottom:1px solid #E3D3C5;padding-bottom:7px">Color</div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#333333;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Charcoal 900 · body text</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#333333</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#3B5A69;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Steel Blue 700 · headings, chart 1</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#3B5A69</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#557A89;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Smalt Blue 500 · chart 2</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#557A89</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#B6D0ED;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Sky Blue 300 · chart 3</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#B6D0ED</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#5B6A71;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Slate Blue 500 · secondary text</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#5B6A71</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#9F8E75;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Clay 400 · eyebrows, compliance</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#9F8E75</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#F8F4F0;border:1px solid #E3D3C5;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Limestone 50 · cards, cover base</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#F8F4F0</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#F4F1EC;border:1px solid #E3D3C5;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Chart track</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#F4F1EC</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#E3D3C5;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Limestone 200 · hairline rules</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#E3D3C5</div></div>
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:26px;height:16px;border-radius:3px;background:#CE3657;flex:none"></div><div style="font-size:11.5px;color:#5B6A71;flex:1">Pomegranate 500 · negatives only</div><div style="font-family:ui-monospace,monospace;font-size:10.5px">#CE3657</div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69;border-bottom:1px solid #E3D3C5;padding-bottom:7px">Structure and print</div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Page gap</div><div style="font-size:11.5px;text-align:right">16–18px between modules</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Module rule</div><div style="font-size:11.5px;text-align:right">1px #E3D3C5, 14–17px padding</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Header rule</div><div style="font-size:11.5px;text-align:right">1px #333, 7px padding</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Column rule</div><div style="font-size:11.5px;text-align:right">2px Steel Blue or Clay</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Card radius</div><div style="font-size:11.5px;text-align:right">4px, 1px #E3D3C5 border</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Wordmark, page</div><div style="font-size:11.5px;text-align:right">74px, −6.7px left offset</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Wordmark, cover</div><div style="font-size:11.5px;text-align:right">112px cream, −10.2px offset</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Print zoom</div><div style="font-size:11.5px;text-align:right">1.33333 on each page</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Auto-fit floor</div><div style="font-size:11.5px;text-align:right">scale 0.84, 8px headroom</div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px"><div style="font-size:11.5px;color:#5B6A71">Cover markup</div><div style="font-size:11.5px;text-align:right">Inline, never an import</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:16px;border-top:1px solid #333;padding-top:22px">
+  <div style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1.1;letter-spacing:-.025em">Voice, and the things that get flagged</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:34px">
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Write it this way</div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Second person, sentence case, no terminal period on a single-sentence headline</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">En dashes for ranges without spaces, em dashes with spaces, Oxford commas always</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Convey what the source says. Do not editorialize, and never rewrite copy a user supplies verbatim.</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#3B5A69;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Candid without being combative. Cite the number rather than characterizing it.</div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3B5A69">Never ships</div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#CE3657;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Emoji, accent colors outside the palette, or a call to action closing the piece</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#CE3657;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Advisor names, emails, phone numbers, or a "prepared for" block</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#CE3657;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">A figure without a source or a hypothetical-illustration note</div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#CE3657;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">Watermarked comps: <span style="font-family:ui-monospace,monospace;font-size:10.5px">stocksy-*</span>, <span style="font-family:ui-monospace,monospace;font-size:10.5px">shutterstock-*</span>, <span style="font-family:ui-monospace,monospace;font-size:10.5px">adobestock-547151154-preview</span></div></div>
+      <div style="display:flex;gap:10px"><div style="width:4px;height:4px;border-radius:50%;background:#CE3657;margin-top:6px;flex:none"></div><div style="font-size:12px;line-height:1.55">A page that scrolls. Fixed 792px height, content cut or the auto-fit takes over.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #E3D3C5;padding-top:14px">
+  <div style="font-size:10.5px;color:#5B6A71">Farther Wealth Management · farther.com</div>
+  <div style="font-size:10.5px;color:#9F8E75">Internal build reference · not client-facing</div>
+</div>
+
+</div>
+</x-dc>
+</body>
+</html>

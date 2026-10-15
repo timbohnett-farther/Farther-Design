@@ -1,0 +1,15 @@
+<!-- @dsCard group="Infographics" viewport="700x880" name="Timeline and hierarchy" subtitle="Timeline, pyramid, funnel" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Timeline and hierarchy</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/icons/farther-icons.js"></script>
+<script src="../assets/infographics/farther-infographics.js"></script>
+<script src="../assets/infographics/farther-infographics-examples.js"></script>
+<style>body{margin:0;padding:20px 24px;background:#F8F4F0;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333;display:flex;flex-direction:column;gap:26px}a{color:#3B5A69}a:hover{color:#31465C}
+.eye{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75}.ttl{font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:17px;color:#3B5A69;margin:2px 0 12px}.fn{font-size:9px;color:#8A8A8A;font-family:ui-monospace,monospace}</style></head><body>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Timeline</div><div class="fn">FartherInfographics.timeline(el, spec)</div></div><div class="ttl">Retirement milestones</div><div id="timeline"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Pyramid</div><div class="fn">FartherInfographics.pyramid(el, spec)</div></div><div class="ttl">The wealth pyramid</div><div id="pyramid"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Funnel</div><div class="fn">FartherInfographics.funnel(el, spec)</div></div><div class="ttl">From gross income to investable</div><div id="funnel"></div></div>
+<div style="font-size:8.5px;color:#8A8A8A">Hypothetical content for design reference.</div>
+<script>["timeline","pyramid","funnel"].forEach(k=>FartherInfographics[k](document.getElementById(k), FARTHER_INFOGRAPHIC_EXAMPLES[k]));</script>
+</body></html>

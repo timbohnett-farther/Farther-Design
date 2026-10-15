@@ -1,0 +1,37 @@
+<!-- @dsCard group="Charts" viewport="700x900" name="Estate flow: report page" subtitle="Order-of-death toggle, US Letter, with required disclosure" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Estate flow: report page</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/charts/estate-flow.js"></script>
+<script src="../assets/charts/estate-flow-example.js"></script>
+<style>body{margin:0;background:#E9E5E0;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333;display:flex;justify-content:center;padding:24px 0}a{color:#3B5A69}a:hover{color:#31465C}
+@page{size:8.5in 11in;margin:0}@media print{body{background:#fff;padding:0}.page{box-shadow:none!important;zoom:1.3333}}</style></head>
+<body>
+<div class="page" style="width:612px;height:792px;box-sizing:border-box;background:#F8F4F0;padding:34px 44px 22px;display:flex;flex-direction:column;gap:9px;overflow:hidden;box-shadow:0 1px 2px rgba(51,51,51,.04),0 8px 24px rgba(51,51,51,.06)">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #333;padding-bottom:7px">
+    <img src="../library/assets/wordmark-iw-dark.svg" alt="Farther" style="width:74px;display:block;">
+    <div style="font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:#5B6A71">Estate plan review · Distribution at death</div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <div style="display:flex;align-items:center;gap:8px"><div style="font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:#9F8E75">How the estate passes</div><div style="font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:#7A6654;background:#E6E3DB;border-radius:9999px;padding:2px 8px">Hypothetical</div></div>
+    <div id="ttl" style="font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:26px;line-height:1.1;letter-spacing:-.03em">Jaime predeceases Robert</div>
+    <div style="font-size:10.5px;line-height:1.45;color:#5B6A71;max-width:470px">A $15.8M household estate, from the accounts each spouse owns to what reaches the children after the second death.</div>
+  </div>
+  <div id="flow" style="flex:1;min-height:0"></div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:8.5px;color:#5B6A71">
+    <span style="display:flex;align-items:center;gap:5px"><svg width="22" height="6"><line x1="0" y1="3" x2="22" y2="3" stroke="#A8B3B8" stroke-width="1.3"></line></svg>Transfers at this death</span>
+    <span style="display:flex;align-items:center;gap:5px"><svg width="22" height="6"><line x1="0" y1="3" x2="22" y2="3" stroke="#A8B3B8" stroke-width="1.3" stroke-dasharray="4 3"></line></svg>Transfers at the survivor’s death</span>
+    <span style="display:flex;align-items:center;gap:5px"><svg width="22" height="6"><line x1="0" y1="3" x2="22" y2="3" stroke="#CE3657" stroke-width="1.6"></line></svg>Estate tax</span>
+    <span>Assumes no growth, spending or change in exemptions between deaths. Your estate documents govern.</span>
+  </div>
+  
+  <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid #E3D3C5;padding-top:8px">
+    <div style="font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75">Important disclosures</div>
+    <div style="font-size:5.6px;line-height:1.45;color:#8A8A8A;text-align:justify">This material has been prepared by Farther Finance Advisors, LLC ("Farther") for general educational and informational purposes only. It does not constitute personalized investment, tax, or legal advice, and it is not a recommendation to buy, sell, or hold any specific security or to adopt any particular investment or planning strategy. Farther is registered as an investment adviser with the U.S. Securities and Exchange Commission (SEC); registration does not imply a certain level of skill or training. This document does not constitute an offer to sell, or a solicitation of an offer to buy, any securities in any jurisdiction where such offer or solicitation would be unlawful.</div>
+    <div style="font-size:5.6px;line-height:1.45;color:#8A8A8A;text-align:justify">Any hypothetical illustrations, examples, or scenarios presented in this material are for illustrative purposes only, do not represent actual client results, and are not a guarantee of future performance. Actual results will vary based on individual circumstances, market conditions, and other factors. Hypothetical performance has inherent limitations, and no representation is made that any client will or is likely to achieve results similar to those shown. All investing involves risk, including the possible loss of principal, and there is no guarantee that any investment or planning strategy will be successful.</div>
+    <div style="font-size:5.6px;line-height:1.45;color:#8A8A8A;text-align:justify">Information contained herein has been obtained from sources believed to be reliable, but its accuracy and completeness are not guaranteed. Views and figures reflect conditions and regulations as of the date noted and are subject to change without notice. Farther does not provide tax or legal advice. Any tax-related discussion in this material is general in nature and should not be relied upon as tax advice. Please consult your own qualified tax advisor or attorney regarding your specific situation before making any tax-related decisions.</div>
+    <div style="font-size:5.6px;line-height:1.45;color:#8A8A8A;text-align:justify">Contribution limits, required minimum distribution (RMD) ages, and other figures referenced in this material reflect rules in effect as of the date of publication and are adjusted periodically by the Internal Revenue Service and subject to legislative change. Please confirm current limits and rules with your tax advisor or at irs.gov before making contribution or distribution decisions. Farther's Form ADV Part 2A Brochure and Form CRS are available at www.adviserinfo.sec.gov.</div>
+  </div>
+</div>
+<script>FartherEstateFlow.mount(document.getElementById('flow'), Object.assign({}, ESTATE_FLOW_EXAMPLE, { width: 720, cardHeight: 72, stageGap: 24, labelHeight: 24, busGap: 18, toggleScale: 0.8, halo: '#F8F4F0', onChange: s => { document.getElementById('ttl').textContent = s.title; } }));</script>
+</body></html>

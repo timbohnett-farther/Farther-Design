@@ -1,0 +1,15 @@
+<!-- @dsCard group="Infographics" viewport="700x1410" name="Relationship infographics" subtitle="Cycle, hub, tree" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Relationship infographics</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../assets/icons/farther-icons.js"></script>
+<script src="../assets/infographics/farther-infographics.js"></script>
+<script src="../assets/infographics/farther-infographics-examples.js"></script>
+<style>body{margin:0;padding:20px 24px;background:#F8F4F0;font-family:'Fakt Pro','Fakt',system-ui,sans-serif;color:#333;display:flex;flex-direction:column;gap:26px}a{color:#3B5A69}a:hover{color:#31465C}
+.eye{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#9F8E75}.ttl{font-family:'ABC Arizona Text',Georgia,serif;font-weight:300;font-size:17px;color:#3B5A69;margin:2px 0 12px}.fn{font-size:9px;color:#8A8A8A;font-family:ui-monospace,monospace}</style></head><body>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Cycle</div><div class="fn">FartherInfographics.cycle(el, spec)</div></div><div class="ttl">The annual review cycle</div><div id="cycle"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Hub</div><div class="fn">FartherInfographics.hub(el, spec)</div></div><div class="ttl">Your financial team</div><div id="hub"></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline"><div class="eye">Tree</div><div class="fn">FartherInfographics.tree(el, spec)</div></div><div class="ttl">Household map</div><div id="tree"></div></div>
+<div style="font-size:8.5px;color:#8A8A8A">Hypothetical content for design reference.</div>
+<script>["cycle","hub","tree"].forEach(k=>FartherInfographics[k](document.getElementById(k), FARTHER_INFOGRAPHIC_EXAMPLES[k]));</script>
+</body></html>

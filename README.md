@@ -28,11 +28,29 @@ hang off it.
 | Path | What it is |
 |---|---|
 | `colors_and_type.css` | All color + type CSS variables and semantic text classes. Import first on any new page. |
-| `assets/logos/` | Wordmark (Navy, Cream), Symbol, and Wordmark + "intelligent wealth" tagline lockup. |
+| `assets/logos/` | **Default logo: the Farther Intelligent Wealth lockup** — `wordmark-iw-dark.svg` (Steel 700, on light backgrounds) and `wordmark-iw-light.svg` (Limestone, on dark backgrounds and photos). Also the Symbol. The old plain wordmarks (`wordmark-navy`, `wordmark-cream`) are retired; don't use them. |
 | `assets/icons/` | 31 variants of the Farther **F-symbol** (brand mark derivatives). |
+| `assets/charts/sankey.js` | **Sankey (flow) diagram** renderer: `FartherSankey.mount(el, {nodes, links})` draws a static, print-ready SVG in brand colors. Use it for income distribution, estate distribution and asset allocation. Examples: `preview/chart-sankey-*.html`. |
+| `assets/charts/estate-flow.js` | **Estate flow chart**: a stage-by-stage estate distribution (before the first death, at the first death, after the first death, after the second death) with an **order-of-death toggle**. `FartherEstateFlow.mount(el, {scenarios})`. Vertical layout for Letter reports, `orientation:'horizontal'` for 16:9 slides. Example data in `estate-flow-example.js`; cards in `preview/estate-flow-report.html` and `preview/estate-flow-slide.html`. |
+| `assets/charts/farther-charts.js` | **15 finance chart types** as static, print-ready SVG: `fan` (Monte Carlo), `waterfall`, `allocation` (vs. target and ranges), `cashflow`, `growth` (growth of $10K), `brackets` (tax bracket fill), `periodic` (table of returns), `drawdown`, `treemap`, `bullet`, `heatmap`, `timeline`, `scatter` (risk vs. return), `tornado`, `choropleth` (U.S. tile map). Call `FartherCharts.<type>(el, spec)`. Sample specs are in `farther-charts-examples.js`; cards are in the Charts group (`preview/charts-*.html`). |
+| `assets/infographics/farther-infographics.js` | **12 Farther infographic layouts** (native, no external library): `steps`, `stairs`, `roadmap`, `timeline`, `pyramid`, `funnel`, `cycle`, `compare`, `quadrant`, `tree`, `hub`, `cards`. Call `FartherInfographics.<type>(el, spec)`. Uses Farther icons, `dark` for navy grounds, `scale` for slides. Sample specs are in `farther-infographics-examples.js`; cards are in the Infographics group (`preview/ig-*.html`). Layout ideas were informed by antvis/infographic (MIT); no code was copied. |
 | `assets/chart-samples/` | Reference images of Farther charts and diagrams (activity gauge, line+bar, pies, positioning matrix). |
 | `assets/misc/` | Ellipses, frame backgrounds, graphic-element explorations. |
 | `assets/images/` | **The image bank** — 196 brand-approved photos in 6 categories (web-ready `library/` + `thumbs/` + `manifest.json` + its own README). |
+| `data/` | **Advisor roster** — `advisors.json` / `advisors.csv`: all 294 active Farther advisors (name, designations, title, contact, location, team, profile URL, headshot URLs). See `data/README.md`. |
+| `guidelines/client-report/` | **Client report wireframe** — `Client Report.html` (page archetypes, components, content rules, build workflow) + `CLAUDE.md` (90% page density, cover-image matching, required disclosure verbatim). |
+| `guidelines/client-deck/` | **Client deck wireframe** — `Client Deck.html` (10 slide archetypes, report-to-deck sequence, slide density, type/color at slide scale, checklist, required disclosure). Shares rules with `guidelines/client-report/CLAUDE.md`. |
+| `templates/benefits-guide/` | **Benefits & Equity Guide / data fact sheet template** — `BenefitsGuide.dc.html` (one-page US Letter wireframe with named slots), a finished QCOM example, and `CLAUDE.md` (slot limits, verbatim footer disclaimer, style rules). |
+| `templates/education-guide/` | **Client Education Guide template** — `EducationGuide.dc.html` (four-page US Letter explainer: cover, guide, fit and reference, data appendix), four page-2 layouts (`Guide Layouts 1a-1d.dc.html`), a finished Tax-Loss Harvesting example, and `BUILD-RULES.md` (slot limits, layout choice, compliance mark, verbatim disclosure). |
+| `guidelines/one-pager/` | **1 Pager wireframes** — `1 Pager Design Wireframes.dc.html`: four Letter-size layouts for advisor one-page references (1a stat strip, 1b chart-led, 1c fact rail, 1d quadrants). |
+| `templates/data-report/` | **Data-heavy single report**: six US Letter wireframes (1a–1f) for single-page reports with lots of data (KPIs, charts, maps). Each has a header, a tile grid, the advisor slot bottom-left and a disclosure band. Also shown as a card in the Reports group (`guidelines/data-report/`). |
+| `templates/client-review/` | **Client Review Package**: three-layer quarterly review wireframes: a 10-page client executive report, a 3-page appendix, and a 2-page internal advisor meeting brief. Reuses the Client Report cover, the data-report layouts, the estate flow chart and the Farther icons. Card in the Reports group (`guidelines/client-review/`). |
+| `guidelines/compliance/DISCLOSURE.md` + `assets/compliance/disclosure.js` | **Official client disclosure** (single source of truth). Verbatim text, placement rules, and a drop-in `data-farther-disclosure` element. Card: Brand › Official disclosure. |
+| `templates/ips/` | **Investment Policy Statement**: two-page client IPS wireframe (mandate; guidelines and governance) plus an internal advisor QA page, with build rules (`BUILD-RULES.md`) and an extraction schema (`ips-schema.json`). Card in the Reports group. |
+| `email/` | **Advisor newsletter email**: `Advisor Newsletter.html`, a send-ready, image-free HTML email (600px, table layout, Outlook and dark-mode safe) with masthead, numbered insights, market snapshot, pull quote, deadline calendar, CTA button, advisor signature and the condensed disclosure. |
+| `templates/why-farther/` | **Why Farther deck**: 19-slide client pitch for complex families (1920×1080). It was copied from the "Why Farther Deck v2 Steel" project, with Farther icons and the disclosure slide added and the advisor filled from the roster. Also in the client material library. |
+| `templates/client-decision-deck/` | **Client Decision Deck**: a decision-led 16:9 deck for one client household's meeting (not part of the education series). 13 slide wireframes with speaker notes (client question banner, connection bar, coordination map, strategy comparison and decision cards, scenario labels, standard closing, disclosure) plus a one-page meeting takeaway. Card in the Reports group. |
+| `templates/group-education-deck/` | **Group Education Deck**: the education-series presentation, a 10-slide broad-audience deck for seminars and webinars with no personal data. Standard ten-step arc, engagement prompts, full presenter notes per slide, and the disclosure slide. Card in the Reports group. |
 | `image-library.html` | Visual browser for the image bank — filter by category, click any image to copy its path. |
 | `fonts/` | Webfont fallbacks (see Visual Foundations > Typography note). |
 | `preview/` | Design-System tab cards (colors, type, components, etc.). |
@@ -72,6 +90,10 @@ extracted text agents need already lives in `research/`. Primary sources:
   — the base design system (tokens, fonts, assets, UI kits, slides, preview
   cards) this project imported and extends. Explore it for history and
   deeper reference material.
+- **GitHub: [timbohnett-farther/Farther-advisor-profile](https://github.com/timbohnett-farther/Farther-advisor-profile)**
+  — the advisor roster, refreshed nightly from the Sanity CMS behind
+  farther.com. `data/advisors.json` and `data/advisors.csv` are copied into
+  `data/`. Use it for any design that names or pictures real advisors.
 
 No farther.com codebase was provided. UI kits are reconstructed from the
 brand PDFs; if you (the reader) have the live codebase or product Figma,
@@ -368,8 +390,7 @@ CDN in every page that needs icons:
 <script>lucide.createIcons();</script>
 ```
 
-When the Farther icon library becomes available, drop the SVGs into
-`assets/icons/diagrams/` and the UI components will read from there first.
+**Farther diagram icons (`assets/icons/diagrams/`).** 30 finance line icons drawn to this spec (50×50 artboard, 1.4 stroke, rounded caps and joins, `currentColor`): advisor, allocation, bank, bonds, business, calculator, cash, coin, contract, debt, dividends, donation, education, estate, family, global, goals, growth, insurance, investment, ledger, performance, real-estate, retirement, savings, security, tax, transfer, trust, wallet. Use them at 32px and up. Color them Bronze 400 in diagrams and Steel 700 in UI. Preview card: `preview/icons-farther.html`. **Use them in reports and callouts:** load `assets/icons/farther-icons.js` and write `<span data-farther-icon="tax">`. The span takes its color from CSS `color` (a plain `<img>` of the SVG can't be recolored). Callout, stat tile, icon list and section-marker patterns: `preview/icons-callouts.html`. For concepts not in the set, or for UI sizes of 24px and below, use Lucide at stroke 1.5.
 
 **Emoji** — never used in brand materials.
 
@@ -392,3 +413,6 @@ Things that would tighten this kit a lot, if you can share them:
    described in `Farther-7.pdf`).
 4. **Photography** — any brand-approved modern-families, advisor-portrait,
    or lifestyle imagery.
+
+
+**Diverging scale (chart negatives → positives).** Seven steps, from large negative to large positive: `--diverge-neg-3` Pomegranate 500 #CE3657, `--diverge-neg-2` Pomegranate 300 #DE788E, `--diverge-neg-1` #EFBDC8, `--diverge-0` Clay 100 #E6E3DB (neutral or flat), `--diverge-pos-1` #BFEBF1, `--diverge-pos-2` Serene Aqua 300 #7FD6E2, `--diverge-pos-3` Serene Aqua 500 #3CC1D3. Use it for heat maps, return tables, gain/loss cells and change maps. Use white text on `--diverge-neg-3` and ink #333 on every other step. Don't use red-green.

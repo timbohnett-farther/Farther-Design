@@ -16,7 +16,14 @@
         "patterns": [
           {
             "group": [
-              "slides/**"
+              "assets/charts/**",
+              "assets/compliance/**",
+              "assets/icons/**",
+              "assets/infographics/**",
+              "library/pieces/**",
+              "library/tools/**",
+              "slides/**",
+              "trials/lauren-moone/**"
             ],
             "message": "Import design-system components from 'index.js', not component internals."
           }
@@ -34,8 +41,8 @@
         "message": "Raw px value — use a design-system spacing token via var()."
       },
       {
-        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:ABC Arizona Text|Fakt Pro|EB Garamond|Nunito Sans))/i]",
-        "message": "Font not provided by the design system. Available: ABC Arizona Text, Fakt Pro, EB Garamond, Nunito Sans."
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:ABC Arizona Text|Fakt Pro|Avenir|EB Garamond|Nunito Sans|JetBrains Mono))/i]",
+        "message": "Font not provided by the design system. Available: ABC Arizona Text, Fakt Pro, Avenir, EB Garamond, Nunito Sans, JetBrains Mono."
       }
     ]
   },
@@ -90,6 +97,13 @@
       "--clay-600",
       "--clay-700",
       "--clay-800",
+      "--diverge-0",
+      "--diverge-neg-1",
+      "--diverge-neg-2",
+      "--diverge-neg-3",
+      "--diverge-pos-1",
+      "--diverge-pos-2",
+      "--diverge-pos-3",
       "--dur-base",
       "--dur-quick",
       "--dur-slow",
@@ -134,6 +148,7 @@
       "--granite-700",
       "--granite-800",
       "--granite-900",
+      "--granite-blue",
       "--limestone-100",
       "--limestone-200",
       "--limestone-25",
@@ -344,10 +359,18 @@
       "--border-strong": "color",
       "--border-focus": "color",
       "--brand-lock": "color",
+      "--granite-blue": "color",
       "--brand-lock-alt": "color",
       "--status-positive": "color",
       "--status-negative": "color",
       "--status-reserved": "color",
+      "--diverge-neg-3": "color",
+      "--diverge-neg-2": "color",
+      "--diverge-neg-1": "color",
+      "--diverge-0": "color",
+      "--diverge-pos-1": "color",
+      "--diverge-pos-2": "color",
+      "--diverge-pos-3": "color",
       "--space-1": "spacing",
       "--space-2": "spacing",
       "--space-3": "spacing",
@@ -399,8 +422,10 @@
     },
     "fontFamilies": [
       "ABC Arizona Text",
+      "Avenir",
       "EB Garamond",
       "Fakt Pro",
+      "JetBrains Mono",
       "Nunito Sans"
     ]
   }
