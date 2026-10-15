@@ -37,7 +37,7 @@ hang off it.
 | `assets/chart-samples/` | Reference images of Farther charts and diagrams (activity gauge, line+bar, pies, positioning matrix). |
 | `assets/misc/` | Ellipses, frame backgrounds, graphic-element explorations. |
 | `assets/images/` | **The image bank** — 196 brand-approved photos in 6 categories (web-ready `library/` + `thumbs/` + `manifest.json` + its own README). |
-| `data/` | **Advisor roster** — `advisors.json` / `advisors.csv`: all 294 active Farther advisors (name, designations, title, contact, location, team, profile URL, headshot URLs). See `data/README.md`. |
+| *(external)* | **Advisor information** lives in [Farther-advisor-profile](https://github.com/timbohnett-farther/Farther-advisor-profile), not in this repo: `data/advisors.json` / `data/advisors.csv` (all 294 active advisors: name, designations, title, contact, location, team, profile URL, headshot URLs) plus its field guide `data/README.md`. Refreshed nightly. |
 | `guidelines/client-report/` | **Client report wireframe** — `Client Report.html` (page archetypes, components, content rules, build workflow) + `CLAUDE.md` (90% page density, cover-image matching, required disclosure verbatim). |
 | `guidelines/client-deck/` | **Client deck wireframe** — `Client Deck.html` (10 slide archetypes, report-to-deck sequence, slide density, type/color at slide scale, checklist, required disclosure). Shares rules with `guidelines/client-report/CLAUDE.md`. |
 | `templates/benefits-guide/` | **Benefits & Equity Guide / data fact sheet template** — `BenefitsGuide.dc.html` (one-page US Letter wireframe with named slots), a finished QCOM example, and `CLAUDE.md` (slot limits, verbatim footer disclaimer, style rules). |

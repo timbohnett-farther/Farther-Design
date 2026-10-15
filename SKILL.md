@@ -53,7 +53,7 @@ Never use Garamond or Avenir on-screen — those are the internal "house" fonts,
 
 ## Advisor data
 
-All advisor headshots and contact information are sourced from https://github.com/timbohnett-farther/Farther-advisor-profile (refreshed nightly; check it for the latest). `data/advisors.json` holds a snapshot of the 294-advisor roster. When a design names or pictures an advisor, pull `displayName`, `designations` (keep the ® marks), `title`, `city`/`state`, `phoneDisplay`, and `headshotSquareUrl` from it. Never invent advisor names or credentials. Field guide in `data/README.md`.
+All advisor headshots and contact information are sourced from https://github.com/timbohnett-farther/Farther-advisor-profile (refreshed nightly; check it for the latest). The roster (`data/advisors.json` / `data/advisors.csv`, 294 advisors) is **not stored in this design system**. Fetch it from that repo (https://github.com/timbohnett-farther/Farther-advisor-profile, path `data/`) whenever a flow below says `data/advisors.json`. When a design names or pictures an advisor, pull `displayName`, `designations` (keep the ® marks), `title`, `city`/`state`, `phoneDisplay`, and `headshotSquareUrl` from it. Never invent advisor names or credentials. Field guide: `data/README.md` in that repo.
 
 ## Components — what to reach for
 
